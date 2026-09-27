@@ -1,0 +1,676 @@
+openapi: 3.2.0
+info:
+  title: Khoros Ai Meta.json API
+  version: '1.1'
+  description: 'Operations tagged Meta.json across 2 of this provider''s published API definitions: lithium-marketing-stream-api-openapi.json, lithium-meta-json-api-openapi.yml. Each path carries the servers of the definition it was published in.'
+servers:
+- url: https://api.massrelevance.com
+security:
+- sec0: []
+tags:
+- name: Meta.json
+paths:
+  /{account}/{streamName}/meta.json:
+    get:
+      summary: Get entity information
+      description: Provides information about and derived from the entities in a stream
+      operationId: get-entity-information
+      parameters:
+      - name: account
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: streamName
+        in: path
+        schema:
+          type: string
+        required: true
+      responses:
+        '200':
+          description: '200'
+          content:
+            text/plain:
+              examples:
+                Result:
+                  value: Coming Soon
+      deprecated: false
+      security: []
+      tags:
+      - Meta.json
+    servers:
+    - url: https://api.massrelevance.com
+  /{account}/{streamName}/meta.json?num_minutes:
+    get:
+      summary: Get minutes of activity
+      description: Retrieve the number of minutes of activity
+      operationId: get-minutes-of-activity
+      parameters:
+      - name: account
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: streamName
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: num_minutes
+        in: query
+        schema:
+          type: integer
+          format: int32
+          default: 60
+      responses:
+        '200':
+          description: '200'
+          content:
+            text/plain:
+              examples:
+                Result:
+                  value: Coming Soon
+      deprecated: false
+      security: []
+      tags:
+      - Meta.json
+    servers:
+    - url: https://api.massrelevance.com
+  /{account}/{streamName}/meta.json?num_hours:
+    get:
+      summary: Get hours of activity
+      description: Retrieve the number of activity hours
+      operationId: get-minutes-of-activity-1
+      parameters:
+      - name: account
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: streamName
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: num_hours
+        in: query
+        schema:
+          type: integer
+          format: int32
+          default: 2
+      responses:
+        '200':
+          description: '200'
+          content:
+            text/plain:
+              examples:
+                Result:
+                  value: Coming Soon
+      deprecated: false
+      security: []
+      tags:
+      - Meta.json
+    servers:
+    - url: https://api.massrelevance.com
+  /{account}/{streamName}/meta.json?num_days:
+    get:
+      summary: Get days of activity
+      description: Retrieve the number of activity days
+      operationId: get-days-of-activity
+      parameters:
+      - name: account
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: streamName
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: num_days
+        in: query
+        schema:
+          type: integer
+          format: int32
+          default: 30
+      responses:
+        '200':
+          description: '200'
+          content:
+            text/plain:
+              examples:
+                Result:
+                  value: Coming Soon
+      deprecated: false
+      security: []
+      tags:
+      - Meta.json
+    servers:
+    - url: https://api.massrelevance.com
+  /{account}/{streamName}/meta.json?activity:
+    get:
+      summary: Get activity and count props
+      description: Include activity and count properties in response
+      operationId: get-activity-and-count-props
+      parameters:
+      - name: account
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: streamName
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: activity
+        in: query
+        description: '**Format:** binary'
+        schema:
+          type: boolean
+          default: true
+      responses:
+        '200':
+          description: '200'
+          content:
+            text/plain:
+              examples:
+                Result:
+                  value: Coming Soon
+      deprecated: false
+      security: []
+      tags:
+      - Meta.json
+    servers:
+    - url: https://api.massrelevance.com
+  /{account}/{streamName}/meta.json?finish:
+    get:
+      summary: Get last item of activity
+      description: Unix time of the point of which activity data should end
+      operationId: get-last-item-of-activity
+      parameters:
+      - name: account
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: streamName
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: finish
+        in: query
+        schema:
+          type: integer
+          format: int32
+          default: 1349278694
+      responses:
+        '200':
+          description: '200'
+          content:
+            text/plain:
+              examples:
+                Result:
+                  value: Coming Soon
+      deprecated: false
+      security: []
+      tags:
+      - Meta.json
+    servers:
+    - url: https://api.massrelevance.com
+  /{account}/{streamName}/meta.json? networks:
+    get:
+      summary: Get networks in meta response
+      description: Include networks property in the response, which is an array of strings
+      operationId: get-networks-in-meta-response-1
+      parameters:
+      - name: account
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: streamName
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: networks
+        in: query
+        schema:
+          type: boolean
+          default: true
+      responses:
+        '200':
+          description: '200'
+          content:
+            text/plain:
+              examples:
+                Result:
+                  value: Coming Soon
+      deprecated: false
+      security: []
+      tags:
+      - Meta.json
+    servers:
+    - url: https://api.massrelevance.com
+  /{account}/{streamName}/meta.json?top_periods:
+    get:
+      summary: Get top retweets in specified hours
+      description: Include top tweets from specific hourly periods provided
+      operationId: get-networks-in-meta-response
+      parameters:
+      - name: account
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: streamName
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: top_periods
+        in: query
+        schema:
+          type: string
+          default: '2012070412'
+      responses:
+        '200':
+          description: '200'
+          content:
+            text/plain:
+              examples:
+                Result:
+                  value: Coming Soon
+      deprecated: false
+      security: []
+      tags:
+      - Meta.json
+    servers:
+    - url: https://api.massrelevance.com
+  /{account}/{streamName}/meta.json?top_periods_relative:
+    get:
+      summary: Get top retweets hourly from now
+      description: Include top tweets from specific hourly periods ago from now
+      operationId: get-top-retweets-hourly-from-now-1
+      parameters:
+      - name: account
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: streamName
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: top_periods_relative
+        in: query
+        schema:
+          type: string
+          default: '1'
+      responses:
+        '200':
+          description: '200'
+          content:
+            text/plain:
+              examples:
+                Result:
+                  value: Coming Soon
+      deprecated: false
+      security: []
+      tags:
+      - Meta.json
+    servers:
+    - url: https://api.massrelevance.com
+  /{account}/{streamName}/meta.json?top_count:
+    get:
+      summary: Get tweets per period
+      description: Number of tweets to include per period
+      operationId: get-top-retweets-hourly-from-now
+      parameters:
+      - name: account
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: streamName
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: top_count
+        in: query
+        schema:
+          type: integer
+          format: int32
+          default: 5
+      responses:
+        '200':
+          description: '200'
+          content:
+            text/plain:
+              examples:
+                Result:
+                  value: Coming Soon
+      deprecated: false
+      security: []
+      tags:
+      - Meta.json
+    servers:
+    - url: https://api.massrelevance.com
+  /{account}/{streamName}/meta.json?num_hashtags:
+    get:
+      summary: Get number of hashtags returned
+      description: Retrieves the number of hashtags.
+      operationId: get-number-of-hashtags-returned-1
+      parameters:
+      - name: account
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: streamName
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: num_hashtags
+        in: query
+        schema:
+          type: integer
+          format: int32
+          default: 10
+      responses:
+        '200':
+          description: '200'
+          content:
+            text/plain:
+              examples:
+                Result:
+                  value: Coming Soon
+      deprecated: false
+      security: []
+      tags:
+      - Meta.json
+    servers:
+    - url: https://api.massrelevance.com
+  /{account}/{streamName}/meta.json?num_contributors:
+    get:
+      summary: Get number of contributors
+      description: Number of contributor user handles to return
+      operationId: get-number-of-topics
+      parameters:
+      - name: account
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: streamName
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: num_contributors
+        in: query
+        schema:
+          type: integer
+          format: int32
+          default: 5
+      responses:
+        '200':
+          description: '200'
+          content:
+            text/plain:
+              examples:
+                Result:
+                  value: Coming Soon
+      deprecated: false
+      security: []
+      tags:
+      - Meta.json
+    servers:
+    - url: https://api.massrelevance.com
+  /{account}/{streamName}/meta.json?num_trends:
+    get:
+      summary: Get number of topics
+      description: Retrieves the number of topics (buckets).
+      operationId: get-number-of-hashtags-returned
+      parameters:
+      - name: account
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: streamName
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: num_trends
+        in: query
+        schema:
+          type: integer
+          format: int32
+          default: 5
+      responses:
+        '200':
+          description: '200'
+          content:
+            text/plain:
+              examples:
+                Result:
+                  value: Coming Soon
+      deprecated: false
+      security: []
+      tags:
+      - Meta.json
+    servers:
+    - url: https://api.massrelevance.com
+  /{account}/{streamName}/meta.json?sort:
+    get:
+      summary: Get Specified Sort Order
+      description: Determines the sort order for returned topics
+      operationId: get-specified-sort-order
+      parameters:
+      - name: account
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: streamName
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: sort
+        in: query
+        schema:
+          type: string
+          default: position asc
+      responses:
+        '200':
+          description: '200'
+          content:
+            text/plain:
+              examples:
+                Result:
+                  value: Coming Soon
+      deprecated: false
+      security: []
+      tags:
+      - Meta.json
+    servers:
+    - url: https://api.massrelevance.com
+  /{account}/{streamName}/meta.json?all_topics:
+    get:
+      summary: Get all topics
+      description: Returns all topics, not just those with count > 0
+      operationId: get-all-topics
+      parameters:
+      - name: account
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: streamName
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: all_topics
+        in: query
+        schema:
+          type: integer
+          format: int32
+          default: 3
+      responses:
+        '200':
+          description: '200'
+          content:
+            text/plain:
+              examples:
+                Result:
+                  value: Coming Soon
+      deprecated: false
+      security: []
+      tags:
+      - Meta.json
+    servers:
+    - url: https://api.massrelevance.com
+  /{account}/{streamName}/meta.json?percent:
+    get:
+      summary: Get percentages in buckets
+      description: Returns percentages (PCT) in buckets (Total group only, not top)
+      operationId: get-percentages-in-buckets
+      parameters:
+      - name: account
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: streamName
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: percent
+        in: query
+        schema:
+          type: integer
+          format: int32
+          default: 1
+      responses:
+        '200':
+          description: '200'
+          content:
+            text/plain:
+              examples:
+                Result:
+                  value: Coming Soon
+        '400':
+          description: '400'
+          content:
+            application/json:
+              examples:
+                Result:
+                  value: '{}'
+              schema:
+                type: object
+                properties: {}
+      deprecated: false
+      security: []
+      tags:
+      - Meta.json
+    servers:
+    - url: https://api.massrelevance.com
+  /{account}/{streamName}/meta.json?precision:
+    get:
+      summary: Get specific decimals in percent return
+      description: Determines the number of decimal places to return in percentages
+      operationId: get-specific-decimals-in-percent-return
+      parameters:
+      - name: account
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: streamName
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: precision
+        in: query
+        schema:
+          type: integer
+          format: int32
+          default: 1
+      responses:
+        '200':
+          description: '200'
+          content:
+            text/plain:
+              examples:
+                Result:
+                  value: Coming Soon
+      deprecated: false
+      security: []
+      tags:
+      - Meta.json
+    servers:
+    - url: https://api.massrelevance.com
+  /{account}/{streamName}/meta.json?disregard:
+    get:
+      summary: Get excluded trends from values
+      description: Exclude trends that match supplied values from buckets while trying to ensure `num_trends` is met
+      operationId: get-excluded-trends-from-values
+      parameters:
+      - name: account
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: streamName
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: disregard
+        in: query
+        schema:
+          type: integer
+          format: int32
+          default: null
+      responses:
+        '200':
+          description: '200'
+          content:
+            text/plain:
+              examples:
+                Result:
+                  value: Coming Soon
+      deprecated: false
+      security: []
+      tags:
+      - Meta.json
+    servers:
+    - url: https://api.massrelevance.com
+components:
+  securitySchemes:
+    sec0:
+      type: oauth2
+      flows:
+        clientCredentials:
+          tokenUrl: https://example.com/oauth2/token
+          scopes: {}
+x-refined-from:
+- lithium-marketing-stream-api-openapi.json
+- lithium-meta-json-api-openapi.yml
+x-readme:
+  headers: []
+  explorer-enabled: false
+  proxy-enabled: false
+x-readme-fauxas: true

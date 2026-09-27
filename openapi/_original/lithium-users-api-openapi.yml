@@ -1,0 +1,153 @@
+# x-archived-from: lithium-users-api-openapi.yml
+# x-archived-on: 2026-09-26
+openapi: 3.2.0
+info:
+  description: Welcome to the Spredfast Conversations API.
+  version: '1'
+  title: Conversations API V1 Users API
+  license:
+    name: Spredfast API Terms of Use
+    url: https://s3.amazonaws.com/apiexplorer.spredfast.com/APITermsonlineacceptance.html
+servers:
+- url: https://api.spredfast.com
+tags:
+- name: Users
+paths:
+  /{environment}/v1/company/{companyId}/users/initiative/{initiativeId}/publishers:
+    get:
+      tags:
+      - Users
+      summary: Retrieve a list of Conversations users
+      operationId: publishers
+      parameters:
+      - name: environment
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: companyId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: initiativeId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/EntityPageResponseConversationsUser'
+            text/plain:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/EntityPageResponseConversationsUser'
+components:
+  schemas:
+    CallStatus:
+      type: object
+      properties:
+        succeeded:
+          type: boolean
+          readOnly: true
+          default: false
+        error:
+          $ref: '#/components/schemas/ApiError'
+    ApiError:
+      type: object
+      properties:
+        code:
+          type: string
+          readOnly: true
+          enum:
+          - PUBLISH_DATE_INVALID
+          - CANNOT_CREATE_NEW_LABELS
+          - IP_ADDRESS_REJECTED
+          - MISSING_FIELD
+          - NOT_ACCEPTABLE
+          - NOT_FOUND
+          - PUBLISH_POST_UPDATE_NOT_ALLOWED
+          - PUBLISH_IMAGE_BAD_CONTENT_TYPE
+          - PUBLISH_IMAGE_TOO_LARGE
+          - PUBLISH_IMAGE_BAD_IMAGE
+          - PUBLISH_INVALID_ACCOUNT_FOR_SERVICE
+          - INVALID_MESSAGE_ID
+          - NOT_IN_PRE_PUBLISH_STATE
+          - NOT_ACCEPTABLE_CONTENT_TYPE
+          - MESSAGE_HAS_A_LINK_PREVIEW
+          - MESSAGE_HAS_TARGETING_PROFILE
+          - MESSAGE_HAS_PROMOTION
+          - MESSAGE_HAS_SCHEDULED_SERIES
+          - MESSAGE_HAS_APPROVAL_TEAMS
+          - EDIT_MESSAGE_SERVER_ERROR
+          - UNAUTHENTICATED
+          - UNAUTHORIZED
+          - UNKNOWN_ERROR
+          - RESOURCE_NOT_FOUND
+          - VALIDATION_ERROR
+          - VIDEO_SINGLE_ASSET_ALLOWED
+          - VIDEO_INVALID_CATEGORY
+          - SERVICE_INVALID_NAME
+          - STREAM_ITEM_INVALID_TYPE
+          - PROXY_UNROUTABLE_REQUEST
+          - PROXY_SERVER_FAILURE
+          - PROXY_ORIGIN_SERVER_FAILURE
+          - ACCOUNT_LOCKED
+          - PASSWORD_EXPIRED
+        message:
+          type: string
+          readOnly: true
+    EntityPageResponseConversationsUser:
+      type: object
+      properties:
+        data:
+          type: array
+          readOnly: true
+          items:
+            type: object
+            description: Minimal data about Conversations users
+            properties:
+              id:
+                type: integer
+              displayName:
+                type: string
+        status:
+          $ref: '#/components/schemas/CallStatus'
+        pagination:
+          $ref: '#/components/schemas/Pagination'
+    Pagination:
+      type: object
+      properties:
+        next:
+          type: string
+        previous:
+          type: string
+        totalItems:
+          type: integer
+          format: int64
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://login.spredfast.com/v3/oauth/authorize
+          tokenUrl: https://login.spredfast.com/v3/oauth/token
+          scopes:
+            all: Read/write access for all endpoints.
+x-readme:
+  explorer-enabled: false
+  proxy-enabled: false
+  samples-enabled: true

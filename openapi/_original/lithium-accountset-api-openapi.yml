@@ -1,0 +1,114 @@
+# x-archived-from: lithium-accountset-api-openapi.yml
+# x-archived-on: 2026-09-26
+openapi: 3.2.0
+info:
+  description: Welcome to the Spredfast Conversations API.
+  version: '1'
+  title: Conversations API V1 Account Set API
+  license:
+    name: Spredfast API Terms of Use
+    url: https://s3.amazonaws.com/apiexplorer.spredfast.com/APITermsonlineacceptance.html
+servers:
+- url: https://api.spredfast.com
+tags:
+- name: AccountSet
+paths:
+  /{environment}/v1/company/{companyId}/initiative/{initiativeId}/accountset:
+    get:
+      tags:
+      - AccountSet
+      operationId: accountSet
+      parameters:
+      - name: environment
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: companyId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: initiativeId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/AccountSet'
+            text/plain:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/AccountSet'
+      description: 'List all account sets and accounts available.
+
+
+        Note: the following criteria must be met for an account set to be listed:
+
+        1. Your user must be a member of the Account Set.
+
+        2. There must be at least one Account registered in the Account Set.'
+      summary: Lists all accounts sets and corresponding accounts available to the user
+components:
+  schemas:
+    Account:
+      type: object
+      description: A Conversations social media Account
+      properties:
+        sfEntityType:
+          type: string
+        id:
+          type: integer
+        service:
+          type: string
+        name:
+          type: string
+        accountType:
+          type: string
+        serviceId:
+          type: string
+    AccountSet:
+      type: object
+      description: A Conversations AccountSet
+      properties:
+        sfEntityType:
+          type: string
+        id:
+          type: integer
+        name:
+          type: string
+        description:
+          type: string
+        thumbnail:
+          type: string
+        accounts:
+          type: array
+          items:
+            $ref: '#/components/schemas/Account'
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://login.spredfast.com/v3/oauth/authorize
+          tokenUrl: https://login.spredfast.com/v3/oauth/token
+          scopes:
+            all: Read/write access for all endpoints.
+x-readme:
+  explorer-enabled: false
+  proxy-enabled: false
+  samples-enabled: true

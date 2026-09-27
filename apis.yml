@@ -1,16 +1,18 @@
-aid: lithium
-name: Lithium
-description: 'Lithium Technologies is the enterprise online-community and social-customer-engagement platform
-  that, after merging with Spredfast in 2018, rebranded as Khoros and is today operated by IgniteTech.
-  The Lithium name is still load-bearing in the live platform: the Khoros Care APIs are served from *.response.lithium.com
-  and api.app.lithium.com, the Community plugin SDK and CLI ship on npm as lithium-sdk (the `li` command),
-  and the public GitHub organization is still github.com/lithiumtech. The platform exposes four public
-  developer surfaces documented at developer.khoros.com — Khoros Care (agent, author, conversation, bot,
-  work-queue, analytics and GDPR APIs on the Lithium hosts), Khoros Marketing (the Spredfast-lineage Conversations,
-  CRM, Stream, label-set and notification APIs on api.spredfast.com), Khoros Flow (the flow.ai bot and
-  messaging REST API), and Khoros Community (the LiQL-powered Community v2 API plus the legacy v1 REST
-  API), with the newer Aurora community platform adding a GraphQL API behind a login.'
-url: https://raw.githubusercontent.com/api-evangelist/lithium/refs/heads/main/apis.yml
+aid: khoros-ai
+name: Khoros
+description: 'Khoros is the enterprise online-community and social-customer-engagement platform formed
+  when Lithium Technologies merged with Spredfast in 2018; the combined company rebranded as Khoros in
+  2019 and is today operated by IgniteTech. This record was listed as Lithium until 2026-09-24, and it
+  also carries the Spredfast product line (Khoros Marketing). The Lithium name is still load-bearing in
+  the live platform: the Khoros Care APIs are served from *.response.lithium.com and api.app.lithium.com,
+  the Community plugin SDK and CLI ship on npm as lithium-sdk (the `li` command), and the public GitHub
+  organization is still github.com/lithiumtech. The platform exposes four public developer surfaces documented
+  at developer.khoros.com — Khoros Care (agent, author, conversation, bot, work-queue, analytics and GDPR
+  APIs on the Lithium hosts), Khoros Marketing (the Spredfast-lineage Conversations, CRM, Stream, label-set
+  and notification APIs on api.spredfast.com), Khoros Flow (the flow.ai bot and messaging REST API), and
+  Khoros Community (the LiQL-powered Community v2 API plus the legacy v1 REST API), with the newer Aurora
+  community platform adding a GraphQL API behind a login.'
+url: https://raw.githubusercontent.com/api-evangelist/khoros-ai/refs/heads/main/apis.yml
 deliveryModel:
   model: saas
   open_source: false
@@ -40,12 +42,14 @@ x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - sapphire-ventures
+- battery-ventures
 x-tier: enriched
 x-tier-reason: public-developer-surface
 x-also-known-as:
 - Khoros
 - Lithium Technologies
 - Spredfast
+- Lithium
 x-current-owner: IgniteTech
 specificationVersion: '0.23'
 created: '2026-07-17'
@@ -55,9 +59,9 @@ tags:
 - Company
 - MarTech
 - Community
-- Social-Media
+- Social Media
 - Customer Engagement
-- Customer-Support
+- Customer Support
 - Chatbots
 - Messaging
 - Analytics
@@ -74,8 +78,10 @@ tags_raw:
 - Messaging
 - Analytics
 - Marketing
+- Social-Media
+- Customer-Support
 apis:
-- aid: lithium:community
+- aid: khoros-ai:community
   name: Khoros Community API
   description: >-
     The Lithium/Khoros Community platform API. Version 2 is driven by LiQL (Lithium Query Language), a
@@ -96,16 +102,17 @@ apis:
   - type: Reference
     name: LiQL collection reference
     url: https://developer.khoros.com/khoroscommunitydevdocs/docs/liql-collection-reference
-- aid: lithium:lithium-accountset-api
-  name: Lithium AccountSet API
-  description: The AccountSet API from Lithium — 1 operation(s) for accountset.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.spredfast.com
+- aid: khoros-ai:khoros-ai-accountset-api
+  name: Khoros Account Set API
+  description: The AccountSet API from Khoros — 1 operation(s) for accountset.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
   tags:
   - AccountSet
   properties:
   - type: OpenAPI
-    url: openapi/lithium-accountset-api-openapi.yml
+    url: openapi/khoros-ai-accountset-api-openapi.yml
   - type: Documentation
     url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
   - type: Documentation
@@ -113,16 +120,17 @@ apis:
       https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
   - type: Documentation
     url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-active-api
-  name: Lithium Active API
-  description: The Active API from Lithium — 1 operation(s) for active.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
+- aid: khoros-ai:khoros-ai-active-api
+  name: Khoros Active API
+  description: The Active API from Khoros — 1 operation(s) for active.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
   tags:
   - Active
   properties:
   - type: OpenAPI
-    url: openapi/lithium-active-api-openapi.yml
+    url: openapi/khoros-ai-active-api-openapi.yml
   - type: Documentation
     url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
   - type: Documentation
@@ -130,16 +138,17 @@ apis:
       https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
   - type: Documentation
     url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-admin-api
-  name: Lithium Admin API
-  description: The Admin API from Lithium — 2 operation(s) for admin.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.spredfast.com/v2/crm
+- aid: khoros-ai:khoros-ai-admin-api
+  name: Khoros Admin API
+  description: The Admin API from Khoros — 2 operation(s) for admin.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
   tags:
   - Admin
   properties:
   - type: OpenAPI
-    url: openapi/lithium-admin-api-openapi.yml
+    url: openapi/khoros-ai-admin-api-openapi.yml
   - type: Documentation
     url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
   - type: Documentation
@@ -147,16 +156,17 @@ apis:
       https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
   - type: Documentation
     url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-asset-api
-  name: Lithium Asset API
-  description: The Asset API from Lithium — 1 operation(s) for asset.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
+- aid: khoros-ai:khoros-ai-asset-api
+  name: Khoros Asset API
+  description: The Asset API from Khoros — 1 operation(s) for asset.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
   tags:
   - Asset
   properties:
   - type: OpenAPI
-    url: openapi/lithium-asset-api-openapi.yml
+    url: openapi/khoros-ai-asset-api-openapi.yml
   - type: Documentation
     url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
   - type: Documentation
@@ -164,16 +174,17 @@ apis:
       https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
   - type: Documentation
     url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-assets-api
-  name: Lithium Assets API
-  description: The Assets API from Lithium — 3 operation(s) for assets.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.spredfast.com
+- aid: khoros-ai:khoros-ai-assets-api
+  name: Khoros Assets API
+  description: The Assets API from Khoros — 3 operation(s) for assets.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
   tags:
   - Assets
   properties:
   - type: OpenAPI
-    url: openapi/lithium-assets-api-openapi.yml
+    url: openapi/khoros-ai-assets-api-openapi.yml
   - type: Documentation
     url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
   - type: Documentation
@@ -181,16 +192,35 @@ apis:
       https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
   - type: Documentation
     url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-author-api-v2-api
-  name: Lithium Author Api V2 API
-  description: The Author Api V2 API from Lithium — 2 operation(s) for author api v2.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
+- aid: khoros-ai:khoros-ai-author-api-v2-api-api
+  name: 'Khoros Author Api V2 # API'
+  description: 'The Author Api V2 # API API from Khoros — 1 operation(s) for author api v2 # api.'
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - 'Author Api V2 # API'
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-author-api-v2-api-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-author-api-v2-api
+  name: Khoros Author Api V2 API
+  description: The Author Api V2 API from Khoros — 3 operation(s) for author api v2.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
   tags:
   - Author Api V2
   properties:
   - type: OpenAPI
-    url: openapi/lithium-author-api-v2-api-openapi.yml
+    url: openapi/khoros-ai-author-api-v2-api-openapi.yml
   - type: Documentation
     url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
   - type: Documentation
@@ -198,16 +228,17 @@ apis:
       https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
   - type: Documentation
     url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-authors-api
-  name: Lithium Authors API
-  description: The Authors API from Lithium — 2 operation(s) for authors.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
+- aid: khoros-ai:khoros-ai-authors-api
+  name: Khoros Authors API
+  description: The Authors API from Khoros — 2 operation(s) for authors.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
   tags:
   - Authors
   properties:
   - type: OpenAPI
-    url: openapi/lithium-authors-api-openapi.yml
+    url: openapi/khoros-ai-authors-api-openapi.yml
   - type: Documentation
     url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
   - type: Documentation
@@ -215,16 +246,17 @@ apis:
       https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
   - type: Documentation
     url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-broadcast-api
-  name: Lithium Broadcast API
-  description: The Broadcast API from Lithium — 3 operation(s) for broadcast.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.flow.ai/rest/v1
+- aid: khoros-ai:khoros-ai-broadcast-api
+  name: Khoros Broadcast API
+  description: The Broadcast API from Khoros — 3 operation(s) for broadcast.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
   tags:
   - Broadcast
   properties:
   - type: OpenAPI
-    url: openapi/lithium-broadcast-api-openapi.yml
+    url: openapi/khoros-ai-broadcast-api-openapi.yml
   - type: Documentation
     url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
   - type: Documentation
@@ -232,1430 +264,9 @@ apis:
       https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
   - type: Documentation
     url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-bysourcedocumentid-api
-  name: Lithium BySourceDocumentId API
-  description: The BySourceDocumentId API from Lithium — 1 operation(s) for bysourcedocumentid.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - BySourceDocumentId
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-bysourcedocumentid-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-case-api
-  name: Lithium Case API
-  description: The Case API from Lithium — 2 operation(s) for case.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - Case
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-case-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-changed-api
-  name: Lithium Changed API
-  description: The Changed API from Lithium — 1 operation(s) for changed.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - Changed
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-changed-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-compare-json-streams-api
-  name: Lithium Compare.json?streams API
-  description: The Compare.json?streams API from Lithium — 1 operation(s) for compare.json?streams.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.massrelevance.com
-  tags:
-  - Compare.json?streams
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-compare-json-streams-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-compare-json-streams-content-sort-api
-  name: Lithium Compare.json?streams={content}&sort API
-  description: >-
-    The Compare.json?streams={content}&sort API from Lithium — 1 operation(s) for compare.json?streams={content}&sort.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.massrelevance.com
-  tags: []
-  tags_raw:
-  - Compare.json?streams={content}&sort
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-compare-json-streams-content-sort-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-compare-json-streams-content-target-api
-  name: Lithium Compare.json?streams={content}&target API
-  description: >-
-    The Compare.json?streams={content}&target API from Lithium — 1 operation(s) for compare.json?streams={content}&target.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.massrelevance.com
-  tags: []
-  tags_raw:
-  - Compare.json?streams={content}&target
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-compare-json-streams-content-target-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-compare-json-streams-content-target-number-precision-api
-  name: Lithium Compare.json?streams={content}&target={number}&precision API
-  description: >-
-    The Compare.json?streams={content}&target={number}&precision API from Lithium — 1 operation(s) for
-    compare.json?streams={content}&target={number}&precision.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.massrelevance.com
-  tags: []
-  tags_raw:
-  - Compare.json?streams={content}&target={number}&precision
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-compare-json-streams-content-target-number-precision-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-config-api
-  name: Lithium Config API
-  description: The Config API from Lithium — 1 operation(s) for config.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://analytics-api.app.lithium.com/api/public
-  tags:
-  - Config
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-config-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-control-api
-  name: Lithium Control API
-  description: The Control API from Lithium — 2 operation(s) for control.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - Control
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-control-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-conversation-api-v2-api
-  name: Lithium Conversation Api V2 API
-  description: The Conversation Api V2 API from Lithium — 1 operation(s) for conversation api v2.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - Conversation Api V2
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-conversation-api-v2-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-conversations-api
-  name: Lithium Conversations API
-  description: The Conversations API from Lithium — 29 operation(s) for conversations.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.spredfast.com/v2
-  tags:
-  - Conversations
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-conversations-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-csv-api
-  name: Lithium Csv API
-  description: The Csv API from Lithium — 1 operation(s) for csv.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - CSV
-  tags_raw:
-  - Csv
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-csv-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-csv-long-api
-  name: Lithium Csv Long API
-  description: The Csv Long API from Lithium — 1 operation(s) for csv long.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - Csv Long
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-csv-long-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-currenttar-api
-  name: Lithium CurrentTAR API
-  description: The CurrentTAR API from Lithium — 1 operation(s) for currenttar.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - CurrentTAR
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-currenttar-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-customer-api
-  name: Lithium Customer API
-  description: The Customer API from Lithium — 4 operation(s) for customer.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - Customers
-  tags_raw:
-  - Customer
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-customer-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-customer-copy-api
-  name: Lithium Customer (COPY) API
-  description: The Customer (COPY) API from Lithium — 1 operation(s) for customer (copy).
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - Customer (COPY)
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-customer-copy-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-customers-api
-  name: Lithium Customers API
-  description: The Customers API from Lithium — 1 operation(s) for customers.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - Customers
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-customers-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-data-api
-  name: Lithium Data API
-  description: The Data API from Lithium — 1 operation(s) for data.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.spredfast.com/v2/events
-  tags:
-  - Data
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-data-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-default-api
-  name: 'Lithium # API'
-  description: 'The # API from Lithium — 1 operation(s) for #.'
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags: []
-  tags_raw:
-  - '#'
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-default-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-discussion-api
-  name: Lithium Discussion API
-  description: The Discussion API from Lithium — 1 operation(s) for discussion.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - Discussions
-  tags_raw:
-  - Discussion
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-discussion-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-displayids-api
-  name: Lithium DisplayIds API
-  description: The DisplayIds API from Lithium — 1 operation(s) for displayids.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - DisplayIds
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-displayids-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-email-api
-  name: Lithium Email API
-  description: The Email API from Lithium — 1 operation(s) for email.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - Email
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-email-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-entities-json-entity-ids-api
-  name: Lithium Entities.json?entity Ids API
-  description: >-
-    The Entities.json?entity Ids API from Lithium — 1 operation(s) for entities.json?entity ids.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.massrelevance.com
-  tags:
-  - Entities.json?entity Ids
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-entities-json-entity-ids-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-export-api
-  name: Lithium Export API
-  description: The Export API from Lithium — 10 operation(s) for export.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.spredfast.com/v2/analytics
-  tags:
-  - Export
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-export-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-flow-rest-api-api
-  name: Lithium Flow Rest Api
-  description: The Flow Rest Api API from Lithium — 2 operation(s) for flow rest api.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.flow.ai/rest/v1
-  tags:
-  - Flow Rest Api
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-flow-rest-api-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-folder-api
-  name: Lithium Folder API
-  description: The Folder API from Lithium — 3 operation(s) for folder.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.spredfast.com
-  tags:
-  - Folder
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-folder-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-form-api
-  name: Lithium Form API
-  description: The Form API from Lithium — 1 operation(s) for form.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - Form
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-form-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-getforms-api
-  name: Lithium GetForms API
-  description: The GetForms API from Lithium — 1 operation(s) for getforms.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - GetForms
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-getforms-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-handover-api
-  name: Lithium Handover API
-  description: The Handover API from Lithium — 1 operation(s) for handover.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.flow.ai/rest/v1
-  tags:
-  - Handover
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-handover-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-health-api
-  name: Lithium Health API
-  description: The Health API from Lithium — 1 operation(s) for health.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - Health
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-health-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-initiatives-api
-  name: Lithium Initiatives API
-  description: The Initiatives API from Lithium — 2 operation(s) for initiatives.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.spredfast.com
-  tags:
-  - Initiatives
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-initiatives-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-khorosapi-api
-  name: Lithium Khorosapi API
-  description: The Khorosapi API from Lithium — 1 operation(s) for khorosapi.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - Khorosapi
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-khorosapi-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-labels-api
-  name: Lithium Labels API
-  description: The Labels API from Lithium — 1 operation(s) for labels.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.spredfast.com
-  tags:
-  - Labels
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-labels-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-list-api
-  name: Lithium List API
-  description: The List API from Lithium — 2 operation(s) for list.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - List
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-list-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-me-api
-  name: Lithium Me API
-  description: The Me API from Lithium — 2 operation(s) for me.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.spredfast.com
-  tags:
-  - Me
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-me-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-messages-api
-  name: Lithium Messages API
-  description: The Messages API from Lithium — 10 operation(s) for messages.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.spredfast.com
-  tags:
-  - Message
-  tags_raw:
-  - Messages
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-messages-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-meta-api
-  name: Lithium Meta API
-  description: The Meta API from Lithium — 1 operation(s) for meta.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - Meta
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-meta-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-meta-json-activity-api
-  name: Lithium Meta.json?activity API
-  description: The Meta.json?activity API from Lithium — 1 operation(s) for meta.json?activity.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.massrelevance.com
-  tags:
-  - Meta.json?activity
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-meta-json-activity-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-meta-json-all-topics-api
-  name: Lithium Meta.json?all Topics API
-  description: The Meta.json?all Topics API from Lithium — 1 operation(s) for meta.json?all topics.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.massrelevance.com
-  tags:
-  - Meta.json?all Topics
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-meta-json-all-topics-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-meta-json-api
-  name: Lithium Meta.json API
-  description: The Meta.json API from Lithium — 1 operation(s) for meta.json.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.massrelevance.com
-  tags:
-  - Meta.json
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-meta-json-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-meta-json-disregard-api
-  name: Lithium Meta.json?disregard API
-  description: The Meta.json?disregard API from Lithium — 1 operation(s) for meta.json?disregard.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.massrelevance.com
-  tags:
-  - Meta.json?disregard
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-meta-json-disregard-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-meta-json-finish-api
-  name: Lithium Meta.json?finish API
-  description: The Meta.json?finish API from Lithium — 1 operation(s) for meta.json?finish.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.massrelevance.com
-  tags:
-  - Meta.json?finish
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-meta-json-finish-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-meta-json-networks-api
-  name: Lithium Meta.json? Networks API
-  description: The Meta.json? Networks API from Lithium — 1 operation(s) for meta.json? networks.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.massrelevance.com
-  tags:
-  - Meta.json? Networks
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-meta-json-networks-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-meta-json-num-contributors-api
-  name: Lithium Meta.json?num Contributors API
-  description: >-
-    The Meta.json?num Contributors API from Lithium — 1 operation(s) for meta.json?num contributors.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.massrelevance.com
-  tags:
-  - Meta.json?num Contributors
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-meta-json-num-contributors-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-meta-json-num-days-api
-  name: Lithium Meta.json?num Days API
-  description: The Meta.json?num Days API from Lithium — 1 operation(s) for meta.json?num days.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.massrelevance.com
-  tags:
-  - Meta.json?num Days
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-meta-json-num-days-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-meta-json-num-hashtags-api
-  name: Lithium Meta.json?num Hashtags API
-  description: The Meta.json?num Hashtags API from Lithium — 1 operation(s) for meta.json?num hashtags.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.massrelevance.com
-  tags:
-  - Meta.json?num Hashtags
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-meta-json-num-hashtags-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-meta-json-num-hours-api
-  name: Lithium Meta.json?num Hours API
-  description: The Meta.json?num Hours API from Lithium — 1 operation(s) for meta.json?num hours.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.massrelevance.com
-  tags:
-  - Meta.json?num Hours
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-meta-json-num-hours-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-meta-json-num-minutes-api
-  name: Lithium Meta.json?num Minutes API
-  description: The Meta.json?num Minutes API from Lithium — 1 operation(s) for meta.json?num minutes.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.massrelevance.com
-  tags:
-  - Meta.json?num Minutes
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-meta-json-num-minutes-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-meta-json-num-trends-api
-  name: Lithium Meta.json?num Trends API
-  description: The Meta.json?num Trends API from Lithium — 1 operation(s) for meta.json?num trends.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.massrelevance.com
-  tags:
-  - Meta.json?num Trends
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-meta-json-num-trends-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-meta-json-percent-api
-  name: Lithium Meta.json?percent API
-  description: The Meta.json?percent API from Lithium — 1 operation(s) for meta.json?percent.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.massrelevance.com
-  tags:
-  - Meta.json?percent
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-meta-json-percent-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-meta-json-precision-api
-  name: Lithium Meta.json?precision API
-  description: The Meta.json?precision API from Lithium — 1 operation(s) for meta.json?precision.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.massrelevance.com
-  tags:
-  - Meta.json?precision
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-meta-json-precision-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-meta-json-sort-api
-  name: Lithium Meta.json?sort API
-  description: The Meta.json?sort API from Lithium — 1 operation(s) for meta.json?sort.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.massrelevance.com
-  tags:
-  - Meta.json?sort
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-meta-json-sort-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-meta-json-top-count-api
-  name: Lithium Meta.json?top Count API
-  description: The Meta.json?top Count API from Lithium — 1 operation(s) for meta.json?top count.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.massrelevance.com
-  tags:
-  - Meta.json?top Count
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-meta-json-top-count-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-meta-json-top-periods-api
-  name: Lithium Meta.json?top Periods API
-  description: The Meta.json?top Periods API from Lithium — 1 operation(s) for meta.json?top periods.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.massrelevance.com
-  tags:
-  - Meta.json?top Periods
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-meta-json-top-periods-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-meta-json-top-periods-relative-api
-  name: Lithium Meta.json?top Periods Relative API
-  description: >-
-    The Meta.json?top Periods Relative API from Lithium — 1 operation(s) for meta.json?top periods relative.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.massrelevance.com
-  tags:
-  - Meta.json?top Periods Relative
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-meta-json-top-periods-relative-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-multichannelmessages-api
-  name: Lithium MultiChannelMessages API
-  description: The MultiChannelMessages API from Lithium — 1 operation(s) for multichannelmessages.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.spredfast.com
-  tags:
-  - MultiChannelMessages
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-multichannelmessages-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-networks-api
-  name: Lithium Networks API
-  description: The Networks API from Lithium — 16 operation(s) for networks.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - Networks
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-networks-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-note-api
-  name: Lithium Note API
-  description: The Note API from Lithium — 1 operation(s) for note.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - Note
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-note-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-pause-api
-  name: Lithium Pause API
-  description: The Pause API from Lithium — 1 operation(s) for pause.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.flow.ai/rest/v1
-  tags:
-  - Pause
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-pause-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-permissions-api
-  name: Lithium Permissions API
-  description: The Permissions API from Lithium — 1 operation(s) for permissions.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.spredfast.com
-  tags:
-  - Permissions
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-permissions-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-plans-api
-  name: Lithium Plans API
-  description: The Plans API from Lithium — 1 operation(s) for plans.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.spredfast.com
-  tags:
-  - Plans
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-plans-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-priority-api
-  name: Lithium Priority API
-  description: The Priority API from Lithium — 1 operation(s) for priority.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - Priority
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-priority-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-projects-api
-  name: Lithium Projects API
-  description: The Projects API from Lithium — 1 operation(s) for projects.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.flow.ai/rest/v1
-  tags:
-  - Project
-  tags_raw:
-  - Projects
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-projects-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-registrations-api
-  name: Lithium Registrations API
-  description: The Registrations API from Lithium — 4 operation(s) for registrations.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - Registrations
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-registrations-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-report-api
-  name: Lithium Report API
-  description: The Report API from Lithium — 1 operation(s) for report.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://analytics-api.app.lithium.com/api/public
-  tags:
-  - Report
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-report-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-reports-api
-  name: Lithium Reports API
-  description: The Reports API from Lithium — 16 operation(s) for reports.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://analytics-api.app.lithium.com/api/public
-  tags:
-  - Reports
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-reports-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-request-api
-  name: Lithium Request API
-  description: The Request API from Lithium — 2 operation(s) for request.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - Request
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-request-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-requests-api
-  name: Lithium Requests API
-  description: The Requests API from Lithium — 2 operation(s) for requests.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - Requests
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-requests-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-resolve-api
-  name: Lithium Resolve API
-  description: The Resolve API from Lithium — 2 operation(s) for resolve.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - Resolve
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-resolve-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-respond-api
-  name: Lithium Respond API
-  description: The Respond API from Lithium — 1 operation(s) for respond.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - Respond
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-respond-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-ssoid-api
-  name: Lithium SsoId API
-  description: The SsoId API from Lithium — 1 operation(s) for ssoid.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - SsoId
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-ssoid-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-stream-api-api
-  name: Lithium Stream Api
-  description: The Stream Api API from Lithium — 25 operation(s) for stream api.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.massrelevance.com
-  tags:
-  - Stream Api
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-stream-api-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-streams-api
-  name: Lithium Streams API
-  description: The Streams API from Lithium — 1 operation(s) for streams.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.spredfast.com/v2/analytics
-  tags:
-  - Streams
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-streams-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-subscription-api
-  name: Lithium Subscription API
-  description: The Subscription API from Lithium — 3 operation(s) for subscription.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.spredfast.com/v2/events
-  tags:
-  - Subscription
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-subscription-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-surveys-api
-  name: Lithium Surveys API
-  description: The Surveys API from Lithium — 1 operation(s) for surveys.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.spredfast.com/v2/analytics
-  tags:
-  - Surveys
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-surveys-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-tag-api
-  name: Lithium Tag API
-  description: The Tag API from Lithium — 2 operation(s) for tag.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - Tag
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-tag-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-teams-api
-  name: Lithium Teams API
-  description: The Teams API from Lithium — 1 operation(s) for teams.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://analytics-api.app.lithium.com/api/public
-  tags:
-  - Team
-  tags_raw:
-  - Teams
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-teams-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-threads-api
-  name: Lithium Threads API
-  description: The Threads API from Lithium — 1 operation(s) for threads.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.flow.ai/rest/v1
-  tags:
-  - Threads
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-threads-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-tokens-api
-  name: Lithium Tokens API
-  description: The Tokens API from Lithium — 1 operation(s) for tokens.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - Tokens
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-tokens-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-trigger-api
-  name: Lithium Trigger API
-  description: The Trigger API from Lithium — 1 operation(s) for trigger.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.flow.ai/rest/v1
-  tags:
-  - Trigger
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-trigger-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-users-api
-  name: Lithium Users API
-  description: The Users API from Lithium — 1 operation(s) for users.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.spredfast.com
-  tags:
-  - User
-  tags_raw:
-  - Users
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-users-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-uuid-api
-  name: Lithium Uuid API
-  description: The Uuid API from Lithium — 1 operation(s) for uuid.
-  humanURL: https://developer.khoros.com/khoroscaredevdocs/reference
-  baseURL: https://api.app.lithium.com
-  tags:
-  - UUID
-  tags_raw:
-  - Uuid
-  properties:
-  - type: OpenAPI
-    url: openapi/lithium-uuid-api-openapi.yml
-  - type: Documentation
-    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
-  - type: Documentation
-    url: >-
-      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
-  - type: Documentation
-    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-business-hours-api
-  name: Lithium Business Hours API
-  description: The Business Hours API from Lithium — 1 operation(s) for business hours.
+- aid: khoros-ai:khoros-ai-business-hours-api
+  name: Khoros Business Hours API
+  description: The Business Hours API from Khoros — 1 operation(s) for business hours.
   humanURL: >-
     https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
   baseURL: https://community.khoros.com/api/2.0
@@ -1663,7 +274,7 @@ apis:
   - Business Hours
   properties:
   - type: OpenAPI
-    url: openapi/lithium-business-hours-api-openapi.yml
+    url: openapi/khoros-ai-business-hours-api-openapi.yml
   - type: Documentation
     url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
   - type: Documentation
@@ -1671,9 +282,1510 @@ apis:
       https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
   - type: Documentation
     url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-work-queue-api
-  name: Lithium Work Queue API
-  description: The Work Queue API from Lithium — 1 operation(s) for work queue.
+- aid: khoros-ai:khoros-ai-bysourcedocumentid-api
+  name: Khoros By Source Document ID API
+  description: The BySourceDocumentId API from Khoros — 1 operation(s) for bysourcedocumentid.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - BySourceDocumentId
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-bysourcedocumentid-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-case-api
+  name: Khoros Case API
+  description: The Case API from Khoros — 2 operation(s) for case.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Case
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-case-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-changed-api
+  name: Khoros Changed API
+  description: The Changed API from Khoros — 1 operation(s) for changed.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Changed
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-changed-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-compare-json-api
+  name: Khoros Compare.json API
+  description: The Compare.json API from Khoros — 4 operation(s) for compare.json.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Compare.json
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-compare-json-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-compare-json-streams-api
+  name: Khoros Compare.json?streams API
+  description: The Compare.json?streams API from Khoros — 1 operation(s) for compare.json?streams.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Compare.json?streams
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-compare-json-streams-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-compare-json-streams-content-sort-api
+  name: Khoros Compare.json?streams={content}&sort API
+  description: >-
+    The Compare.json?streams={content}&sort API from Khoros — 1 operation(s) for compare.json?streams={content}&sort.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Compare.json?streams={content}&sort
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-compare-json-streams-content-sort-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-compare-json-streams-content-target-api
+  name: Khoros Compare.json?streams={content}&target API
+  description: >-
+    The Compare.json?streams={content}&target API from Khoros — 1 operation(s) for compare.json?streams={content}&target.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Compare.json?streams={content}&target
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-compare-json-streams-content-target-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-compare-json-streams-content-target-number-precision-api
+  name: Khoros Compare.json?streams={content}&target={number}&precision API
+  description: >-
+    The Compare.json?streams={content}&target={number}&precision API from Khoros — 1 operation(s) for
+    compare.json?streams={content}&target={number}&precision.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Compare.json?streams={content}&target={number}&precision
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-compare-json-streams-content-target-number-precision-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-config-api
+  name: Khoros Config API
+  description: The Config API from Khoros — 1 operation(s) for config.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Config
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-config-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-control-api
+  name: Khoros Control API
+  description: The Control API from Khoros — 2 operation(s) for control.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Control
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-control-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-conversation-api-v2-api
+  name: Khoros Conversation Api V2 API
+  description: The Conversation Api V2 API from Khoros — 1 operation(s) for conversation api v2.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Conversation Api V2
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-conversation-api-v2-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-conversations-api
+  name: Khoros Conversations API
+  description: The Conversations API from Khoros — 29 operation(s) for conversations.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Conversations
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-conversations-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-csv-api
+  name: Khoros CSV API
+  description: The Csv API from Khoros — 1 operation(s) for csv.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Csv
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-csv-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-csv-long-api
+  name: Khoros Csv Long API
+  description: The Csv Long API from Khoros — 1 operation(s) for csv long.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Csv Long
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-csv-long-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-currenttar-api
+  name: Khoros Current TAR API
+  description: The CurrentTAR API from Khoros — 1 operation(s) for currenttar.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - CurrentTAR
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-currenttar-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-customer-api
+  name: Khoros Customer API
+  description: The Customer API from Khoros — 4 operation(s) for customer.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Customer
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-customer-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-customer-copy-api
+  name: Khoros Customer (COPY) API
+  description: The Customer (COPY) API from Khoros — 1 operation(s) for customer (copy).
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Customer (COPY)
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-customer-copy-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-customers-api
+  name: Khoros Customers API
+  description: The Customers API from Khoros — 1 operation(s) for customers.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Customers
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-customers-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-data-api
+  name: Khoros Data API
+  description: The Data API from Khoros — 1 operation(s) for data.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Data
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-data-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-discussion-api
+  name: Khoros Discussion API
+  description: The Discussion API from Khoros — 1 operation(s) for discussion.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Discussion
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-discussion-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-displayids-api
+  name: Khoros Display IDs API
+  description: The DisplayIds API from Khoros — 1 operation(s) for displayids.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - DisplayIds
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-displayids-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-email-api
+  name: Khoros Email API
+  description: The Email API from Khoros — 1 operation(s) for email.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Email
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-email-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-entities-json-api
+  name: Khoros Entities.json API
+  description: The Entities.json API from Khoros — 1 operation(s) for entities.json.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Entities.json
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-entities-json-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-entities-json-entity-ids-api
+  name: Khoros Entities.json?entity Ids API
+  description: >-
+    The Entities.json?entity Ids API from Khoros — 1 operation(s) for entities.json?entity ids.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Entities.json?entity Ids
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-entities-json-entity-ids-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-export-api
+  name: Khoros Export API
+  description: The Export API from Khoros — 10 operation(s) for export.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Export
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-export-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-flow-rest-api-api
+  name: Khoros Flow Rest API
+  description: The Flow Rest Api API from Khoros — 2 operation(s) for flow rest api.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Flow Rest Api
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-flow-rest-api-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-folder-api
+  name: Khoros Folder API
+  description: The Folder API from Khoros — 3 operation(s) for folder.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Folder
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-folder-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-form-api
+  name: Khoros Form API
+  description: The Form API from Khoros — 1 operation(s) for form.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Form
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-form-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-getforms-api
+  name: Khoros Get Forms API
+  description: The GetForms API from Khoros — 1 operation(s) for getforms.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - GetForms
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-getforms-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-handover-api
+  name: Khoros Handover API
+  description: The Handover API from Khoros — 1 operation(s) for handover.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Handover
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-handover-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-health-api
+  name: Khoros Health API
+  description: The Health API from Khoros — 1 operation(s) for health.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Health
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-health-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-initiatives-api
+  name: Khoros Initiatives API
+  description: The Initiatives API from Khoros — 2 operation(s) for initiatives.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Initiatives
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-initiatives-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-khorosapi-api
+  name: Khoros Khorosapi API
+  description: The Khorosapi API from Khoros — 1 operation(s) for khorosapi.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Khorosapi
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-khorosapi-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-labels-api
+  name: Khoros Labels API
+  description: The Labels API from Khoros — 1 operation(s) for labels.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Labels
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-labels-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-list-api
+  name: Khoros List API
+  description: The List API from Khoros — 2 operation(s) for list.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - List
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-list-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-me-api
+  name: Khoros Me API
+  description: The Me API from Khoros — 2 operation(s) for me.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Me
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-me-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-messages-api
+  name: Khoros Messages API
+  description: The Messages API from Khoros — 10 operation(s) for messages.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Messages
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-messages-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-meta-api
+  name: Khoros Meta API
+  description: The Meta API from Khoros — 1 operation(s) for meta.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Meta
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-meta-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-meta-json-activity-api
+  name: Khoros Meta.json?activity API
+  description: The Meta.json?activity API from Khoros — 1 operation(s) for meta.json?activity.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Meta.json?activity
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-meta-json-activity-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-meta-json-all-topics-api
+  name: Khoros Meta.json?all Topics API
+  description: The Meta.json?all Topics API from Khoros — 1 operation(s) for meta.json?all topics.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Meta.json?all Topics
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-meta-json-all-topics-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-meta-json-api
+  name: Khoros Meta.json API
+  description: The Meta.json API from Khoros — 18 operation(s) for meta.json.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Meta.json
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-meta-json-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-meta-json-disregard-api
+  name: Khoros Meta.json?disregard API
+  description: The Meta.json?disregard API from Khoros — 1 operation(s) for meta.json?disregard.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Meta.json?disregard
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-meta-json-disregard-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-meta-json-finish-api
+  name: Khoros Meta.json?finish API
+  description: The Meta.json?finish API from Khoros — 1 operation(s) for meta.json?finish.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Meta.json?finish
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-meta-json-finish-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-meta-json-networks-api
+  name: Khoros Meta.json? Networks API
+  description: The Meta.json? Networks API from Khoros — 1 operation(s) for meta.json? networks.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Meta.json? Networks
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-meta-json-networks-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-meta-json-num-contributors-api
+  name: Khoros Meta.json?num Contributors API
+  description: >-
+    The Meta.json?num Contributors API from Khoros — 1 operation(s) for meta.json?num contributors.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Meta.json?num Contributors
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-meta-json-num-contributors-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-meta-json-num-days-api
+  name: Khoros Meta.json?num Days API
+  description: The Meta.json?num Days API from Khoros — 1 operation(s) for meta.json?num days.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Meta.json?num Days
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-meta-json-num-days-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-meta-json-num-hashtags-api
+  name: Khoros Meta.json?num Hashtags API
+  description: The Meta.json?num Hashtags API from Khoros — 1 operation(s) for meta.json?num hashtags.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Meta.json?num Hashtags
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-meta-json-num-hashtags-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-meta-json-num-hours-api
+  name: Khoros Meta.json?num Hours API
+  description: The Meta.json?num Hours API from Khoros — 1 operation(s) for meta.json?num hours.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Meta.json?num Hours
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-meta-json-num-hours-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-meta-json-num-minutes-api
+  name: Khoros Meta.json?num Minutes API
+  description: The Meta.json?num Minutes API from Khoros — 1 operation(s) for meta.json?num minutes.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Meta.json?num Minutes
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-meta-json-num-minutes-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-meta-json-num-trends-api
+  name: Khoros Meta.json?num Trends API
+  description: The Meta.json?num Trends API from Khoros — 1 operation(s) for meta.json?num trends.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Meta.json?num Trends
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-meta-json-num-trends-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-meta-json-percent-api
+  name: Khoros Meta.json?percent API
+  description: The Meta.json?percent API from Khoros — 1 operation(s) for meta.json?percent.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Meta.json?percent
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-meta-json-percent-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-meta-json-precision-api
+  name: Khoros Meta.json?precision API
+  description: The Meta.json?precision API from Khoros — 1 operation(s) for meta.json?precision.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Meta.json?precision
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-meta-json-precision-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-meta-json-sort-api
+  name: Khoros Meta.json?sort API
+  description: The Meta.json?sort API from Khoros — 1 operation(s) for meta.json?sort.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Meta.json?sort
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-meta-json-sort-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-meta-json-top-count-api
+  name: Khoros Meta.json?top Count API
+  description: The Meta.json?top Count API from Khoros — 1 operation(s) for meta.json?top count.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Meta.json?top Count
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-meta-json-top-count-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-meta-json-top-periods-api
+  name: Khoros Meta.json?top Periods API
+  description: The Meta.json?top Periods API from Khoros — 1 operation(s) for meta.json?top periods.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Meta.json?top Periods
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-meta-json-top-periods-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-meta-json-top-periods-relative-api
+  name: Khoros Meta.json?top Periods Relative API
+  description: >-
+    The Meta.json?top Periods Relative API from Khoros — 1 operation(s) for meta.json?top periods relative.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Meta.json?top Periods Relative
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-meta-json-top-periods-relative-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-multichannelmessages-api
+  name: Khoros Multi Channel Messages API
+  description: The MultiChannelMessages API from Khoros — 1 operation(s) for multichannelmessages.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - MultiChannelMessages
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-multichannelmessages-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-networks-api
+  name: Khoros Networks API
+  description: The Networks API from Khoros — 16 operation(s) for networks.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Networks
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-networks-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-note-api
+  name: Khoros Note API
+  description: The Note API from Khoros — 1 operation(s) for note.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Note
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-note-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-pause-api
+  name: Khoros Pause API
+  description: The Pause API from Khoros — 1 operation(s) for pause.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Pause
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-pause-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-permissions-api
+  name: Khoros Permissions API
+  description: The Permissions API from Khoros — 1 operation(s) for permissions.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Permissions
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-permissions-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-plans-api
+  name: Khoros Plans API
+  description: The Plans API from Khoros — 1 operation(s) for plans.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Plans
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-plans-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-priority-api
+  name: Khoros Priority API
+  description: The Priority API from Khoros — 1 operation(s) for priority.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Priority
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-priority-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-projects-api
+  name: Khoros Projects API
+  description: The Projects API from Khoros — 1 operation(s) for projects.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Projects
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-projects-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-registrations-api
+  name: Khoros Registrations API
+  description: The Registrations API from Khoros — 4 operation(s) for registrations.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Registrations
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-registrations-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-report-api
+  name: Khoros Report API
+  description: The Report API from Khoros — 1 operation(s) for report.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Report
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-report-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-reports-api
+  name: Khoros Reports API
+  description: The Reports API from Khoros — 16 operation(s) for reports.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Reports
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-reports-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-request-api
+  name: Khoros Request API
+  description: The Request API from Khoros — 2 operation(s) for request.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Request
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-request-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-requests-api
+  name: Khoros Requests API
+  description: The Requests API from Khoros — 2 operation(s) for requests.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Requests
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-requests-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-resolve-api
+  name: Khoros Resolve API
+  description: The Resolve API from Khoros — 2 operation(s) for resolve.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Resolve
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-resolve-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-respond-api
+  name: Khoros Respond API
+  description: The Respond API from Khoros — 1 operation(s) for respond.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Respond
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-respond-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-ssoid-api
+  name: Khoros SSO ID API
+  description: The SsoId API from Khoros — 1 operation(s) for ssoid.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - SsoId
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-ssoid-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-stream-api-api
+  name: Khoros Stream API
+  description: The Stream Api API from Khoros — 25 operation(s) for stream api.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Stream Api
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-stream-api-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-streams-api
+  name: Khoros Streams API
+  description: The Streams API from Khoros — 1 operation(s) for streams.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Streams
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-streams-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-subscription-api
+  name: Khoros Subscription API
+  description: The Subscription API from Khoros — 3 operation(s) for subscription.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Subscription
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-subscription-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-surveys-api
+  name: Khoros Surveys API
+  description: The Surveys API from Khoros — 1 operation(s) for surveys.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Surveys
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-surveys-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-tag-api
+  name: Khoros Tag API
+  description: The Tag API from Khoros — 2 operation(s) for tag.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Tag
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-tag-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-teams-api
+  name: Khoros Teams API
+  description: The Teams API from Khoros — 1 operation(s) for teams.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Teams
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-teams-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-threads-api
+  name: Khoros Threads API
+  description: The Threads API from Khoros — 1 operation(s) for threads.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Threads
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-threads-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-tokens-api
+  name: Khoros Tokens API
+  description: The Tokens API from Khoros — 1 operation(s) for tokens.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Tokens
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-tokens-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-trigger-api
+  name: Khoros Trigger API
+  description: The Trigger API from Khoros — 1 operation(s) for trigger.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Trigger
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-trigger-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-users-api
+  name: Khoros Users API
+  description: The Users API from Khoros — 1 operation(s) for users.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Users
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-users-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-uuid-api
+  name: Khoros Uuid API
+  description: The Uuid API from Khoros — 1 operation(s) for uuid.
+  humanURL: >-
+    https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
+  baseURL: https://community.khoros.com/api/2.0
+  tags:
+  - Uuid
+  properties:
+  - type: OpenAPI
+    url: openapi/khoros-ai-uuid-api-openapi.yml
+  - type: Documentation
+    url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
+  - type: Documentation
+    url: >-
+      https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
+  - type: Documentation
+    url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
+- aid: khoros-ai:khoros-ai-work-queue-api
+  name: Khoros Work Queue API
+  description: The Work Queue API from Khoros — 1 operation(s) for work queue.
   humanURL: >-
     https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
   baseURL: https://community.khoros.com/api/2.0
@@ -1681,7 +1793,7 @@ apis:
   - Work Queue
   properties:
   - type: OpenAPI
-    url: openapi/lithium-work-queue-api-openapi.yml
+    url: openapi/khoros-ai-work-queue-api-openapi.yml
   - type: Documentation
     url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
   - type: Documentation
@@ -1689,9 +1801,9 @@ apis:
       https://developer.khoros.com/khorosmarketingdevdocs/docs/developing-and-integrating-with-khoros-marketing
   - type: Documentation
     url: https://developer.khoros.com/khoros-flow/docs/overview-of-khoros-flow-apis
-- aid: lithium:lithium-work-queues-api
-  name: Lithium Work Queues API
-  description: The Work Queues API from Lithium — 1 operation(s) for work queues.
+- aid: khoros-ai:khoros-ai-work-queues-api
+  name: Khoros Work Queues API
+  description: The Work Queues API from Khoros — 1 operation(s) for work queues.
   humanURL: >-
     https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
   baseURL: https://community.khoros.com/api/2.0
@@ -1699,7 +1811,7 @@ apis:
   - Work Queues
   properties:
   - type: OpenAPI
-    url: openapi/lithium-work-queues-api-openapi.yml
+    url: openapi/khoros-ai-work-queues-api-openapi.yml
   - type: Documentation
     url: https://developer.khoros.com/khoroscaredevdocs/docs/khoros-care-integration-overview
   - type: Documentation
@@ -1832,3 +1944,8 @@ x-enrichment:
     at the Khoros Care gateway when their operations belong to Khoros Marketing, the Marketing Stream
     API or Khoros Flow); found a real RFC 9727 api-catalog linkset at developer.khoros.com; found api.massrelevance.com
     dead (502 on every path); refreshed package currency from live registry metadata.
+x-status: acquired
+x-acquired-by: ignitetech
+x-acquired-date: '2025-05-27'
+x-parent: ignitetech
+x-status-source: https://www.prnewswire.com/news-releases/ignitetech-acquires-khoros-to-transform-customer-connections-in-the-ai-answer-engine-era-302465365.html

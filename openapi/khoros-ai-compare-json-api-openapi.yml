@@ -1,0 +1,274 @@
+openapi: 3.2.0
+info:
+  title: stream-api Compare.json API
+  version: '1.1'
+servers:
+- url: https://api.massrelevance.com
+security:
+- sec0: []
+tags:
+- name: Compare.json
+paths:
+  /compare.json?streams:
+    get:
+      summary: Compare stream volumes
+      description: Retrieve stream volumes and compare them.
+      operationId: compare-stream-volumes
+      parameters:
+      - name: streams
+        in: path
+        schema:
+          type: string
+          default: MassRelDemo/kindle,MassRelDemo/galaxy-topic1
+        required: true
+      responses:
+        '200':
+          description: '200'
+          content:
+            application/json:
+              examples:
+                Result:
+                  value: "{\n  \"streams\": [\n    {\n      \"approved_tpm\": 0,\n      \"count\": {\n        \"approved\": 551979,\n        \"pending\": 0,\n        \"rejected\": 81681394,\n        \"total\": 82233373\n      },\n      \"created_at\": \"2013-09-09T18:26:01Z\",\n      \"description\": \"The Twitterverse has some good things to say about the Amazon Kindle.\",\n      \"full_name\": \"MassRelDemo/kindle\",\n      \"name\": \"kindle\",\n      \"pct\": 98,\n      \"tags\": [],\n      \"tpm\": 0\n    },\n    {\n      \"approved_tpm\": 0,\n      \"count\": {\n        \"approved\": 12990,\n        \"pending\": 0,\n        \"rejected\": 0,\n        \"total\": 12990\n      },\n      \"created_at\": \"2012-02-03T15:17:01Z\",\n      \"description\": \"Topic 1\",\n      \"full_name\": \"MassRelDemo/galaxy-topic1\",\n      \"name\": \"galaxy-topic1\",\n      \"pct\": 2,\n      \"tags\": [],\n      \"tpm\": 0\n    }\n  ]\n}"
+              schema:
+                type: object
+                properties:
+                  streams:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        approved_tpm:
+                          type: integer
+                          example: 0
+                          default: 0
+                        count:
+                          type: object
+                          properties:
+                            approved:
+                              type: integer
+                              example: 551979
+                              default: 0
+                            pending:
+                              type: integer
+                              example: 0
+                              default: 0
+                            rejected:
+                              type: integer
+                              example: 81681394
+                              default: 0
+                            total:
+                              type: integer
+                              example: 82233373
+                              default: 0
+                        created_at:
+                          type: string
+                          example: '2013-09-09T18:26:01Z'
+                        description:
+                          type: string
+                          example: The Twitterverse has some good things to say about the Amazon Kindle.
+                        full_name:
+                          type: string
+                          example: MassRelDemo/kindle
+                        name:
+                          type: string
+                          example: kindle
+                        pct:
+                          type: integer
+                          example: 98
+                          default: 0
+                        tags:
+                          type: array
+                          items:
+                            type: object
+                            properties: {}
+                        tpm:
+                          type: integer
+                          example: 0
+                          default: 0
+      deprecated: false
+      security: []
+      tags:
+      - Compare.json
+  /compare.json?streams={content}&target:
+    get:
+      summary: Get percentage towards target
+      description: Get a percentage towards a specified target
+      operationId: get-percentage-towards-target
+      parameters:
+      - name: content
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: streams
+        in: query
+        schema:
+          type: string
+          default: MassRelDemo/kindle,MassRelDemo/galaxy-topic1
+      - name: target
+        in: query
+        schema:
+          type: integer
+          format: int32
+          default: 5000
+      responses:
+        '200':
+          description: '200'
+          content:
+            text/plain:
+              examples:
+                Result:
+                  value: Coming Soon
+      deprecated: false
+      security: []
+      tags:
+      - Compare.json
+  /compare.json?streams={content}&target={number}&precision:
+    get:
+      summary: Get specific decimals in percent return
+      description: Return specific decimals
+      operationId: get-specific-decimals-in-percent-return-1
+      parameters:
+      - name: content
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: number
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: streams
+        in: query
+        schema:
+          type: string
+          default: MassRelDemo/kindle,MassRelDemo/galaxy-topic1
+      - name: target
+        in: query
+        schema:
+          type: integer
+          format: int32
+          default: 500
+      - name: precision
+        in: query
+        description: '**Possible Values:** `0`, `1`, `2`, `3`, `4`'
+        schema:
+          type: integer
+          format: int32
+          default: 1
+      responses:
+        '200':
+          description: '200'
+          content:
+            text/plain:
+              examples:
+                Result:
+                  value: Coming Soon
+      deprecated: false
+      security: []
+      tags:
+      - Compare.json
+  /compare.json?streams={content}&sort:
+    get:
+      summary: Get specified sort order
+      description: Defines the sort order of the results
+      operationId: get-specified-sort-order-1
+      parameters:
+      - name: content
+        in: path
+        schema:
+          type: string
+        required: true
+      - name: streams
+        in: query
+        schema:
+          type: string
+          default: MassRelDemo/kindle,MassRelDemo/galaxy-topic1
+      - name: sort
+        in: query
+        description: 'Possible Values: `pct asc`, `pct desc`'
+        schema:
+          type: string
+          default: pct asc
+      responses:
+        '200':
+          description: '200'
+          content:
+            application/json:
+              examples:
+                Result:
+                  value: "{\n  \"streams\": [\n    {\n      \"approved_tpm\": 0,\n      \"count\": {\n        \"approved\": 12990,\n        \"pending\": 0,\n        \"rejected\": 0,\n        \"total\": 12990\n      },\n      \"created_at\": \"2012-02-03T15:17:01Z\",\n      \"description\": \"Topic 1\",\n      \"full_name\": \"MassRelDemo/galaxy-topic1\",\n      \"name\": \"galaxy-topic1\",\n      \"pct\": 2,\n      \"tags\": [],\n      \"tpm\": 0\n    },\n    {\n      \"approved_tpm\": 0,\n      \"count\": {\n        \"approved\": 551979,\n        \"pending\": 0,\n        \"rejected\": 81681394,\n        \"total\": 82233373\n      },\n      \"created_at\": \"2013-09-09T18:26:01Z\",\n      \"description\": \"The Twitterverse has some good things to say about the Amazon Kindle.\",\n      \"full_name\": \"MassRelDemo/kindle\",\n      \"name\": \"kindle\",\n      \"pct\": 98,\n      \"tags\": [],\n      \"tpm\": 0\n    }\n  ]\n}"
+              schema:
+                type: object
+                properties:
+                  streams:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        approved_tpm:
+                          type: integer
+                          example: 0
+                          default: 0
+                        count:
+                          type: object
+                          properties:
+                            approved:
+                              type: integer
+                              example: 12990
+                              default: 0
+                            pending:
+                              type: integer
+                              example: 0
+                              default: 0
+                            rejected:
+                              type: integer
+                              example: 0
+                              default: 0
+                            total:
+                              type: integer
+                              example: 12990
+                              default: 0
+                        created_at:
+                          type: string
+                          example: '2012-02-03T15:17:01Z'
+                        description:
+                          type: string
+                          example: Topic 1
+                        full_name:
+                          type: string
+                          example: MassRelDemo/galaxy-topic1
+                        name:
+                          type: string
+                          example: galaxy-topic1
+                        pct:
+                          type: integer
+                          example: 2
+                          default: 0
+                        tags:
+                          type: array
+                          items:
+                            type: object
+                            properties: {}
+                        tpm:
+                          type: integer
+                          example: 0
+                          default: 0
+      deprecated: false
+      security: []
+      tags:
+      - Compare.json
+components:
+  securitySchemes:
+    sec0:
+      type: oauth2
+      flows:
+        clientCredentials:
+          tokenUrl: https://example.com/oauth2/token
+          scopes: {}
+x-readme:
+  headers: []
+  explorer-enabled: false
+  proxy-enabled: true
+x-readme-fauxas: true
