@@ -1,8 +1,7 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Authors API
+  title: bot-api-v3 Authors API
   version: '1.1'
-  description: 'Operations tagged Authors across 2 of this provider''s published API definitions: lithium-care-bot-api-v3-openapi.json, lithium-authors-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://api.app.lithium.com/bots/v3
 security:
@@ -50,8 +49,6 @@ paths:
         - curl
       tags:
       - Authors
-    servers:
-    - url: https://api.app.lithium.com/bots/v3
   /authors/attributes (COPY):
     put:
       summary: Update author metadata
@@ -92,13 +89,12 @@ paths:
         - curl
       tags:
       - Authors
-    servers:
-    - url: https://api.app.lithium.com/bots/v3
-x-refined-from:
-- lithium-care-bot-api-v3-openapi.json
-- lithium-authors-api-openapi.yml
 x-readme:
-  headers: []
+  headers:
+  - key: Authorization
+    value: Bearer [TOKEN]
+  - key: Content-type
+    value: application/json; charset=utf-8
   explorer-enabled: false
-  proxy-enabled: false
+  proxy-enabled: true
 x-readme-fauxas: true

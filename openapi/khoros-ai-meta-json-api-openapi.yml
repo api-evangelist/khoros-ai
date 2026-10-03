@@ -1,8 +1,7 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Meta.json API
+  title: stream-api Meta.json API
   version: '1.1'
-  description: 'Operations tagged Meta.json across 2 of this provider''s published API definitions: lithium-marketing-stream-api-openapi.json, lithium-meta-json-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://api.massrelevance.com
 security:
@@ -38,8 +37,6 @@ paths:
       security: []
       tags:
       - Meta.json
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}/meta.json?num_minutes:
     get:
       summary: Get minutes of activity
@@ -74,8 +71,6 @@ paths:
       security: []
       tags:
       - Meta.json
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}/meta.json?num_hours:
     get:
       summary: Get hours of activity
@@ -110,8 +105,6 @@ paths:
       security: []
       tags:
       - Meta.json
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}/meta.json?num_days:
     get:
       summary: Get days of activity
@@ -146,8 +139,6 @@ paths:
       security: []
       tags:
       - Meta.json
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}/meta.json?activity:
     get:
       summary: Get activity and count props
@@ -182,8 +173,6 @@ paths:
       security: []
       tags:
       - Meta.json
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}/meta.json?finish:
     get:
       summary: Get last item of activity
@@ -218,8 +207,6 @@ paths:
       security: []
       tags:
       - Meta.json
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}/meta.json? networks:
     get:
       summary: Get networks in meta response
@@ -253,8 +240,6 @@ paths:
       security: []
       tags:
       - Meta.json
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}/meta.json?top_periods:
     get:
       summary: Get top retweets in specified hours
@@ -288,8 +273,6 @@ paths:
       security: []
       tags:
       - Meta.json
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}/meta.json?top_periods_relative:
     get:
       summary: Get top retweets hourly from now
@@ -323,8 +306,6 @@ paths:
       security: []
       tags:
       - Meta.json
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}/meta.json?top_count:
     get:
       summary: Get tweets per period
@@ -359,8 +340,6 @@ paths:
       security: []
       tags:
       - Meta.json
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}/meta.json?num_hashtags:
     get:
       summary: Get number of hashtags returned
@@ -395,8 +374,6 @@ paths:
       security: []
       tags:
       - Meta.json
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}/meta.json?num_contributors:
     get:
       summary: Get number of contributors
@@ -431,8 +408,6 @@ paths:
       security: []
       tags:
       - Meta.json
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}/meta.json?num_trends:
     get:
       summary: Get number of topics
@@ -467,8 +442,6 @@ paths:
       security: []
       tags:
       - Meta.json
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}/meta.json?sort:
     get:
       summary: Get Specified Sort Order
@@ -502,8 +475,6 @@ paths:
       security: []
       tags:
       - Meta.json
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}/meta.json?all_topics:
     get:
       summary: Get all topics
@@ -538,8 +509,6 @@ paths:
       security: []
       tags:
       - Meta.json
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}/meta.json?percent:
     get:
       summary: Get percentages in buckets
@@ -584,8 +553,6 @@ paths:
       security: []
       tags:
       - Meta.json
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}/meta.json?precision:
     get:
       summary: Get specific decimals in percent return
@@ -620,8 +587,6 @@ paths:
       security: []
       tags:
       - Meta.json
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}/meta.json?disregard:
     get:
       summary: Get excluded trends from values
@@ -656,8 +621,6 @@ paths:
       security: []
       tags:
       - Meta.json
-    servers:
-    - url: https://api.massrelevance.com
 components:
   securitySchemes:
     sec0:
@@ -666,11 +629,8 @@ components:
         clientCredentials:
           tokenUrl: https://example.com/oauth2/token
           scopes: {}
-x-refined-from:
-- lithium-marketing-stream-api-openapi.json
-- lithium-meta-json-api-openapi.yml
 x-readme:
   headers: []
   explorer-enabled: false
-  proxy-enabled: false
+  proxy-enabled: true
 x-readme-fauxas: true

@@ -1,8 +1,7 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Customer (COPY) API
+  title: api-specifications Customer (COPY) API
   version: '1.1'
-  description: 'Operations tagged Customer (COPY) across 2 of this provider''s published API definitions: lithium-care-api-specifications-openapi.json, lithium-customer-copy-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://{your-domain}.com
   variables:
@@ -97,14 +96,6 @@ paths:
       deprecated: false
       tags:
       - Customer (COPY)
-    servers:
-    - url: https://{your-domain}.com
-      variables:
-        your-domain:
-          default: your-domain
-x-refined-from:
-- lithium-care-api-specifications-openapi.json
-- lithium-customer-copy-api-openapi.yml
 x-readme:
   headers: []
   explorer-enabled: false

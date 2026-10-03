@@ -1,8 +1,7 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Stream API
+  title: stream-api Stream API
   version: '1.1'
-  description: 'Operations tagged Stream Api across 2 of this provider''s published API definitions: lithium-marketing-stream-api-openapi.json, lithium-stream-api-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://api.massrelevance.com
 security:
@@ -44,8 +43,6 @@ paths:
       security: []
       tags:
       - Stream Api
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}?limit:
     get:
       summary: Specify amount of content to pull
@@ -81,8 +78,6 @@ paths:
       security: []
       tags:
       - Stream Api
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}?since_id:
     get:
       summary: Gather content after specific entity
@@ -119,8 +114,6 @@ paths:
       security: []
       tags:
       - Stream Api
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}?from_id:
     get:
       summary: Gather content after included entity
@@ -156,8 +149,6 @@ paths:
       security: []
       tags:
       - Stream Api
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}?start_id:
     get:
       summary: Gather content before included entity
@@ -194,8 +185,6 @@ paths:
       security: []
       tags:
       - Stream Api
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}?callback:
     get:
       summary: Enable JSONP support
@@ -224,8 +213,6 @@ paths:
       security: []
       tags:
       - Stream Api
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}?geo_hint:
     get:
       summary: Enable geohinting data
@@ -280,8 +267,6 @@ paths:
       security: []
       tags:
       - Stream Api
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}?page_links:
     get:
       summary: Enable product hinting for each entity
@@ -348,8 +333,6 @@ paths:
       security: []
       tags:
       - Stream Api
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}?replies:
     get:
       summary: Enable replies to entities
@@ -416,8 +399,6 @@ paths:
       security: []
       tags:
       - Stream Api
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}?network:
     get:
       summary: Specify Social Network to gather entities
@@ -454,8 +435,6 @@ paths:
       security: []
       tags:
       - Stream Api
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}?include_entities:
     get:
       summary: Included entity object on tweets
@@ -492,8 +471,6 @@ paths:
       security: []
       tags:
       - Stream Api
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}?reverse:
     get:
       summary: Reverse order of status entities
@@ -530,8 +507,6 @@ paths:
       security: []
       tags:
       - Stream Api
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}?strip_links:
     get:
       summary: Remove trailing links
@@ -568,8 +543,6 @@ paths:
       security: []
       tags:
       - Stream Api
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}?keywords:
     get:
       summary: Gather specific entities containing keywords
@@ -606,8 +579,6 @@ paths:
       security: []
       tags:
       - Stream Api
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}?from:
     get:
       summary: Return entities from specific user
@@ -643,8 +614,6 @@ paths:
       security: []
       tags:
       - Stream Api
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}?timeframe[start]:
     get:
       summary: Return entities after a specific time
@@ -680,8 +649,6 @@ paths:
       security: []
       tags:
       - Stream Api
-    servers:
-    - url: https://api.massrelevance.com
   /{account}/{streamName}?timeframe[finish]:
     get:
       summary: Return entities before a specific time
@@ -717,8 +684,6 @@ paths:
       security: []
       tags:
       - Stream Api
-    servers:
-    - url: https://api.massrelevance.com
   /{account}.json:
     get:
       summary: Get meta account information
@@ -742,8 +707,6 @@ paths:
       security: []
       tags:
       - Stream Api
-    servers:
-    - url: https://api.massrelevance.com
   /{account}.json?streams:
     get:
       summary: Get meta info of account's streams
@@ -772,8 +735,6 @@ paths:
       security: []
       tags:
       - Stream Api
-    servers:
-    - url: https://api.massrelevance.com
   /{account}.json?num_minutes:
     get:
       summary: Get minutes of activity from account
@@ -803,8 +764,6 @@ paths:
       security: []
       tags:
       - Stream Api
-    servers:
-    - url: https://api.massrelevance.com
   /{account}.json?num_trends:
     get:
       summary: Get trends in response per account
@@ -834,8 +793,6 @@ paths:
       security: []
       tags:
       - Stream Api
-    servers:
-    - url: https://api.massrelevance.com
   /{account}.json?disregard:
     get:
       summary: Exclude specified trends
@@ -877,8 +834,6 @@ paths:
       security: []
       tags:
       - Stream Api
-    servers:
-    - url: https://api.massrelevance.com
   /{account}.json?start:
     get:
       summary: Get activity data from specific time
@@ -908,8 +863,6 @@ paths:
       security: []
       tags:
       - Stream Api
-    servers:
-    - url: https://api.massrelevance.com
   /{account}.json?finish:
     get:
       summary: Get activity data ending at specific time
@@ -933,8 +886,6 @@ paths:
       security: []
       tags:
       - Stream Api
-    servers:
-    - url: https://api.massrelevance.com
   /{account}.json?streams_with_topics:
     get:
       summary: Get streams with/without topics
@@ -963,8 +914,6 @@ paths:
       security: []
       tags:
       - Stream Api
-    servers:
-    - url: https://api.massrelevance.com
 components:
   securitySchemes:
     sec0:
@@ -973,11 +922,8 @@ components:
         clientCredentials:
           tokenUrl: https://example.com/oauth2/token
           scopes: {}
-x-refined-from:
-- lithium-marketing-stream-api-openapi.json
-- lithium-stream-api-api-openapi.yml
 x-readme:
   headers: []
   explorer-enabled: false
-  proxy-enabled: false
+  proxy-enabled: true
 x-readme-fauxas: true

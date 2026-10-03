@@ -1,8 +1,7 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Teams API
+  title: analytics-reports Teams API
   version: '1.1'
-  description: 'Operations tagged Teams across 2 of this provider''s published API definitions: lithium-care-analytics-reports-openapi.json, lithium-teams-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://analytics-api.app.lithium.com/api/public
 security:
@@ -39,16 +38,11 @@ paths:
         - curl
       tags:
       - Teams
-    servers:
-    - url: https://analytics-api.app.lithium.com/api/public
 components:
   securitySchemes:
     sec0:
       type: http
       scheme: basic
-x-refined-from:
-- lithium-care-analytics-reports-openapi.json
-- lithium-teams-api-openapi.yml
 x-readme:
   headers: []
   explorer-enabled: false

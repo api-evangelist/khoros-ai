@@ -1,8 +1,7 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Csv Long API
+  title: supervisor-reports-api Csv Long API
   version: '1.1'
-  description: 'Operations tagged Csv Long across 2 of this provider''s published API definitions: lithium-care-supervisor-reports-api-openapi.json, lithium-csv-long-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://servername.lithium.com/reports
 security:
@@ -90,18 +89,13 @@ paths:
         - http
       tags:
       - Csv Long
-    servers:
-    - url: https://servername.lithium.com/reports
 components:
   securitySchemes:
     sec0:
       type: http
       scheme: basic
-x-refined-from:
-- lithium-care-supervisor-reports-api-openapi.json
-- lithium-csv-long-api-openapi.yml
 x-readme:
   headers: []
   explorer-enabled: false
-  proxy-enabled: false
+  proxy-enabled: true
 x-readme-fauxas: true

@@ -1,8 +1,7 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Discussion API
+  title: listening-api-v2 Discussion API
   version: '1.1'
-  description: 'Operations tagged Discussion across 2 of this provider''s published API definitions: lithium-care-listening-api-v2-openapi.json, lithium-discussion-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://{instance}.response.lithium.com/api/v2/listening
   variables:
@@ -77,16 +76,8 @@ paths:
         - http
       tags:
       - Discussion
-    servers:
-    - url: https://{instance}.response.lithium.com/api/v2/listening
-      variables:
-        instance:
-          default: instance
-x-refined-from:
-- lithium-care-listening-api-v2-openapi.json
-- lithium-discussion-api-openapi.yml
 x-readme:
   headers: []
   explorer-enabled: false
-  proxy-enabled: false
+  proxy-enabled: true
 x-readme-fauxas: true

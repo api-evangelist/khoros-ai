@@ -1,8 +1,7 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Pause API
+  title: flow-rest-api Pause API
   version: '1.0'
-  description: 'Operations tagged Pause across 2 of this provider''s published API definitions: lithium-flow-flow-rest-api-openapi.json, lithium-pause-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://api.flow.ai/rest/v1/
 security:
@@ -97,13 +96,8 @@ paths:
         - http
       tags:
       - Pause
-    servers:
-    - url: https://api.flow.ai/rest/v1/
-x-refined-from:
-- lithium-flow-flow-rest-api-openapi.json
-- lithium-pause-api-openapi.yml
 x-readme:
   headers: []
   explorer-enabled: false
-  proxy-enabled: false
+  proxy-enabled: true
 x-readme-fauxas: true

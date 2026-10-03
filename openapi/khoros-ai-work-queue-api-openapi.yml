@@ -1,6 +1,6 @@
 openapi: 3.2.0
 info:
-  title: bot-api-v3 Workqueue Work Queue API
+  title: bot-api-v3 Workqueue API
   version: '1.1'
 servers:
 - url: https://api.app.lithium.com/bots/v3

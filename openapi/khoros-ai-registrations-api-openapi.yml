@@ -1,8 +1,7 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Registrations API
+  title: bot-api-v3 Registrations API
   version: '1.1'
-  description: 'Operations tagged Registrations across 2 of this provider''s published API definitions: lithium-care-bot-api-v3-openapi.json, lithium-registrations-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://api.app.lithium.com/bots/v3
 security:
@@ -138,8 +137,6 @@ paths:
         - curl
       tags:
       - Registrations
-    servers:
-    - url: https://api.app.lithium.com/bots/v3
   /registrations/network/{networkKey}/externalId/{externalId}:
     get:
       summary: Get bot registrations by source channel
@@ -183,8 +180,6 @@ paths:
         - curl
       tags:
       - Registrations
-    servers:
-    - url: https://api.app.lithium.com/bots/v3
   /registrations/network/{networkKey}/externalId/{externalId}/appId/{appId}:
     get:
       summary: Get bot registration details
@@ -281,8 +276,6 @@ paths:
         - curl
       tags:
       - Registrations
-    servers:
-    - url: https://api.app.lithium.com/bots/v3
   /registrations/network/{networkKey}/externalId/{externalId}/appId/{appId}/mode/{mode}:
     put:
       summary: Change bot operating mode
@@ -345,13 +338,12 @@ paths:
         - curl
       tags:
       - Registrations
-    servers:
-    - url: https://api.app.lithium.com/bots/v3
-x-refined-from:
-- lithium-care-bot-api-v3-openapi.json
-- lithium-registrations-api-openapi.yml
 x-readme:
-  headers: []
+  headers:
+  - key: Authorization
+    value: Bearer [TOKEN]
+  - key: Content-type
+    value: application/json; charset=utf-8
   explorer-enabled: false
-  proxy-enabled: false
+  proxy-enabled: true
 x-readme-fauxas: true

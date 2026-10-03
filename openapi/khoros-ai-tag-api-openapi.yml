@@ -1,8 +1,7 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Tag API
+  title: bot-api-v3 Tag API
   version: '1.1'
-  description: 'Operations tagged Tag across 2 of this provider''s published API definitions: lithium-care-bot-api-v3-openapi.json, lithium-tag-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://api.app.lithium.com/bots/v3
 security:
@@ -51,8 +50,6 @@ paths:
         - curl
       tags:
       - Tag
-    servers:
-    - url: https://api.app.lithium.com/bots/v3
   /tag/remove:
     put:
       summary: Untag message by Care tag ID
@@ -92,13 +89,12 @@ paths:
         - curl
       tags:
       - Tag
-    servers:
-    - url: https://api.app.lithium.com/bots/v3
-x-refined-from:
-- lithium-care-bot-api-v3-openapi.json
-- lithium-tag-api-openapi.yml
 x-readme:
-  headers: []
+  headers:
+  - key: Authorization
+    value: Bearer [TOKEN]
+  - key: Content-type
+    value: application/json; charset=utf-8
   explorer-enabled: false
-  proxy-enabled: false
+  proxy-enabled: true
 x-readme-fauxas: true

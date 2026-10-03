@@ -1,8 +1,7 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Display IDs API
+  title: conversation-api-v2 Display IDs API
   version: '1.1'
-  description: 'Operations tagged DisplayIds across 2 of this provider''s published API definitions: lithium-care-conversation-api-v2-openapi.json, lithium-displayids-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://{instance}.response.lithium.com/api/v2/conversations
   variables:
@@ -48,16 +47,8 @@ paths:
       deprecated: false
       tags:
       - DisplayIds
-    servers:
-    - url: https://{instance}.response.lithium.com/api/v2/conversations
-      variables:
-        instance:
-          default: instance
-x-refined-from:
-- lithium-care-conversation-api-v2-openapi.json
-- lithium-displayids-api-openapi.yml
 x-readme:
   headers: []
   explorer-enabled: false
-  proxy-enabled: false
+  proxy-enabled: true
 x-readme-fauxas: true

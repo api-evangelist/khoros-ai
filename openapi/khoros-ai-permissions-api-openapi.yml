@@ -1,11 +1,11 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Permissions API
+  description: Welcome to the Spredfast Conversations API.
   version: '1'
+  title: Conversations API V1 Permissions API
   license:
     name: Spredfast API Terms of Use
     url: https://s3.amazonaws.com/apiexplorer.spredfast.com/APITermsonlineacceptance.html
-  description: 'Operations tagged Permissions across 2 of this provider''s published API definitions: lithium-marketing-conversations-api-v1-openapi.json, lithium-permissions-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://api.spredfast.com
 tags:
@@ -37,35 +37,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/EntityResponseUserPrivilege'
-    servers:
-    - url: https://api.spredfast.com
 components:
   schemas:
-    CallStatus:
-      type: object
-      properties:
-        succeeded:
-          type: boolean
-          readOnly: true
-          default: false
-        error:
-          $ref: '#/components/schemas/ApiError'
-    EntityResponseUserPrivilege:
-      type: object
-      properties:
-        data:
-          $ref: '#/components/schemas/UserPrivilege'
-        status:
-          $ref: '#/components/schemas/CallStatus'
-    UserPrivilege:
-      type: object
-      properties:
-        canPublish:
-          type: boolean
-          default: false
-        canCreateLabels:
-          type: boolean
-          default: false
     ApiError:
       type: object
       properties:
@@ -110,6 +83,31 @@ components:
         message:
           type: string
           readOnly: true
+    UserPrivilege:
+      type: object
+      properties:
+        canPublish:
+          type: boolean
+          default: false
+        canCreateLabels:
+          type: boolean
+          default: false
+    CallStatus:
+      type: object
+      properties:
+        succeeded:
+          type: boolean
+          readOnly: true
+          default: false
+        error:
+          $ref: '#/components/schemas/ApiError'
+    EntityResponseUserPrivilege:
+      type: object
+      properties:
+        data:
+          $ref: '#/components/schemas/UserPrivilege'
+        status:
+          $ref: '#/components/schemas/CallStatus'
   securitySchemes:
     oauth2:
       type: oauth2
@@ -119,11 +117,7 @@ components:
           tokenUrl: https://login.spredfast.com/v3/oauth/token
           scopes:
             all: Read/write access for all endpoints.
-x-refined-from:
-- lithium-marketing-conversations-api-v1-openapi.json
-- lithium-permissions-api-openapi.yml
 x-readme:
-  headers: []
   explorer-enabled: false
   proxy-enabled: false
-x-readme-fauxas: true
+  samples-enabled: true

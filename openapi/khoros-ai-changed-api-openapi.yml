@@ -1,8 +1,7 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Changed API
+  title: author-api-v2 Changed API
   version: '1.1'
-  description: 'Operations tagged Changed across 2 of this provider''s published API definitions: lithium-care-author-api-v2-openapi.json, lithium-changed-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://{instance}.response.lithium.com/api/v2/authors
   variables:
@@ -70,16 +69,8 @@ paths:
         - curl
       tags:
       - Changed
-    servers:
-    - url: https://{instance}.response.lithium.com/api/v2/authors
-      variables:
-        instance:
-          default: instance
-x-refined-from:
-- lithium-care-author-api-v2-openapi.json
-- lithium-changed-api-openapi.yml
 x-readme:
   headers: []
   explorer-enabled: false
-  proxy-enabled: false
+  proxy-enabled: true
 x-readme-fauxas: true

@@ -1109,347 +1109,39 @@ components:
           default: false
         error:
           $ref: '#/components/schemas/ApiError'
-    TargetingProfile:
+    MessageNote:
       type: object
-      properties:
-        targetingType:
-          type: string
-          enum:
-          - ENHANCED
-          - GATED
-        targetingValues:
-          type: object
-          additionalProperties:
-            type: array
-            items:
-              $ref: '#/components/schemas/TargetingValue'
-    OptionalResponseLong:
-      type: object
-      properties:
-        data:
-          type: integer
-          format: int64
-        status:
-          $ref: '#/components/schemas/CallStatus'
-    MessageMultiPartImages:
-      type: object
+      description: A Note on the Message.
       properties:
         sfEntityType:
           type: string
-          example: ImageShare
-        caption:
+          description: Spredfast internal entity type
+          enum:
+          - Note
+        text:
           type: string
+          description: The note's text content.
         id:
           type: string
-        content:
-          $ref: '#/components/schemas/MessageContent'
-        title:
+          description: The note's ID. This should be left empty or set to 0 for new notes.
+        createdByDisplayName:
           type: string
-        labels:
-          type: array
-          items:
-            type: string
-        service:
+          description: The formatted name [firstName lastName] of the note's author.
+          readOnly: true
+        createdByUserId:
           type: string
-          enum:
-          - FACEBOOK
-          - GOOGLEPLUS
-          - SINAWEIBO
-          - LINKEDIN
-          - PINTEREST
-          - YOUTUBE
-          - VK
-        targetAccountIds:
-          type: array
-          items:
-            type: string
-        organicVisibility:
-          type: string
-          enum:
-          - VISIBLE
-          - INVISIBLE
-          - VISIBLE_POST_PUBLISH
-        status:
-          type: string
-          enum:
-          - DRAFT
-          - PENDING
-          - AWAITING_APPROVAL
-          - REJECTED
-          - PUBLISHED
-          - ERROR
-          - DELETED
-          - NATIVELY_SCHEDULED
-        delegationStatus:
-          type: string
-          enum:
-          - NOT_DELEGATED
-          - SCHEDULED_FOR_DELEGATION
-          - DELEGATION_FAILED
-          - DELEGATED
-        publicationResults:
-          type: array
-          items:
-            $ref: '#/components/schemas/PublicationResult'
-        scheduledPublishDate:
+          readOnly: true
+        createdDate:
           type: string
           format: date-time
-        callbacks:
-          type: array
-          uniqueItems: true
-          items:
-            type: string
-            format: uri
-        targetingProfile:
-          $ref: '#/components/schemas/TargetingProfile'
-        assetIds:
-          type: array
-          items:
-            type: string
-        planId:
+          readOnly: true
+        lastModifiedByUserId:
           type: string
-        nativeScheduling:
-          type: boolean
-          default: false
-        notes:
-          type: array
-          items:
-            $ref: '#/components/schemas/MessageNote'
-      example:
-        sfEntityType: Message
-        service: FACEBOOK
-        content:
-          sfEntityType: ImageShareList
-          images:
-          - sfEntityType: ImageShare
-            caption: image one
-        targetAccountIds:
-        - '4'
-    PublicationResult:
-      type: object
-      properties:
-        accountId:
-          type: string
-        serviceId:
-          type: string
-        serviceLink:
-          type: string
-        status:
-          type: string
-          enum:
-          - PENDING
-          - PUBLISHED
-          - ERROR
-          - DELETED
-        datePublished:
+          readOnly: true
+        lastModifiedDate:
           type: string
           format: date-time
-    MessageContent:
-      type: object
-      discriminator:
-        propertyName: sfEntityType
-    TargetingValue:
-      type: object
-      properties:
-        subType:
-          type: string
-          enum:
-          - COUNTRY
-          - REGION
-          - METRO
-          - CONTINENT
-          - ZIP_CODE
-        value:
-          type: string
-        description:
-          type: string
-    MessageMultiPart:
-      type: object
-      properties:
-        sfEntityType:
-          type: string
-          example: ImageShare
-        caption:
-          type: string
-        id:
-          type: string
-        content:
-          $ref: '#/components/schemas/MessageContent'
-        title:
-          type: string
-        labels:
-          type: array
-          items:
-            type: string
-        service:
-          type: string
-          enum:
-          - FACEBOOK
-          - GOOGLEPLUS
-          - SINAWEIBO
-          - LINKEDIN
-          - PINTEREST
-          - YOUTUBE
-          - VK
-        targetAccountIds:
-          type: array
-          items:
-            type: string
-        organicVisibility:
-          type: string
-          enum:
-          - VISIBLE
-          - INVISIBLE
-          - VISIBLE_POST_PUBLISH
-        status:
-          type: string
-          enum:
-          - DRAFT
-          - PENDING
-          - AWAITING_APPROVAL
-          - REJECTED
-          - PUBLISHED
-          - ERROR
-          - DELETED
-          - NATIVELY_SCHEDULED
-        delegationStatus:
-          type: string
-          enum:
-          - NOT_DELEGATED
-          - SCHEDULED_FOR_DELEGATION
-          - DELEGATION_FAILED
-          - DELEGATED
-        publicationResults:
-          type: array
-          items:
-            $ref: '#/components/schemas/PublicationResult'
-        scheduledPublishDate:
-          type: string
-          format: date-time
-        callbacks:
-          type: array
-          uniqueItems: true
-          items:
-            type: string
-            format: uri
-        targetingProfile:
-          $ref: '#/components/schemas/TargetingProfile'
-        assetIds:
-          type: array
-          items:
-            type: string
-        planId:
-          type: string
-        nativeScheduling:
-          type: boolean
-          default: false
-        notes:
-          type: array
-          items:
-            $ref: '#/components/schemas/MessageNote'
-      example:
-        sfEntityType: Message
-        service: FACEBOOK
-        content:
-          sfEntityType: ImageShare
-          caption: Status Update w/ image
-        targetAccountIds:
-        - '4'
-    MessageMultiPartVideo:
-      type: object
-      properties:
-        sfEntityType:
-          type: string
-          example: Video
-        caption:
-          type: string
-        id:
-          type: string
-        content:
-          $ref: '#/components/schemas/MessageContent'
-        title:
-          type: string
-        labels:
-          type: array
-          items:
-            type: string
-        service:
-          type: string
-          enum:
-          - FACEBOOK
-          - GOOGLEPLUS
-          - SINAWEIBO
-          - LINKEDIN
-          - PINTEREST
-          - YOUTUBE
-          - VK
-        targetAccountIds:
-          type: array
-          items:
-            type: string
-        organicVisibility:
-          type: string
-          enum:
-          - VISIBLE
-          - INVISIBLE
-          - VISIBLE_POST_PUBLISH
-        status:
-          type: string
-          enum:
-          - DRAFT
-          - PENDING
-          - AWAITING_APPROVAL
-          - REJECTED
-          - PUBLISHED
-          - ERROR
-          - DELETED
-          - NATIVELY_SCHEDULED
-        delegationStatus:
-          type: string
-          enum:
-          - NOT_DELEGATED
-          - SCHEDULED_FOR_DELEGATION
-          - DELEGATION_FAILED
-          - DELEGATED
-        publicationResults:
-          type: array
-          items:
-            $ref: '#/components/schemas/PublicationResult'
-        scheduledPublishDate:
-          type: string
-          format: date-time
-        callbacks:
-          type: array
-          uniqueItems: true
-          items:
-            type: string
-            format: uri
-        targetingProfile:
-          $ref: '#/components/schemas/TargetingProfile'
-        assetIds:
-          type: array
-          items:
-            type: string
-        planId:
-          type: string
-        nativeScheduling:
-          type: boolean
-          default: false
-        notes:
-          type: array
-          items:
-            $ref: '#/components/schemas/MessageNote'
-      example:
-        sfEntityType: Message
-        service: YOUTUBE
-        content:
-          sfEntityType: Video
-          videoTitle: Cool video!
-          description: That one guy doing that thing.
-        assetIds:
-        - xxx-xxx-xxx-xxx
-        targetAccountIds:
-        - '4'
+          readOnly: true
     Message:
       type: object
       properties:
@@ -1552,52 +1244,6 @@ components:
           text: Status Update
         targetAccountIds:
         - '4'
-    MessageNote:
-      type: object
-      description: A Note on the Message.
-      properties:
-        sfEntityType:
-          type: string
-          description: Spredfast internal entity type
-          enum:
-          - Note
-        text:
-          type: string
-          description: The note's text content.
-        id:
-          type: string
-          description: The note's ID. This should be left empty or set to 0 for new notes.
-        createdByDisplayName:
-          type: string
-          description: The formatted name [firstName lastName] of the note's author.
-          readOnly: true
-        createdByUserId:
-          type: string
-          readOnly: true
-        createdDate:
-          type: string
-          format: date-time
-          readOnly: true
-        lastModifiedByUserId:
-          type: string
-          readOnly: true
-        lastModifiedDate:
-          type: string
-          format: date-time
-          readOnly: true
-    MessageSponsor:
-      type: object
-      description: A Sponsor for the Message. Currently, we only support attaching a single sponsor when posting to *only* Facebook *verified* Pages (a.k.a. Facebook Branded Content, see https://www.facebook.com/facebookmedia/get-started/branded-content for more info), so any attempt to use it either for other Social Networks or including targets that don't comply with this rule, will result in an error from the back-end. Note that the Sponsor itself is not restricted to be a verified page, so it could be a regular (non-verified) page or a regular user. As an example, a post could be created, targeting the Facebook verified page of @LeoMessi and that post could be sponsored by @nike.
-      properties:
-        profileId:
-          type: string
-          description: The sponsor's profile ID in the corresponding Social Network.
-        displayName:
-          type: string
-          description: The sponsor's display name in the corresponding Social Network.
-        link:
-          type: string
-          description: The link to the sponsor's profile in the corresponding Social Network.
     ApiError:
       type: object
       properties:
@@ -1642,6 +1288,360 @@ components:
         message:
           type: string
           readOnly: true
+    PublicationResult:
+      type: object
+      properties:
+        accountId:
+          type: string
+        serviceId:
+          type: string
+        serviceLink:
+          type: string
+        status:
+          type: string
+          enum:
+          - PENDING
+          - PUBLISHED
+          - ERROR
+          - DELETED
+        datePublished:
+          type: string
+          format: date-time
+    MessageMultiPart:
+      type: object
+      properties:
+        sfEntityType:
+          type: string
+          example: ImageShare
+        caption:
+          type: string
+        id:
+          type: string
+        content:
+          $ref: '#/components/schemas/MessageContent'
+        title:
+          type: string
+        labels:
+          type: array
+          items:
+            type: string
+        service:
+          type: string
+          enum:
+          - FACEBOOK
+          - GOOGLEPLUS
+          - SINAWEIBO
+          - LINKEDIN
+          - PINTEREST
+          - YOUTUBE
+          - VK
+        targetAccountIds:
+          type: array
+          items:
+            type: string
+        organicVisibility:
+          type: string
+          enum:
+          - VISIBLE
+          - INVISIBLE
+          - VISIBLE_POST_PUBLISH
+        status:
+          type: string
+          enum:
+          - DRAFT
+          - PENDING
+          - AWAITING_APPROVAL
+          - REJECTED
+          - PUBLISHED
+          - ERROR
+          - DELETED
+          - NATIVELY_SCHEDULED
+        delegationStatus:
+          type: string
+          enum:
+          - NOT_DELEGATED
+          - SCHEDULED_FOR_DELEGATION
+          - DELEGATION_FAILED
+          - DELEGATED
+        publicationResults:
+          type: array
+          items:
+            $ref: '#/components/schemas/PublicationResult'
+        scheduledPublishDate:
+          type: string
+          format: date-time
+        callbacks:
+          type: array
+          uniqueItems: true
+          items:
+            type: string
+            format: uri
+        targetingProfile:
+          $ref: '#/components/schemas/TargetingProfile'
+        assetIds:
+          type: array
+          items:
+            type: string
+        planId:
+          type: string
+        nativeScheduling:
+          type: boolean
+          default: false
+        notes:
+          type: array
+          items:
+            $ref: '#/components/schemas/MessageNote'
+      example:
+        sfEntityType: Message
+        service: FACEBOOK
+        content:
+          sfEntityType: ImageShare
+          caption: Status Update w/ image
+        targetAccountIds:
+        - '4'
+    MessageMultiPartImages:
+      type: object
+      properties:
+        sfEntityType:
+          type: string
+          example: ImageShare
+        caption:
+          type: string
+        id:
+          type: string
+        content:
+          $ref: '#/components/schemas/MessageContent'
+        title:
+          type: string
+        labels:
+          type: array
+          items:
+            type: string
+        service:
+          type: string
+          enum:
+          - FACEBOOK
+          - GOOGLEPLUS
+          - SINAWEIBO
+          - LINKEDIN
+          - PINTEREST
+          - YOUTUBE
+          - VK
+        targetAccountIds:
+          type: array
+          items:
+            type: string
+        organicVisibility:
+          type: string
+          enum:
+          - VISIBLE
+          - INVISIBLE
+          - VISIBLE_POST_PUBLISH
+        status:
+          type: string
+          enum:
+          - DRAFT
+          - PENDING
+          - AWAITING_APPROVAL
+          - REJECTED
+          - PUBLISHED
+          - ERROR
+          - DELETED
+          - NATIVELY_SCHEDULED
+        delegationStatus:
+          type: string
+          enum:
+          - NOT_DELEGATED
+          - SCHEDULED_FOR_DELEGATION
+          - DELEGATION_FAILED
+          - DELEGATED
+        publicationResults:
+          type: array
+          items:
+            $ref: '#/components/schemas/PublicationResult'
+        scheduledPublishDate:
+          type: string
+          format: date-time
+        callbacks:
+          type: array
+          uniqueItems: true
+          items:
+            type: string
+            format: uri
+        targetingProfile:
+          $ref: '#/components/schemas/TargetingProfile'
+        assetIds:
+          type: array
+          items:
+            type: string
+        planId:
+          type: string
+        nativeScheduling:
+          type: boolean
+          default: false
+        notes:
+          type: array
+          items:
+            $ref: '#/components/schemas/MessageNote'
+      example:
+        sfEntityType: Message
+        service: FACEBOOK
+        content:
+          sfEntityType: ImageShareList
+          images:
+          - sfEntityType: ImageShare
+            caption: image one
+        targetAccountIds:
+        - '4'
+    MessageContent:
+      type: object
+      discriminator:
+        propertyName: sfEntityType
+    TargetingProfile:
+      type: object
+      properties:
+        targetingType:
+          type: string
+          enum:
+          - ENHANCED
+          - GATED
+        targetingValues:
+          type: object
+          additionalProperties:
+            type: array
+            items:
+              $ref: '#/components/schemas/TargetingValue'
+    MessageMultiPartVideo:
+      type: object
+      properties:
+        sfEntityType:
+          type: string
+          example: Video
+        caption:
+          type: string
+        id:
+          type: string
+        content:
+          $ref: '#/components/schemas/MessageContent'
+        title:
+          type: string
+        labels:
+          type: array
+          items:
+            type: string
+        service:
+          type: string
+          enum:
+          - FACEBOOK
+          - GOOGLEPLUS
+          - SINAWEIBO
+          - LINKEDIN
+          - PINTEREST
+          - YOUTUBE
+          - VK
+        targetAccountIds:
+          type: array
+          items:
+            type: string
+        organicVisibility:
+          type: string
+          enum:
+          - VISIBLE
+          - INVISIBLE
+          - VISIBLE_POST_PUBLISH
+        status:
+          type: string
+          enum:
+          - DRAFT
+          - PENDING
+          - AWAITING_APPROVAL
+          - REJECTED
+          - PUBLISHED
+          - ERROR
+          - DELETED
+          - NATIVELY_SCHEDULED
+        delegationStatus:
+          type: string
+          enum:
+          - NOT_DELEGATED
+          - SCHEDULED_FOR_DELEGATION
+          - DELEGATION_FAILED
+          - DELEGATED
+        publicationResults:
+          type: array
+          items:
+            $ref: '#/components/schemas/PublicationResult'
+        scheduledPublishDate:
+          type: string
+          format: date-time
+        callbacks:
+          type: array
+          uniqueItems: true
+          items:
+            type: string
+            format: uri
+        targetingProfile:
+          $ref: '#/components/schemas/TargetingProfile'
+        assetIds:
+          type: array
+          items:
+            type: string
+        planId:
+          type: string
+        nativeScheduling:
+          type: boolean
+          default: false
+        notes:
+          type: array
+          items:
+            $ref: '#/components/schemas/MessageNote'
+      example:
+        sfEntityType: Message
+        service: YOUTUBE
+        content:
+          sfEntityType: Video
+          videoTitle: Cool video!
+          description: That one guy doing that thing.
+        assetIds:
+        - xxx-xxx-xxx-xxx
+        targetAccountIds:
+        - '4'
+    TargetingValue:
+      type: object
+      properties:
+        subType:
+          type: string
+          enum:
+          - COUNTRY
+          - REGION
+          - METRO
+          - CONTINENT
+          - ZIP_CODE
+        value:
+          type: string
+        description:
+          type: string
+    MessageSponsor:
+      type: object
+      description: A Sponsor for the Message. Currently, we only support attaching a single sponsor when posting to *only* Facebook *verified* Pages (a.k.a. Facebook Branded Content, see https://www.facebook.com/facebookmedia/get-started/branded-content for more info), so any attempt to use it either for other Social Networks or including targets that don't comply with this rule, will result in an error from the back-end. Note that the Sponsor itself is not restricted to be a verified page, so it could be a regular (non-verified) page or a regular user. As an example, a post could be created, targeting the Facebook verified page of @LeoMessi and that post could be sponsored by @nike.
+      properties:
+        profileId:
+          type: string
+          description: The sponsor's profile ID in the corresponding Social Network.
+        displayName:
+          type: string
+          description: The sponsor's display name in the corresponding Social Network.
+        link:
+          type: string
+          description: The link to the sponsor's profile in the corresponding Social Network.
+    OptionalResponseLong:
+      type: object
+      properties:
+        data:
+          type: integer
+          format: int64
+        status:
+          $ref: '#/components/schemas/CallStatus'
   securitySchemes:
     oauth2:
       type: oauth2
@@ -1659,5 +1659,5 @@ x-refined-from:
 x-readme:
   headers: []
   explorer-enabled: false
-  proxy-enabled: false
+  proxy-enabled: true
 x-readme-fauxas: true

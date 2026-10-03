@@ -1,6 +1,6 @@
 openapi: 3.2.0
 info:
-  title: work-queue-api-v1 Workqueues Work Queues API
+  title: work-queue-api-v1 Workqueues API
   version: '1.1'
 servers:
 - url: https://{instance}.response.lithium.com/api/v1/

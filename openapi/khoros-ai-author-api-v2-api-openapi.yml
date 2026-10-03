@@ -1,8 +1,7 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Author Api V2 API
+  title: author-api-v2 Author Api V2 API
   version: '1.1'
-  description: 'Operations tagged Author Api V2 across 2 of this provider''s published API definitions: lithium-care-author-api-v2-openapi.json, lithium-author-api-v2-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://{instance}.response.lithium.com/api/v2/authors
   variables:
@@ -107,11 +106,6 @@ paths:
       security: []
       tags:
       - Author Api V2
-    servers:
-    - url: https://{instance}.response.lithium.com/api/v2/authors
-      variables:
-        instance:
-          default: instance
   /:
     post:
       summary: Create Care author
@@ -193,11 +187,6 @@ paths:
         - http
       tags:
       - Author Api V2
-    servers:
-    - url: https://{instance}.response.lithium.com/api/v2/authors
-      variables:
-        instance:
-          default: instance
   /#:
     get:
       summary: Get paginated list of authors
@@ -253,16 +242,8 @@ paths:
         - curl
       tags:
       - Author Api V2
-    servers:
-    - url: https://{instance}.response.lithium.com/api/v2/authors
-      variables:
-        instance:
-          default: instance
-x-refined-from:
-- lithium-care-author-api-v2-openapi.json
-- lithium-author-api-v2-api-openapi.yml
 x-readme:
   headers: []
   explorer-enabled: false
-  proxy-enabled: false
+  proxy-enabled: true
 x-readme-fauxas: true

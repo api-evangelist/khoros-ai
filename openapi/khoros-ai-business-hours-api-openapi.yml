@@ -1,6 +1,6 @@
 openapi: 3.2.0
 info:
-  title: flow-rest-api Businesshours Business Hours API
+  title: flow-rest-api Businesshours API
   version: '1.0'
 servers:
 - url: https://api.flow.ai/rest/v1/

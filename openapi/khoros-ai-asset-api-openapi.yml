@@ -1,8 +1,7 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Asset API
+  title: api-specifications Asset API
   version: '1.1'
-  description: 'Operations tagged Asset across 2 of this provider''s published API definitions: lithium-marketing-api-specifications-openapi.json, lithium-asset-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://{your-domain}.com
   variables:
@@ -71,14 +70,6 @@ paths:
       security: []
       tags:
       - Asset
-    servers:
-    - url: https://{your-domain}.com
-      variables:
-        your-domain:
-          default: your-domain
-x-refined-from:
-- lithium-marketing-api-specifications-openapi.json
-- lithium-asset-api-openapi.yml
 x-readme:
   headers: []
   explorer-enabled: false

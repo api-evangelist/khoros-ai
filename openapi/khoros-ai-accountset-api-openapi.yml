@@ -1,11 +1,11 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Account Set API
+  description: Welcome to the Spredfast Conversations API.
   version: '1'
+  title: Conversations API V1 Account Set API
   license:
     name: Spredfast API Terms of Use
     url: https://s3.amazonaws.com/apiexplorer.spredfast.com/APITermsonlineacceptance.html
-  description: 'Operations tagged AccountSet across 2 of this provider''s published API definitions: lithium-marketing-conversations-api-v1-openapi.json, lithium-accountset-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://api.spredfast.com
 tags:
@@ -61,26 +61,8 @@ paths:
 
         2. There must be at least one Account registered in the Account Set.'
       summary: Lists all accounts sets and corresponding accounts available to the user
-    servers:
-    - url: https://api.spredfast.com
 components:
   schemas:
-    Account:
-      type: object
-      description: A Conversations social media Account
-      properties:
-        sfEntityType:
-          type: string
-        id:
-          type: integer
-        service:
-          type: string
-        name:
-          type: string
-        accountType:
-          type: string
-        serviceId:
-          type: string
     AccountSet:
       type: object
       description: A Conversations AccountSet
@@ -99,6 +81,22 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/Account'
+    Account:
+      type: object
+      description: A Conversations social media Account
+      properties:
+        sfEntityType:
+          type: string
+        id:
+          type: integer
+        service:
+          type: string
+        name:
+          type: string
+        accountType:
+          type: string
+        serviceId:
+          type: string
   securitySchemes:
     oauth2:
       type: oauth2
@@ -108,11 +106,7 @@ components:
           tokenUrl: https://login.spredfast.com/v3/oauth/token
           scopes:
             all: Read/write access for all endpoints.
-x-refined-from:
-- lithium-marketing-conversations-api-v1-openapi.json
-- lithium-accountset-api-openapi.yml
 x-readme:
-  headers: []
   explorer-enabled: false
   proxy-enabled: false
-x-readme-fauxas: true
+  samples-enabled: true

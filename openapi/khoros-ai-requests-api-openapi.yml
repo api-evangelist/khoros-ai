@@ -1,8 +1,7 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Requests API
+  title: gdpr-api-v2 Requests API
   version: '1.1'
-  description: 'Operations tagged Requests across 2 of this provider''s published API definitions: lithium-care-gdpr-api-v2-openapi.json, lithium-requests-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://{instance}.response.lithium.com/api/v2/gdpr
   variables:
@@ -79,11 +78,6 @@ paths:
         - python
       tags:
       - Requests
-    servers:
-    - url: https://{instance}.response.lithium.com/api/v2/gdpr
-      variables:
-        instance:
-          default: instance
   /requests/{requestUUID}:
     get:
       summary: Get GDPR request status
@@ -137,16 +131,8 @@ paths:
       security: []
       tags:
       - Requests
-    servers:
-    - url: https://{instance}.response.lithium.com/api/v2/gdpr
-      variables:
-        instance:
-          default: instance
-x-refined-from:
-- lithium-care-gdpr-api-v2-openapi.json
-- lithium-requests-api-openapi.yml
 x-readme:
   headers: []
   explorer-enabled: false
-  proxy-enabled: false
+  proxy-enabled: true
 x-readme-fauxas: true

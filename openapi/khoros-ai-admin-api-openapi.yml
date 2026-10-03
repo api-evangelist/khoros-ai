@@ -1,8 +1,7 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Admin API
+  title: crm Admin API
   version: '1.1'
-  description: 'Operations tagged Admin across 2 of this provider''s published API definitions: lithium-marketing-crm-openapi.json, lithium-admin-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://api.spredfast.com/v2/crm
 security:
@@ -46,8 +45,6 @@ paths:
       security: []
       tags:
       - Admin
-    servers:
-    - url: https://api.spredfast.com/v2/crm
   /admin/custom/{crmId}:
     patch:
       summary: Register a Custom CRM
@@ -92,8 +89,6 @@ paths:
       security: []
       tags:
       - Admin
-    servers:
-    - url: https://api.spredfast.com/v2/crm
 components:
   securitySchemes:
     sec0:
@@ -102,11 +97,8 @@ components:
         clientCredentials:
           tokenUrl: https://example.com/oauth2/token
           scopes: {}
-x-refined-from:
-- lithium-marketing-crm-openapi.json
-- lithium-admin-api-openapi.yml
 x-readme:
   headers: []
-  explorer-enabled: false
+  explorer-enabled: true
   proxy-enabled: false
 x-readme-fauxas: true

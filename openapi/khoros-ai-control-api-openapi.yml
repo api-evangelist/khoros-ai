@@ -1,8 +1,7 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Control API
+  title: bot-api-v3 Control API
   version: '1.1'
-  description: 'Operations tagged Control across 2 of this provider''s published API definitions: lithium-care-bot-api-v3-openapi.json, lithium-control-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://api.app.lithium.com/bots/v3
 security:
@@ -102,8 +101,6 @@ paths:
         - curl
       tags:
       - Control
-    servers:
-    - url: https://api.app.lithium.com/bots/v3
   /control:
     put:
       summary: Pass conversation control
@@ -163,13 +160,12 @@ paths:
         - curl
       tags:
       - Control
-    servers:
-    - url: https://api.app.lithium.com/bots/v3
-x-refined-from:
-- lithium-care-bot-api-v3-openapi.json
-- lithium-control-api-openapi.yml
 x-readme:
-  headers: []
+  headers:
+  - key: Authorization
+    value: Bearer [TOKEN]
+  - key: Content-type
+    value: application/json; charset=utf-8
   explorer-enabled: false
-  proxy-enabled: false
+  proxy-enabled: true
 x-readme-fauxas: true

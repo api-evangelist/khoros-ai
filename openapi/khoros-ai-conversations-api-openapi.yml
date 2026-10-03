@@ -2,7 +2,7 @@ openapi: 3.2.0
 info:
   title: Khoros Ai Conversations API
   version: '1.1'
-  description: 'Operations tagged Conversations across 3 of this provider''s published API definitions: lithium-care-author-api-v2-openapi.json, lithium-marketing-conversations-openapi.json, lithium-conversations-api-openapi.yml. Each path carries the servers of the definition it was published in.'
+  description: 'Operations tagged Conversations across 3 of this provider''s published API definitions: lithium-care-author-api-v2-openapi.json, lithium-conversations-api-openapi.yml, lithium-marketing-conversations-openapi.json. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://{instance}.response.lithium.com/api/v2/authors
   variables:
@@ -81,6 +81,8 @@ paths:
         instance:
           default: instance
   /conversations/initiative/{initiative-id}/accountset:
+    servers:
+    - url: https://api.spredfast.com/v2
     get:
       summary: Retrieve All Account Sets & Accounts Available
       description: List all account sets and accounts available
@@ -178,9 +180,9 @@ paths:
       - Conversations
       security:
       - sec0: []
+  /conversations/asset:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/asset:
     post:
       summary: Create Text Asset
       description: Create a new Text Content Center Asset
@@ -341,9 +343,9 @@ paths:
       security: []
       tags:
       - Conversations
+  /conversations/asset?multipart:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/asset?multipart:
     post:
       summary: Create Image or Video
       description: Create a new image/video Content Center Asset
@@ -478,9 +480,9 @@ paths:
       security: []
       tags:
       - Conversations
+  /conversations/asset/{assetId}:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/asset/{assetId}:
     get:
       summary: Retrieve a Content Center Asset by ID
       description: Gets a Content Center Asset by asset ID (including content label information)
@@ -681,9 +683,9 @@ paths:
       security: []
       tags:
       - Conversations
+  /conversations/folder:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/folder:
     post:
       summary: Create a New Content Asset Folder
       description: Create a new custom asset folder where assets may be assigned
@@ -838,9 +840,9 @@ paths:
       security: []
       tags:
       - Conversations
+  /conversations/folder/{folderId}:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/folder/{folderId}:
     get:
       summary: Retrieve a Content Asset Folder by ID
       description: Retrieve a specific content asset folder by ID
@@ -987,9 +989,9 @@ paths:
       security: []
       tags:
       - Conversations
+  /conversations/folder/{folderId}/assets:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/folder/{folderId}/assets:
     get:
       summary: Retrieve a List of Assets in a Folder
       description: Retrieve a list of assets in a folder
@@ -1107,9 +1109,9 @@ paths:
       security: []
       tags:
       - Conversations
+  /conversations/calendar/customChannel:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/calendar/customChannel:
     get:
       summary: List CustomChannels
       description: List any CustomChannels that exist
@@ -1275,9 +1277,9 @@ paths:
       security: []
       tags:
       - Conversations
+  /conversations/calendar/customChannel/{customChannelId}:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/calendar/customChannel/{customChannelId}:
     get:
       summary: Get a CustomChannel based on ID
       description: Retrieve a previously created custom channel
@@ -1401,9 +1403,9 @@ paths:
       security: []
       tags:
       - Conversations
+  /conversations/initiative/{initiativeId}/calendar/customChannelItem/{customChannelItemId}:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/initiative/{initiativeId}/calendar/customChannelItem/{customChannelItemId}:
     post:
       summary: Create a CustomChannelItem
       description: Create a new CustomChannelItem
@@ -1607,9 +1609,9 @@ paths:
       security: []
       tags:
       - Conversations
+  /conversations/calendar/messages:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/calendar/messages:
     get:
       summary: Get Messages
       description: Get a list of messages posted or scheduled to be posted from Khoros Marketing
@@ -1658,9 +1660,9 @@ paths:
       security: []
       tags:
       - Conversations
+  /conversations/initiative:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/initiative:
     get:
       summary: Retrieve a List of Available Initiatives
       description: Retrieve a list of initiatives that exist for your company
@@ -1731,9 +1733,9 @@ paths:
       security: []
       tags:
       - Conversations
+  /conversations/initiative/{initiativeId}:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/initiative/{initiativeId}:
     get:
       summary: Retrieve a Single Initiative
       description: Retrieve information about a specific initiative
@@ -1782,9 +1784,9 @@ paths:
       security: []
       tags:
       - Conversations
+  /conversations/initiative/{initiativeId}/contentLabel:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/initiative/{initiativeId}/contentLabel:
     get:
       summary: Retrieve Paged Labels
       description: Retrieve a paged list of labels using Khoros Marketing Conversations API.
@@ -1857,9 +1859,9 @@ paths:
       security: []
       tags:
       - Conversations
+  /conversations/initiative/{initiativeId}/message:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/initiative/{initiativeId}/message:
     post:
       summary: Publish a New Message (imageset)
       description: Publish a new Khoros Marketing Message for the target Initiative
@@ -2007,9 +2009,9 @@ paths:
       security: []
       tags:
       - Conversations
+  /conversations/initiative/{initiativeId}/message/{messageId}:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/initiative/{initiativeId}/message/{messageId}:
     put:
       summary: Update a Message
       description: Update an existing Khoros Marketing Message using Khoros Marketing Conversations API.
@@ -2333,9 +2335,9 @@ paths:
       security: []
       tags:
       - Conversations
+  /conversations/initiative/{initiativeId}/message?multipart:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/initiative/{initiativeId}/message?multipart:
     post:
       summary: Publish a New Message (multipart)
       description: Publish a new Khoros Marketing multipart Message for the target Initiative
@@ -2483,9 +2485,9 @@ paths:
       security: []
       tags:
       - Conversations
+  /conversations/initiative/{initiativeId}/message/{messageId}?multipart:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/initiative/{initiativeId}/message/{messageId}?multipart:
     put:
       summary: Update a Multipart Message
       description: This endpoint is used to update an existing multi-part Khoros Marketing Message
@@ -2640,9 +2642,9 @@ paths:
       security: []
       tags:
       - Conversations
+  /conversations/initiative/{initiativeId}/multiChannelMessage/{messageId}:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/initiative/{initiativeId}/multiChannelMessage/{messageId}:
     get:
       summary: Retrieve an Existing Multi-channel Message
       description: The Messages endpoint returns information about the Khoros Marketing multi-channel messages for the target Initiative
@@ -2673,9 +2675,9 @@ paths:
       security: []
       tags:
       - Conversations
+  /conversations/privilege:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/privilege:
     get:
       summary: Retrieve Permissions for Current User
       description: Retrieves a list of permissions in the currently selected company using Khoros Marketing Conversations API.
@@ -2716,9 +2718,9 @@ paths:
       security: []
       tags:
       - Conversations
+  /conversations/initiative/{initiativeId}/plan:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/initiative/{initiativeId}/plan:
     get:
       summary: Retrieve a List of Plans
       description: Retrieve a list of plans for the specified initiative
@@ -2810,9 +2812,9 @@ paths:
       security: []
       tags:
       - Conversations
+  /conversations/roles:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/roles:
     get:
       summary: List Roles for the Company
       description: List Roles for the company using Khoros Marketing Conversations API.
@@ -2873,9 +2875,9 @@ paths:
       security: []
       tags:
       - Conversations
+  /conversations/users/initiative/{initiativeId}/publishers:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/users/initiative/{initiativeId}/publishers:
     get:
       summary: List Conversations Publishers
       description: List publishers for a specified initiative using Khoros Marketing Conversations API.
@@ -2924,9 +2926,9 @@ paths:
       security: []
       tags:
       - Conversations
+  /conversations/user/{userId}:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/user/{userId}:
     delete:
       summary: Delete a Conversations User
       description: Delete a user from the company using Khoros Marketing Conversations API.
@@ -2961,9 +2963,9 @@ paths:
       security: []
       tags:
       - Conversations
+  /conversations/user:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/user:
     post:
       summary: Create a Conversations User
       description: Create a Conversations user for the company using Khoros Marketing Conversations API.
@@ -3055,9 +3057,9 @@ paths:
       security: []
       tags:
       - Conversations
+  /conversations/users:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/users:
     get:
       summary: List Conversations Users
       description: List Conversations users in the company
@@ -3159,9 +3161,9 @@ paths:
       security: []
       tags:
       - Conversations
+  /conversations/initiative/{initiativeId}/video/captions:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/initiative/{initiativeId}/video/captions:
     post:
       summary: Create a Video Captions
       description: Create a Video Captions object for using in the Khoros Marketing Conversations API.
@@ -3201,9 +3203,9 @@ paths:
       security: []
       tags:
       - Conversations
+  /conversations/workspaces:
     servers:
     - url: https://api.spredfast.com/v2
-  /conversations/workspaces:
     get:
       summary: List Workspaces for the Company
       description: Retrieve list Workspaces for the company
@@ -3264,8 +3266,6 @@ paths:
       security: []
       tags:
       - Conversations
-    servers:
-    - url: https://api.spredfast.com/v2
 components:
   securitySchemes:
     sec0:
@@ -3276,10 +3276,10 @@ components:
           scopes: {}
 x-refined-from:
 - lithium-care-author-api-v2-openapi.json
-- lithium-marketing-conversations-openapi.json
 - lithium-conversations-api-openapi.yml
+- lithium-marketing-conversations-openapi.json
 x-readme:
   headers: []
   explorer-enabled: false
-  proxy-enabled: false
+  proxy-enabled: true
 x-readme-fauxas: true

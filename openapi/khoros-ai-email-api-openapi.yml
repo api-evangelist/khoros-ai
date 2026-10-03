@@ -1,8 +1,7 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Email API
+  title: users-api-v2 Email API
   version: '1.1'
-  description: 'Operations tagged Email across 2 of this provider''s published API definitions: lithium-care-users-api-v2-openapi.json, lithium-email-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://{care-instance}/api/v2/users
   variables:
@@ -89,16 +88,8 @@ paths:
         - curl
       tags:
       - Email
-    servers:
-    - url: https://{care-instance}/api/v2/users
-      variables:
-        care-instance:
-          default: care-instance
-x-refined-from:
-- lithium-care-users-api-v2-openapi.json
-- lithium-email-api-openapi.yml
 x-readme:
   headers: []
-  explorer-enabled: false
-  proxy-enabled: false
+  explorer-enabled: true
+  proxy-enabled: true
 x-readme-fauxas: true

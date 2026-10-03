@@ -1,8 +1,7 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Subscription API
+  title: notification-service Subscription API
   version: '1.1'
-  description: 'Operations tagged Subscription across 2 of this provider''s published API definitions: lithium-marketing-notification-service-openapi.json, lithium-subscription-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://api.spredfast.com/v2/events
 security:
@@ -123,8 +122,6 @@ paths:
       security: []
       tags:
       - Subscription
-    servers:
-    - url: https://api.spredfast.com/v2/events
   /subscription/{id}:
     get:
       summary: Retrieve Subscription Details
@@ -192,8 +189,6 @@ paths:
       security: []
       tags:
       - Subscription
-    servers:
-    - url: https://api.spredfast.com/v2/events
   /subscription/{id}/{status}:
     put:
       summary: Update a Subscription
@@ -241,8 +236,6 @@ paths:
       security: []
       tags:
       - Subscription
-    servers:
-    - url: https://api.spredfast.com/v2/events
 components:
   securitySchemes:
     sec0:
@@ -251,11 +244,8 @@ components:
         clientCredentials:
           tokenUrl: https://example.com/oauth2/token
           scopes: {}
-x-refined-from:
-- lithium-marketing-notification-service-openapi.json
-- lithium-subscription-api-openapi.yml
 x-readme:
   headers: []
   explorer-enabled: false
-  proxy-enabled: false
+  proxy-enabled: true
 x-readme-fauxas: true

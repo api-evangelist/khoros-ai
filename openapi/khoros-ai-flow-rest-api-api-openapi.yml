@@ -1,8 +1,7 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Flow Rest API
+  title: flow-rest-api Flow Rest API
   version: '1.0'
-  description: 'Operations tagged Flow Rest Api across 2 of this provider''s published API definitions: lithium-flow-flow-rest-api-openapi.json, lithium-flow-rest-api-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://api.flow.ai/rest/v1/
 security:
@@ -59,8 +58,6 @@ paths:
         - http
       tags:
       - Flow Rest Api
-    servers:
-    - url: https://api.flow.ai/rest/v1/
   /:
     get:
       summary: Retrieve a bot's status
@@ -115,13 +112,8 @@ paths:
         - http
       tags:
       - Flow Rest Api
-    servers:
-    - url: https://api.flow.ai/rest/v1/
-x-refined-from:
-- lithium-flow-flow-rest-api-openapi.json
-- lithium-flow-rest-api-api-openapi.yml
 x-readme:
   headers: []
   explorer-enabled: false
-  proxy-enabled: false
+  proxy-enabled: true
 x-readme-fauxas: true

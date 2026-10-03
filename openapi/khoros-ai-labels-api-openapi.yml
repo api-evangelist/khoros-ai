@@ -1,11 +1,11 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Labels API
+  description: Welcome to the Spredfast Conversations API.
   version: '1'
+  title: Conversations API V1 Labels API
   license:
     name: Spredfast API Terms of Use
     url: https://s3.amazonaws.com/apiexplorer.spredfast.com/APITermsonlineacceptance.html
-  description: 'Operations tagged Labels across 2 of this provider''s published API definitions: lithium-marketing-conversations-api-v1-openapi.json, lithium-labels-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://api.spredfast.com
 tags:
@@ -69,8 +69,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ContentLabel'
-    servers:
-    - url: https://api.spredfast.com
 components:
   schemas:
     ContentLabel:
@@ -90,11 +88,7 @@ components:
           tokenUrl: https://login.spredfast.com/v3/oauth/token
           scopes:
             all: Read/write access for all endpoints.
-x-refined-from:
-- lithium-marketing-conversations-api-v1-openapi.json
-- lithium-labels-api-openapi.yml
 x-readme:
-  headers: []
   explorer-enabled: false
   proxy-enabled: false
-x-readme-fauxas: true
+  samples-enabled: true

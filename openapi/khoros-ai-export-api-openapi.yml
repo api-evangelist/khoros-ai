@@ -1,8 +1,7 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Export API
+  title: beta-analytics-api Export API
   version: '1.1'
-  description: 'Operations tagged Export across 2 of this provider''s published API definitions: lithium-marketing-beta-analytics-api-openapi.json, lithium-export-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://api.spredfast.com/v2/analytics
 security:
@@ -135,8 +134,6 @@ paths:
       security: []
       tags:
       - Export
-    servers:
-    - url: https://api.spredfast.com/v2/analytics
   /export/accounts:
     post:
       summary: Daily Account Level Metrics
@@ -189,8 +186,6 @@ paths:
       security: []
       tags:
       - Export
-    servers:
-    - url: https://api.spredfast.com/v2/analytics
   /export/daily_post_summary:
     post:
       summary: Daily Post Summary
@@ -326,8 +321,6 @@ paths:
       security: []
       tags:
       - Export
-    servers:
-    - url: https://api.spredfast.com/v2/analytics
   /export/net_ads:
     post:
       summary: Ads Net Values
@@ -449,8 +442,6 @@ paths:
       security: []
       tags:
       - Export
-    servers:
-    - url: https://api.spredfast.com/v2/analytics
   /export/stream_items:
     post:
       summary: Stream Item Data
@@ -551,8 +542,6 @@ paths:
       security: []
       tags:
       - Export
-    servers:
-    - url: https://api.spredfast.com/v2/analytics
   /export/stream_item_actions:
     post:
       summary: Stream Item Action Data
@@ -660,8 +649,6 @@ paths:
       security: []
       tags:
       - Export
-    servers:
-    - url: https://api.spredfast.com/v2/analytics
   /export/customer_feedback:
     post:
       summary: Customer Feedback
@@ -749,8 +736,6 @@ paths:
       security: []
       tags:
       - Export
-    servers:
-    - url: https://api.spredfast.com/v2/analytics
   /export/profiles:
     post:
       summary: Profiles
@@ -838,8 +823,6 @@ paths:
       security: []
       tags:
       - Export
-    servers:
-    - url: https://api.spredfast.com/v2/analytics
   /export/{id}/status:
     get:
       summary: Retrieve Export Status
@@ -890,8 +873,6 @@ paths:
       security: []
       tags:
       - Export
-    servers:
-    - url: https://api.spredfast.com/v2/analytics
   /export/{export_type}/fields:
     get:
       summary: Get Available Report Fields
@@ -926,8 +907,6 @@ paths:
       security: []
       tags:
       - Export
-    servers:
-    - url: https://api.spredfast.com/v2/analytics
 components:
   securitySchemes:
     sec0:
@@ -936,11 +915,8 @@ components:
         clientCredentials:
           tokenUrl: https://example.com/oauth2/token
           scopes: {}
-x-refined-from:
-- lithium-marketing-beta-analytics-api-openapi.json
-- lithium-export-api-openapi.yml
 x-readme:
   headers: []
   explorer-enabled: false
-  proxy-enabled: false
+  proxy-enabled: true
 x-readme-fauxas: true

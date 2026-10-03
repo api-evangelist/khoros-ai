@@ -1,8 +1,7 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Streams API
+  title: beta-analytics-api Streams API
   version: '1.1'
-  description: 'Operations tagged Streams across 2 of this provider''s published API definitions: lithium-marketing-beta-analytics-api-openapi.json, lithium-streams-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://api.spredfast.com/v2/analytics
 security:
@@ -77,8 +76,6 @@ paths:
       security: []
       tags:
       - Streams
-    servers:
-    - url: https://api.spredfast.com/v2/analytics
 components:
   securitySchemes:
     sec0:
@@ -87,11 +84,8 @@ components:
         clientCredentials:
           tokenUrl: https://example.com/oauth2/token
           scopes: {}
-x-refined-from:
-- lithium-marketing-beta-analytics-api-openapi.json
-- lithium-streams-api-openapi.yml
 x-readme:
   headers: []
   explorer-enabled: false
-  proxy-enabled: false
+  proxy-enabled: true
 x-readme-fauxas: true

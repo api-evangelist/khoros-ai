@@ -1,8 +1,7 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Data API
+  title: notification-service Data API
   version: '1.1'
-  description: 'Operations tagged Data across 2 of this provider''s published API definitions: lithium-marketing-notification-service-openapi.json, lithium-data-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://api.spredfast.com/v2/events
 security:
@@ -58,8 +57,6 @@ paths:
       security: []
       tags:
       - Data
-    servers:
-    - url: https://api.spredfast.com/v2/events
 components:
   securitySchemes:
     sec0:
@@ -68,11 +65,8 @@ components:
         clientCredentials:
           tokenUrl: https://example.com/oauth2/token
           scopes: {}
-x-refined-from:
-- lithium-marketing-notification-service-openapi.json
-- lithium-data-api-openapi.yml
 x-readme:
   headers: []
   explorer-enabled: false
-  proxy-enabled: false
+  proxy-enabled: true
 x-readme-fauxas: true

@@ -1,11 +1,11 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Users API
+  description: Welcome to the Spredfast Conversations API.
   version: '1'
+  title: Conversations API V1 Users API
   license:
     name: Spredfast API Terms of Use
     url: https://s3.amazonaws.com/apiexplorer.spredfast.com/APITermsonlineacceptance.html
-  description: 'Operations tagged Users across 2 of this provider''s published API definitions: lithium-marketing-conversations-api-v1-openapi.json, lithium-users-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://api.spredfast.com
 tags:
@@ -53,47 +53,8 @@ paths:
                     type: array
                     items:
                       $ref: '#/components/schemas/EntityPageResponseConversationsUser'
-    servers:
-    - url: https://api.spredfast.com
 components:
   schemas:
-    CallStatus:
-      type: object
-      properties:
-        succeeded:
-          type: boolean
-          readOnly: true
-          default: false
-        error:
-          $ref: '#/components/schemas/ApiError'
-    EntityPageResponseConversationsUser:
-      type: object
-      properties:
-        data:
-          type: array
-          readOnly: true
-          items:
-            type: object
-            description: Minimal data about Conversations users
-            properties:
-              id:
-                type: integer
-              displayName:
-                type: string
-        status:
-          $ref: '#/components/schemas/CallStatus'
-        pagination:
-          $ref: '#/components/schemas/Pagination'
-    Pagination:
-      type: object
-      properties:
-        next:
-          type: string
-        previous:
-          type: string
-        totalItems:
-          type: integer
-          format: int64
     ApiError:
       type: object
       properties:
@@ -138,6 +99,43 @@ components:
         message:
           type: string
           readOnly: true
+    CallStatus:
+      type: object
+      properties:
+        succeeded:
+          type: boolean
+          readOnly: true
+          default: false
+        error:
+          $ref: '#/components/schemas/ApiError'
+    Pagination:
+      type: object
+      properties:
+        next:
+          type: string
+        previous:
+          type: string
+        totalItems:
+          type: integer
+          format: int64
+    EntityPageResponseConversationsUser:
+      type: object
+      properties:
+        data:
+          type: array
+          readOnly: true
+          items:
+            type: object
+            description: Minimal data about Conversations users
+            properties:
+              id:
+                type: integer
+              displayName:
+                type: string
+        status:
+          $ref: '#/components/schemas/CallStatus'
+        pagination:
+          $ref: '#/components/schemas/Pagination'
   securitySchemes:
     oauth2:
       type: oauth2
@@ -147,11 +145,7 @@ components:
           tokenUrl: https://login.spredfast.com/v3/oauth/token
           scopes:
             all: Read/write access for all endpoints.
-x-refined-from:
-- lithium-marketing-conversations-api-v1-openapi.json
-- lithium-users-api-openapi.yml
 x-readme:
-  headers: []
   explorer-enabled: false
   proxy-enabled: false
-x-readme-fauxas: true
+  samples-enabled: true

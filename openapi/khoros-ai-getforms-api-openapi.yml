@@ -1,8 +1,7 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Get Forms API
+  title: secure-forms-api-v2 Get Forms API
   version: '1.1'
-  description: 'Operations tagged GetForms across 2 of this provider''s published API definitions: lithium-care-secure-forms-api-v2-openapi.json, lithium-getforms-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://api.app.lithium.com/engage/api/v2/secureForms
 security:
@@ -42,18 +41,13 @@ paths:
         - curl
       tags:
       - GetForms
-    servers:
-    - url: https://api.app.lithium.com/engage/api/v2/secureForms
 components:
   securitySchemes:
     sec0:
       type: http
       scheme: basic
-x-refined-from:
-- lithium-care-secure-forms-api-v2-openapi.json
-- lithium-getforms-api-openapi.yml
 x-readme:
   headers: []
-  explorer-enabled: false
-  proxy-enabled: false
+  explorer-enabled: true
+  proxy-enabled: true
 x-readme-fauxas: true

@@ -1,8 +1,7 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Reports API
+  title: analytics Reports API
   version: '1.1'
-  description: 'Operations tagged Reports across 2 of this provider''s published API definitions: lithium-care-analytics-reports-openapi.json, lithium-reports-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://analytics-api.app.lithium.com/api/public
 security:
@@ -106,8 +105,6 @@ paths:
         - curl
       tags:
       - Reports
-    servers:
-    - url: https://analytics-api.app.lithium.com/api/public
   /reports/report/conversation_actions:
     get:
       summary: Create conversation actions report
@@ -327,8 +324,6 @@ paths:
         - curl
       tags:
       - Reports
-    servers:
-    - url: https://analytics-api.app.lithium.com/api/public
   /reports/report/user:
     get:
       summary: Create user export
@@ -515,8 +510,6 @@ paths:
         - curl
       tags:
       - Reports
-    servers:
-    - url: https://analytics-api.app.lithium.com/api/public
   /reports/report/{workflowId}/{runId}/download:
     get:
       summary: Download export by run ID
@@ -557,8 +550,6 @@ paths:
         - curl
       tags:
       - Reports
-    servers:
-    - url: https://analytics-api.app.lithium.com/api/public
   /reports/report/author:
     post:
       summary: Create raw author export
@@ -676,8 +667,6 @@ paths:
         - curl
       tags:
       - Reports
-    servers:
-    - url: https://analytics-api.app.lithium.com/api/public
   /reports/report/combined:
     post:
       summary: Create raw combined export
@@ -795,8 +784,6 @@ paths:
         - curl
       tags:
       - Reports
-    servers:
-    - url: https://analytics-api.app.lithium.com/api/public
   /reports/report/conversation:
     post:
       summary: Create raw conversations export
@@ -920,8 +907,6 @@ paths:
         - curl
       tags:
       - Reports
-    servers:
-    - url: https://analytics-api.app.lithium.com/api/public
   /reports/report/conversation_history_action:
     post:
       summary: Create conversation action history export
@@ -1029,8 +1014,6 @@ paths:
         - curl
       tags:
       - Reports
-    servers:
-    - url: https://analytics-api.app.lithium.com/api/public
   /reports/report/incoming_post:
     post:
       summary: Create raw incoming post export
@@ -1125,8 +1108,6 @@ paths:
         - curl
       tags:
       - Reports
-    servers:
-    - url: https://analytics-api.app.lithium.com/api/public
   /reports/report/raw_agent_states:
     post:
       summary: Create agent state export
@@ -1249,8 +1230,6 @@ paths:
         - curl
       tags:
       - Reports
-    servers:
-    - url: https://analytics-api.app.lithium.com/api/public
   /reports/report/raw_expert_help:
     post:
       summary: Create raw help request export
@@ -1368,8 +1347,6 @@ paths:
         - curl
       tags:
       - Reports
-    servers:
-    - url: https://analytics-api.app.lithium.com/api/public
   /reports/report/response:
     post:
       summary: Create raw response export
@@ -1487,8 +1464,6 @@ paths:
         - curl
       tags:
       - Reports
-    servers:
-    - url: https://analytics-api.app.lithium.com/api/public
   /reports/report/response_approval:
     post:
       summary: Create raw response approval export
@@ -1612,8 +1587,6 @@ paths:
         - curl
       tags:
       - Reports
-    servers:
-    - url: https://analytics-api.app.lithium.com/api/public
   /reports/report/team_performance:
     post:
       summary: Create raw team performance export
@@ -1747,8 +1720,6 @@ paths:
         - curl
       tags:
       - Reports
-    servers:
-    - url: https://analytics-api.app.lithium.com/api/public
   /reports/report/team_performance_interval:
     post:
       summary: Run team performance interval export
@@ -1883,8 +1854,6 @@ paths:
         - curl
       tags:
       - Reports
-    servers:
-    - url: https://analytics-api.app.lithium.com/api/public
   /reports/report/{report_type}:
     post:
       summary: Run care analytics report
@@ -2028,16 +1997,11 @@ paths:
         - curl
       tags:
       - Reports
-    servers:
-    - url: https://analytics-api.app.lithium.com/api/public
 components:
   securitySchemes:
     sec0:
       type: http
       scheme: basic
-x-refined-from:
-- lithium-care-analytics-reports-openapi.json
-- lithium-reports-api-openapi.yml
 x-readme:
   headers: []
   explorer-enabled: false

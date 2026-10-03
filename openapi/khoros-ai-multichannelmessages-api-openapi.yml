@@ -1,11 +1,11 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Multi Channel Messages API
+  description: Welcome to the Spredfast Conversations API.
   version: '1'
+  title: Conversations API V1 Multi Channel Messages API
   license:
     name: Spredfast API Terms of Use
     url: https://s3.amazonaws.com/apiexplorer.spredfast.com/APITermsonlineacceptance.html
-  description: 'Operations tagged MultiChannelMessages across 2 of this provider''s published API definitions: lithium-marketing-conversations-api-v1-openapi.json, lithium-multichannelmessages-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://api.spredfast.com
 tags:
@@ -47,86 +47,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/MultiChannelMessage'
-    servers:
-    - url: https://api.spredfast.com
 components:
   schemas:
-    SingleChannelMessage:
-      type: object
-      properties:
-        sfEntityType:
-          type: string
-          description: Spredfast internal entity type
-          enum:
-          - SingleChannelMessage
-        service:
-          type: string
-          description: Social network to publish to
-          enum:
-          - FACEBOOK
-          - GOOGLEPLUS
-          - SINAWEIBO
-          - LINKEDIN
-          - PINTEREST
-          - YOUTUBE
-          - VK
-        targetAccountIds:
-          type: array
-          items:
-            type: string
-        content:
-          $ref: '#/components/schemas/MessageContent'
-        organicVisibility:
-          type: string
-          enum:
-          - VISIBLE
-          - INVISIBLE
-          - VISIBLE_POST_PUBLISH
-        publicationResults:
-          type: array
-          items:
-            $ref: '#/components/schemas/PublicationResult'
-        targetingProfile:
-          $ref: '#/components/schemas/TargetingProfile'
-        sponsor:
-          $ref: '#/components/schemas/MessageSponsor'
-    TargetingProfile:
-      type: object
-      properties:
-        targetingType:
-          type: string
-          enum:
-          - ENHANCED
-          - GATED
-        targetingValues:
-          type: object
-          additionalProperties:
-            type: array
-            items:
-              $ref: '#/components/schemas/TargetingValue'
-    PublicationResult:
-      type: object
-      properties:
-        accountId:
-          type: string
-        serviceId:
-          type: string
-        serviceLink:
-          type: string
-        status:
-          type: string
-          enum:
-          - PENDING
-          - PUBLISHED
-          - ERROR
-          - DELETED
-        datePublished:
-          type: string
-          format: date-time
-    MessageContent:
-      type: object
-      discriminator:
-        propertyName: sfEntityType
     MultiChannelMessage:
       type: object
       properties:
@@ -215,21 +137,45 @@ components:
           content:
             sfEntityType: Status
             text: Facebook test post
-    TargetingValue:
+    SingleChannelMessage:
       type: object
       properties:
-        subType:
+        sfEntityType:
+          type: string
+          description: Spredfast internal entity type
+          enum:
+          - SingleChannelMessage
+        service:
+          type: string
+          description: Social network to publish to
+          enum:
+          - FACEBOOK
+          - GOOGLEPLUS
+          - SINAWEIBO
+          - LINKEDIN
+          - PINTEREST
+          - YOUTUBE
+          - VK
+        targetAccountIds:
+          type: array
+          items:
+            type: string
+        content:
+          $ref: '#/components/schemas/MessageContent'
+        organicVisibility:
           type: string
           enum:
-          - COUNTRY
-          - REGION
-          - METRO
-          - CONTINENT
-          - ZIP_CODE
-        value:
-          type: string
-        description:
-          type: string
+          - VISIBLE
+          - INVISIBLE
+          - VISIBLE_POST_PUBLISH
+        publicationResults:
+          type: array
+          items:
+            $ref: '#/components/schemas/PublicationResult'
+        targetingProfile:
+          $ref: '#/components/schemas/TargetingProfile'
+        sponsor:
+          $ref: '#/components/schemas/MessageSponsor'
     MessageNote:
       type: object
       description: A Note on the Message.
@@ -263,6 +209,58 @@ components:
           type: string
           format: date-time
           readOnly: true
+    PublicationResult:
+      type: object
+      properties:
+        accountId:
+          type: string
+        serviceId:
+          type: string
+        serviceLink:
+          type: string
+        status:
+          type: string
+          enum:
+          - PENDING
+          - PUBLISHED
+          - ERROR
+          - DELETED
+        datePublished:
+          type: string
+          format: date-time
+    MessageContent:
+      type: object
+      discriminator:
+        propertyName: sfEntityType
+    TargetingProfile:
+      type: object
+      properties:
+        targetingType:
+          type: string
+          enum:
+          - ENHANCED
+          - GATED
+        targetingValues:
+          type: object
+          additionalProperties:
+            type: array
+            items:
+              $ref: '#/components/schemas/TargetingValue'
+    TargetingValue:
+      type: object
+      properties:
+        subType:
+          type: string
+          enum:
+          - COUNTRY
+          - REGION
+          - METRO
+          - CONTINENT
+          - ZIP_CODE
+        value:
+          type: string
+        description:
+          type: string
     MessageSponsor:
       type: object
       description: A Sponsor for the Message. Currently, we only support attaching a single sponsor when posting to *only* Facebook *verified* Pages (a.k.a. Facebook Branded Content, see https://www.facebook.com/facebookmedia/get-started/branded-content for more info), so any attempt to use it either for other Social Networks or including targets that don't comply with this rule, will result in an error from the back-end. Note that the Sponsor itself is not restricted to be a verified page, so it could be a regular (non-verified) page or a regular user. As an example, a post could be created, targeting the Facebook verified page of @LeoMessi and that post could be sponsored by @nike.
@@ -285,11 +283,7 @@ components:
           tokenUrl: https://login.spredfast.com/v3/oauth/token
           scopes:
             all: Read/write access for all endpoints.
-x-refined-from:
-- lithium-marketing-conversations-api-v1-openapi.json
-- lithium-multichannelmessages-api-openapi.yml
 x-readme:
-  headers: []
   explorer-enabled: false
   proxy-enabled: false
-x-readme-fauxas: true
+  samples-enabled: true

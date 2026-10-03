@@ -1,11 +1,11 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Initiatives API
+  description: Welcome to the Spredfast Conversations API.
   version: '1'
+  title: Conversations API V1 Initiatives API
   license:
     name: Spredfast API Terms of Use
     url: https://s3.amazonaws.com/apiexplorer.spredfast.com/APITermsonlineacceptance.html
-  description: 'Operations tagged Initiatives across 2 of this provider''s published API definitions: lithium-marketing-conversations-api-v1-openapi.json, lithium-initiatives-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://api.spredfast.com
 tags:
@@ -57,8 +57,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/EntityPageResponseInitiative'
-    servers:
-    - url: https://api.spredfast.com
   /{environment}/v1/company/{companyId}/initiative/{initiativeId}:
     get:
       tags:
@@ -91,8 +89,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/EntityResponseInitiative'
-    servers:
-    - url: https://api.spredfast.com
 components:
   schemas:
     CallStatus:
@@ -104,34 +100,6 @@ components:
           default: false
         error:
           $ref: '#/components/schemas/ApiError'
-    EntityPageResponseInitiative:
-      type: object
-      properties:
-        data:
-          type: array
-          readOnly: true
-          items:
-            $ref: '#/components/schemas/Initiative'
-        status:
-          $ref: '#/components/schemas/CallStatus'
-        pagination:
-          $ref: '#/components/schemas/Pagination'
-    Initiative:
-      type: object
-      properties:
-        id:
-          type: string
-        name:
-          type: string
-        description:
-          type: string
-    EntityResponseInitiative:
-      type: object
-      properties:
-        data:
-          $ref: '#/components/schemas/Initiative'
-        status:
-          $ref: '#/components/schemas/CallStatus'
     Pagination:
       type: object
       properties:
@@ -186,6 +154,34 @@ components:
         message:
           type: string
           readOnly: true
+    Initiative:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        description:
+          type: string
+    EntityResponseInitiative:
+      type: object
+      properties:
+        data:
+          $ref: '#/components/schemas/Initiative'
+        status:
+          $ref: '#/components/schemas/CallStatus'
+    EntityPageResponseInitiative:
+      type: object
+      properties:
+        data:
+          type: array
+          readOnly: true
+          items:
+            $ref: '#/components/schemas/Initiative'
+        status:
+          $ref: '#/components/schemas/CallStatus'
+        pagination:
+          $ref: '#/components/schemas/Pagination'
   securitySchemes:
     oauth2:
       type: oauth2
@@ -195,11 +191,7 @@ components:
           tokenUrl: https://login.spredfast.com/v3/oauth/token
           scopes:
             all: Read/write access for all endpoints.
-x-refined-from:
-- lithium-marketing-conversations-api-v1-openapi.json
-- lithium-initiatives-api-openapi.yml
 x-readme:
-  headers: []
   explorer-enabled: false
   proxy-enabled: false
-x-readme-fauxas: true
+  samples-enabled: true

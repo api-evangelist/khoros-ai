@@ -1,8 +1,7 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Conversation Api V2 API
+  title: conversation-api-v2 Conversation Api V2 API
   version: '1.1'
-  description: 'Operations tagged Conversation Api V2 across 2 of this provider''s published API definitions: lithium-care-conversation-api-v2-openapi.json, lithium-conversation-api-v2-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://{instance}.response.lithium.com/api/v2/conversations
   variables:
@@ -50,16 +49,8 @@ paths:
       security: []
       tags:
       - Conversation Api V2
-    servers:
-    - url: https://{instance}.response.lithium.com/api/v2/conversations
-      variables:
-        instance:
-          default: instance
-x-refined-from:
-- lithium-care-conversation-api-v2-openapi.json
-- lithium-conversation-api-v2-api-openapi.yml
 x-readme:
   headers: []
   explorer-enabled: false
-  proxy-enabled: false
+  proxy-enabled: true
 x-readme-fauxas: true

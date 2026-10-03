@@ -1,11 +1,11 @@
 openapi: 3.2.0
 info:
-  title: Khoros Ai Plans API
+  description: Welcome to the Spredfast Conversations API.
   version: '1'
+  title: Conversations API V1 Plans API
   license:
     name: Spredfast API Terms of Use
     url: https://s3.amazonaws.com/apiexplorer.spredfast.com/APITermsonlineacceptance.html
-  description: 'Operations tagged Plans across 2 of this provider''s published API definitions: lithium-marketing-conversations-api-v1-openapi.json, lithium-plans-api-openapi.yml. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://api.spredfast.com
 tags:
@@ -62,8 +62,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/EntityPageResponsePlan'
-    servers:
-    - url: https://api.spredfast.com
 components:
   schemas:
     CallStatus:
@@ -75,39 +73,6 @@ components:
           default: false
         error:
           $ref: '#/components/schemas/ApiError'
-    Plan:
-      type: object
-      properties:
-        id:
-          type: string
-        companyId:
-          type: integer
-          format: int64
-        campaignId:
-          type: integer
-          format: int64
-        name:
-          type: string
-        overview:
-          type: string
-        objective:
-          type: string
-        targetAudience:
-          type: string
-        color:
-          type: string
-        startDate:
-          type: string
-          format: date-time
-        endDate:
-          type: string
-          format: date-time
-        createdDate:
-          type: string
-          format: date-time
-        lastModifiedDate:
-          type: string
-          format: date-time
     EntityPageResponsePlan:
       type: object
       properties:
@@ -174,6 +139,39 @@ components:
         message:
           type: string
           readOnly: true
+    Plan:
+      type: object
+      properties:
+        id:
+          type: string
+        companyId:
+          type: integer
+          format: int64
+        campaignId:
+          type: integer
+          format: int64
+        name:
+          type: string
+        overview:
+          type: string
+        objective:
+          type: string
+        targetAudience:
+          type: string
+        color:
+          type: string
+        startDate:
+          type: string
+          format: date-time
+        endDate:
+          type: string
+          format: date-time
+        createdDate:
+          type: string
+          format: date-time
+        lastModifiedDate:
+          type: string
+          format: date-time
   securitySchemes:
     oauth2:
       type: oauth2
@@ -183,11 +181,7 @@ components:
           tokenUrl: https://login.spredfast.com/v3/oauth/token
           scopes:
             all: Read/write access for all endpoints.
-x-refined-from:
-- lithium-marketing-conversations-api-v1-openapi.json
-- lithium-plans-api-openapi.yml
 x-readme:
-  headers: []
   explorer-enabled: false
   proxy-enabled: false
-x-readme-fauxas: true
+  samples-enabled: true
