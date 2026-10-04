@@ -54,6 +54,9 @@ x-current-owner: IgniteTech
 specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-09-16'
+x-docs-platform: readme
+x-docs-platform-confidence: high
+x-docs-platform-checked: 2026-10-03
 tags:
 - Lithium
 - Company
@@ -397,6 +400,8 @@ apis:
     https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
   baseURL: https://community.khoros.com/api/2.0
   tags:
+  - CSV
+  tags_raw:
   - Csv
   properties:
   - type: OpenAPI
@@ -451,6 +456,8 @@ apis:
     https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
   baseURL: https://community.khoros.com/api/2.0
   tags:
+  - Customers
+  tags_raw:
   - Customer
   properties:
   - type: OpenAPI
@@ -523,6 +530,8 @@ apis:
     https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
   baseURL: https://community.khoros.com/api/2.0
   tags:
+  - Discussions
+  tags_raw:
   - Discussion
   properties:
   - type: OpenAPI
@@ -811,6 +820,8 @@ apis:
     https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
   baseURL: https://community.khoros.com/api/2.0
   tags:
+  - Message
+  tags_raw:
   - Messages
   properties:
   - type: OpenAPI
@@ -991,6 +1002,8 @@ apis:
     https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
   baseURL: https://community.khoros.com/api/2.0
   tags:
+  - Project
+  tags_raw:
   - Projects
   properties:
   - type: OpenAPI
@@ -1243,6 +1256,8 @@ apis:
     https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
   baseURL: https://community.khoros.com/api/2.0
   tags:
+  - Team
+  tags_raw:
   - Teams
   properties:
   - type: OpenAPI
@@ -1315,6 +1330,8 @@ apis:
     https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
   baseURL: https://community.khoros.com/api/2.0
   tags:
+  - User
+  tags_raw:
   - Users
   properties:
   - type: OpenAPI
@@ -1333,6 +1350,8 @@ apis:
     https://developer.khoros.com/khoroscommunitydevdocs/reference/khoros-communities-platform-apis
   baseURL: https://community.khoros.com/api/2.0
   tags:
+  - UUID
+  tags_raw:
   - Uuid
   properties:
   - type: OpenAPI
@@ -1404,6 +1423,9 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: CapabilityMap
+  url: capabilities/khoros-ai-capability-edges.yml
+  name: Khoros Business Capability Map
 - type: VendorFacets
   url: vendor-facets/khoros-ai-vendor-facets.yml
 - type: Community
