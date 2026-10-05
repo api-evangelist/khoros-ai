@@ -1,0 +1,99 @@
+slug: khoros-ai
+provider: Khoros
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 8
+edges:
+- tag: Customer
+  spec_file: khoros-ai-customer-api-openapi.yml
+  capability_id: BC-420.10
+  capability_id_l1: BC-420
+  capability_name: Customer Data Management
+  confidence: 0.8
+  evidence: POST /customer 'createCustomer', GET /customer/{id} 'findCustomer', PATCH /customer/{id} 'updateCustomer',
+    POST /customer/bestmatch 'bestmatchCustomers'
+  reason: CRUD over customer records plus a best-match lookup — customer master records and identity resolution.
+    'findCases' links to support cases but the tag's own operations are customer data management.
+- tag: Case
+  spec_file: khoros-ai-case-api-openapi.yml
+  capability_id: BC-430.10
+  capability_id_l1: BC-430
+  capability_name: Customer Inquiry Management
+  confidence: 0.78
+  evidence: POST /case 'createCase', GET /case/{id} 'lookupCase', PATCH /case/{id} 'updateCase' — from
+    lithium-care-api-specifications
+  reason: Cases in the Khoros Care (customer support) API are support tickets created, looked up and updated
+    — customer service case handling. L2 inquiry management is the best fit for case capture and resolution,
+    though complaint handling is a plausible alternative, hence moderate confidence.
+- tag: Requests
+  spec_file: khoros-ai-requests-api-openapi.yml
+  capability_id: BC-130.50
+  capability_id_l1: BC-130
+  capability_name: Privacy & Data Protection Management
+  confidence: 0.78
+  evidence: POST /requests "Create GDPR request"; GET /requests/{requestUUID} "Get GDPR request status"
+  reason: A dedicated gdpr-api-v2 that creates and tracks GDPR requests is data-subject-rights handling
+    under privacy and data protection. Some ambiguity remains between enterprise privacy compliance and
+    the SaaS-specific service privacy commitment sub-capability, hence not higher.
+- tag: Author Api V2
+  spec_file: khoros-ai-author-api-v2-api-openapi.yml
+  capability_id: BC-420.10
+  capability_id_l1: BC-420
+  capability_name: Customer Data Management
+  confidence: 0.75
+  evidence: PUT /{lswUuid} 'Update or merge author handles by Care author ID'; POST / 'Create Care author';
+    PUT / 'Batch update author records by author'
+  reason: '''Authors'' here are the social/Care-side customer identities; creating records and merging
+    handles under a single Care author ID is identity resolution and golden-record maintenance over customer
+    master data.'
+- tag: Resolve
+  spec_file: khoros-ai-resolve-api-openapi.yml
+  capability_id: BC-430.10
+  capability_id_l1: BC-430
+  capability_name: Customer Inquiry Management
+  confidence: 0.72
+  evidence: PUT /resolve "Mark conversation resolved"; POST /resolve/{threadId} "Resolve Action"
+  reason: Marking a customer conversation resolved is the resolution step of inbound contact handling
+    on a customer-engagement platform, matching Customer Inquiry Management ("inbound contacts, routing,
+    resolution").
+- tag: Respond
+  spec_file: khoros-ai-respond-api-openapi.yml
+  capability_id: BC-430.10
+  capability_id_l1: BC-430
+  capability_name: Customer Inquiry Management
+  confidence: 0.72
+  evidence: POST /respond "Respond to incoming message (bot to channel)"
+  reason: Sending a reply to an inbound customer message on a social/messaging channel is inbound contact
+    handling and response, i.e. customer inquiry management; the bot origin also touches self-service
+    but the operation itself is the response to a customer contact.
+- tag: Subscription
+  spec_file: khoros-ai-subscription-api-openapi.yml
+  capability_id: BC-4270.80
+  capability_id_l1: BC-4270
+  capability_name: Webhook & Event Subscription Management
+  confidence: 0.7
+  evidence: openapi title "notification-service Subscription API"; "Create a Subscription", "List Subscriptions",
+    "Delete a Subscription"
+  reason: Despite the business-sounding tag, these are CRUD operations on notification-service subscriptions
+    — i.e. lifecycle of outbound event/notification subscriptions, not commercial SaaS subscriptions.
+    Mapped to webhook & event subscription management; confidence held at 0.7 because no schemas are shown
+    to confirm the event-delivery payload.
+- tag: Work Queue
+  spec_file: khoros-ai-work-queue-api-openapi.yml
+  capability_id: BC-430.10
+  capability_id_l1: BC-430
+  capability_name: Customer Inquiry Management
+  confidence: 0.7
+  evidence: PUT /workqueue — "Move conversation to specified workqueue"
+  reason: Khoros Care bot API operation that routes a customer conversation into an agent work queue —
+    inbound contact routing within customer service, not a generic job queue. Mapped to Customer Inquiry
+    Management (routing, resolution); some ambiguity with contact-centre operations.
