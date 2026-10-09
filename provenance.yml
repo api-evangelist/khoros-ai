@@ -37,11 +37,11 @@ artifacts:
     method: derived
     evidence: openapi/lithium-admin-api
   collections/lithium-agent-states-api-v2-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-agent-states-api-v2-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-agent-states-api-v2-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-agent-states-api-v2-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-asset-api.opencollection.json:
     method: derived
     evidence: openapi/lithium-asset-api
@@ -73,11 +73,11 @@ artifacts:
     method: derived
     evidence: openapi/lithium-broadcast-api
   collections/lithium-businesshours-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-businesshours-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-businesshours-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-businesshours-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-bysourcedocumentid-api.opencollection.json:
     method: derived
     evidence: openapi/lithium-bysourcedocumentid-api
@@ -139,11 +139,11 @@ artifacts:
     method: derived
     evidence: openapi/lithium-conversation-api-v2-api
   collections/lithium-conversation-tag-rules-v2-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-conversation-tag-rules-v2-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-conversation-tag-rules-v2-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-conversation-tag-rules-v2-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-conversations-api.opencollection.json:
     method: derived
     evidence: openapi/lithium-conversations-api
@@ -271,11 +271,11 @@ artifacts:
     method: derived
     evidence: openapi/lithium-initiatives-api
   collections/lithium-introspection-api-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-introspection-api-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-introspection-api-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-introspection-api-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-khorosapi-api.opencollection.json:
     method: derived
     evidence: openapi/lithium-khorosapi-api
@@ -289,11 +289,11 @@ artifacts:
     method: derived
     evidence: openapi/lithium-labels-api
   collections/lithium-labelsets-api-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-labelsets-api-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-labelsets-api-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-labelsets-api-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-list-api.opencollection.json:
     method: derived
     evidence: openapi/lithium-list-api
@@ -517,11 +517,11 @@ artifacts:
     method: derived
     evidence: openapi/lithium-respond-api
   collections/lithium-smart-views-api-v2-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-smart-views-api-v2-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-smart-views-api-v2-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-smart-views-api-v2-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-ssoid-api.opencollection.json:
     method: derived
     evidence: openapi/lithium-ssoid-api
@@ -553,11 +553,11 @@ artifacts:
     method: derived
     evidence: openapi/lithium-surveys-api
   collections/lithium-tag-api-v2-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-tag-api-v2-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-tag-api-v2-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-tag-api-v2-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-tag-api.opencollection.json:
     method: derived
     evidence: openapi/lithium-tag-api
@@ -601,17 +601,17 @@ artifacts:
     method: derived
     evidence: openapi/lithium-uuid-api
   collections/lithium-workqueue-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-workqueue-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-workqueue-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-workqueue-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-workqueues-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-workqueues-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-workqueues-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-workqueues-api
+    method: unknown
+    evidence: no authorship recorded
   components/lithium-components.yml:
     method: searched
     evidence: declared in the artifact
@@ -627,61 +627,10 @@ artifacts:
   errors/lithium-problem-types.yml:
     method: derived
     evidence: declared in the artifact
-  kin/checks-2026-09-05T072335.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-06T210741.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-07T135032.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-10T093022.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-10T111628.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-11T211707.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-12T193225.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-13T203944.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-14T105006.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-17T064519.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-19T080027.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-19T082702.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-19T114122.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-20T165047.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-20T191845.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-20T205517.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-21T110057.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-24T064859.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-24T171257.yml:
+  front-door-ai/2026-09-17.yml:
+    method: unknown
+    evidence: no authorship recorded
+  kin/checks-2026-09-24T161608.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-08-25T125852.yml:
@@ -768,6 +717,123 @@ artifacts:
   kin/score-2026-09-05T072335.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-05T144739.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-05T195450.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-05T211839.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-06T011047.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-06T211804.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-06T224210.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-07T200636.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-07T213054.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-08T214843.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-08T232836.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-10T204815.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-10T222408.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-12T062655.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-12T080032.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-12T204651.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-12T221936.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-13T214537.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-14T064754.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-14T210656.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-14T225847.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-15T211329.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-15T230249.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-16T210549.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-16T225339.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-17T211151.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-17T233623.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-18T205255.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-18T231945.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-19T165737.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-19T193153.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-20T205903.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-20T232958.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-21T211425.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-21T233935.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-22T213221.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-23T000603.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-24T064009.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-24T090406.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-24T161608.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
   lifecycle/lithium-lifecycle.yml:
     method: searched
     evidence: declared in the artifact
@@ -779,88 +845,116 @@ artifacts:
     evidence: declared in the artifact
   openapi/_original/lithium-care-agent-states-api-v2-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-care-analytics-reports-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-care-api-specifications-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-care-authentication-api-v2-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-care-author-api-v2-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-care-bot-api-v2-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-care-bot-api-v3-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-care-conversation-api-v2-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-care-conversation-tag-rules-v2-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-care-gdpr-api-v2-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-care-listening-api-v2-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-care-secure-forms-api-v2-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-care-smart-views-api-v2-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-care-supervisor-reports-api-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-care-tag-api-v2-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-care-users-api-v2-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-care-work-queue-api-v1-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-care-work-queue-api-v2-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-flow-flow-rest-api-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-marketing-api-specifications-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-marketing-beta-analytics-api-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-marketing-conversations-api-v1-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-marketing-conversations-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-marketing-crm-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-marketing-introspection-api-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-marketing-labelsets-api-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-marketing-notification-service-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-marketing-stream-api-openapi.json:
     method: harvested
-    evidence: fetched from the provider as-is; byte-identical to the source
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/lithium-accountset-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
@@ -868,9 +962,6 @@ artifacts:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   openapi/lithium-admin-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-agent-states-api-v2-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   openapi/lithium-asset-api-openapi.yml:
@@ -888,7 +979,7 @@ artifacts:
   openapi/lithium-broadcast-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-businesshours-api-openapi.yml:
+  openapi/lithium-business-hours-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   openapi/lithium-bysourcedocumentid-api-openapi.yml:
@@ -919,9 +1010,6 @@ artifacts:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   openapi/lithium-conversation-api-v2-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-conversation-tag-rules-v2-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   openapi/lithium-conversations-api-openapi.yml:
@@ -987,16 +1075,10 @@ artifacts:
   openapi/lithium-initiatives-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-introspection-api-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   openapi/lithium-khorosapi-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   openapi/lithium-labels-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-labelsets-api-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   openapi/lithium-list-api-openapi.yml:
@@ -1110,9 +1192,6 @@ artifacts:
   openapi/lithium-respond-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-smart-views-api-v2-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   openapi/lithium-ssoid-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
@@ -1129,9 +1208,6 @@ artifacts:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   openapi/lithium-tag-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-tag-api-v2-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   openapi/lithium-teams-api-openapi.yml:
@@ -1152,10 +1228,10 @@ artifacts:
   openapi/lithium-uuid-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-workqueue-api-openapi.yml:
+  openapi/lithium-work-queue-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-workqueues-api-openapi.yml:
+  openapi/lithium-work-queues-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   overlays/_index.yml:
@@ -1287,6 +1363,9 @@ artifacts:
   skills/lithium-subscribe-to-marketing-events.md:
     method: unknown
     evidence: no authorship recorded
+  vendor-facets/khoros-ai-vendor-facets.yml:
+    method: searched
+    evidence: declared in the artifact
   well-known/lithium-api-catalog.json:
     method: unknown
     evidence: no authorship recorded
