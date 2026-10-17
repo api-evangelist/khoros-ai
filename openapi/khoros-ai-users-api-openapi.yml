@@ -55,6 +55,43 @@ paths:
                       $ref: '#/components/schemas/EntityPageResponseConversationsUser'
 components:
   schemas:
+    CallStatus:
+      type: object
+      properties:
+        succeeded:
+          type: boolean
+          readOnly: true
+          default: false
+        error:
+          $ref: '#/components/schemas/ApiError'
+    Pagination:
+      type: object
+      properties:
+        next:
+          type: string
+        previous:
+          type: string
+        totalItems:
+          type: integer
+          format: int64
+    EntityPageResponseConversationsUser:
+      type: object
+      properties:
+        data:
+          type: array
+          readOnly: true
+          items:
+            type: object
+            description: Minimal data about Conversations users
+            properties:
+              id:
+                type: integer
+              displayName:
+                type: string
+        status:
+          $ref: '#/components/schemas/CallStatus'
+        pagination:
+          $ref: '#/components/schemas/Pagination'
     ApiError:
       type: object
       properties:
@@ -99,43 +136,6 @@ components:
         message:
           type: string
           readOnly: true
-    CallStatus:
-      type: object
-      properties:
-        succeeded:
-          type: boolean
-          readOnly: true
-          default: false
-        error:
-          $ref: '#/components/schemas/ApiError'
-    Pagination:
-      type: object
-      properties:
-        next:
-          type: string
-        previous:
-          type: string
-        totalItems:
-          type: integer
-          format: int64
-    EntityPageResponseConversationsUser:
-      type: object
-      properties:
-        data:
-          type: array
-          readOnly: true
-          items:
-            type: object
-            description: Minimal data about Conversations users
-            properties:
-              id:
-                type: integer
-              displayName:
-                type: string
-        status:
-          $ref: '#/components/schemas/CallStatus'
-        pagination:
-          $ref: '#/components/schemas/Pagination'
   securitySchemes:
     oauth2:
       type: oauth2

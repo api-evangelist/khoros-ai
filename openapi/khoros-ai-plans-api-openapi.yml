@@ -85,16 +85,39 @@ components:
           $ref: '#/components/schemas/CallStatus'
         pagination:
           $ref: '#/components/schemas/Pagination'
-    Pagination:
+    Plan:
       type: object
       properties:
-        next:
+        id:
           type: string
-        previous:
-          type: string
-        totalItems:
+        companyId:
           type: integer
           format: int64
+        campaignId:
+          type: integer
+          format: int64
+        name:
+          type: string
+        overview:
+          type: string
+        objective:
+          type: string
+        targetAudience:
+          type: string
+        color:
+          type: string
+        startDate:
+          type: string
+          format: date-time
+        endDate:
+          type: string
+          format: date-time
+        createdDate:
+          type: string
+          format: date-time
+        lastModifiedDate:
+          type: string
+          format: date-time
     ApiError:
       type: object
       properties:
@@ -139,39 +162,16 @@ components:
         message:
           type: string
           readOnly: true
-    Plan:
+    Pagination:
       type: object
       properties:
-        id:
+        next:
           type: string
-        companyId:
+        previous:
+          type: string
+        totalItems:
           type: integer
           format: int64
-        campaignId:
-          type: integer
-          format: int64
-        name:
-          type: string
-        overview:
-          type: string
-        objective:
-          type: string
-        targetAudience:
-          type: string
-        color:
-          type: string
-        startDate:
-          type: string
-          format: date-time
-        endDate:
-          type: string
-          format: date-time
-        createdDate:
-          type: string
-          format: date-time
-        lastModifiedDate:
-          type: string
-          format: date-time
   securitySchemes:
     oauth2:
       type: oauth2

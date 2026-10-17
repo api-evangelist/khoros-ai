@@ -49,6 +49,39 @@ paths:
                 $ref: '#/components/schemas/MultiChannelMessage'
 components:
   schemas:
+    MessageNote:
+      type: object
+      description: A Note on the Message.
+      properties:
+        sfEntityType:
+          type: string
+          description: Spredfast internal entity type
+          enum:
+          - Note
+        text:
+          type: string
+          description: The note's text content.
+        id:
+          type: string
+          description: The note's ID. This should be left empty or set to 0 for new notes.
+        createdByDisplayName:
+          type: string
+          description: The formatted name [firstName lastName] of the note's author.
+          readOnly: true
+        createdByUserId:
+          type: string
+          readOnly: true
+        createdDate:
+          type: string
+          format: date-time
+          readOnly: true
+        lastModifiedByUserId:
+          type: string
+          readOnly: true
+        lastModifiedDate:
+          type: string
+          format: date-time
+          readOnly: true
     MultiChannelMessage:
       type: object
       properties:
@@ -137,6 +170,35 @@ components:
           content:
             sfEntityType: Status
             text: Facebook test post
+    TargetingProfile:
+      type: object
+      properties:
+        targetingType:
+          type: string
+          enum:
+          - ENHANCED
+          - GATED
+        targetingValues:
+          type: object
+          additionalProperties:
+            type: array
+            items:
+              $ref: '#/components/schemas/TargetingValue'
+    TargetingValue:
+      type: object
+      properties:
+        subType:
+          type: string
+          enum:
+          - COUNTRY
+          - REGION
+          - METRO
+          - CONTINENT
+          - ZIP_CODE
+        value:
+          type: string
+        description:
+          type: string
     SingleChannelMessage:
       type: object
       properties:
@@ -176,39 +238,6 @@ components:
           $ref: '#/components/schemas/TargetingProfile'
         sponsor:
           $ref: '#/components/schemas/MessageSponsor'
-    MessageNote:
-      type: object
-      description: A Note on the Message.
-      properties:
-        sfEntityType:
-          type: string
-          description: Spredfast internal entity type
-          enum:
-          - Note
-        text:
-          type: string
-          description: The note's text content.
-        id:
-          type: string
-          description: The note's ID. This should be left empty or set to 0 for new notes.
-        createdByDisplayName:
-          type: string
-          description: The formatted name [firstName lastName] of the note's author.
-          readOnly: true
-        createdByUserId:
-          type: string
-          readOnly: true
-        createdDate:
-          type: string
-          format: date-time
-          readOnly: true
-        lastModifiedByUserId:
-          type: string
-          readOnly: true
-        lastModifiedDate:
-          type: string
-          format: date-time
-          readOnly: true
     PublicationResult:
       type: object
       properties:
@@ -228,39 +257,6 @@ components:
         datePublished:
           type: string
           format: date-time
-    MessageContent:
-      type: object
-      discriminator:
-        propertyName: sfEntityType
-    TargetingProfile:
-      type: object
-      properties:
-        targetingType:
-          type: string
-          enum:
-          - ENHANCED
-          - GATED
-        targetingValues:
-          type: object
-          additionalProperties:
-            type: array
-            items:
-              $ref: '#/components/schemas/TargetingValue'
-    TargetingValue:
-      type: object
-      properties:
-        subType:
-          type: string
-          enum:
-          - COUNTRY
-          - REGION
-          - METRO
-          - CONTINENT
-          - ZIP_CODE
-        value:
-          type: string
-        description:
-          type: string
     MessageSponsor:
       type: object
       description: A Sponsor for the Message. Currently, we only support attaching a single sponsor when posting to *only* Facebook *verified* Pages (a.k.a. Facebook Branded Content, see https://www.facebook.com/facebookmedia/get-started/branded-content for more info), so any attempt to use it either for other Social Networks or including targets that don't comply with this rule, will result in an error from the back-end. Note that the Sponsor itself is not restricted to be a verified page, so it could be a regular (non-verified) page or a regular user. As an example, a post could be created, targeting the Facebook verified page of @LeoMessi and that post could be sponsored by @nike.
@@ -274,6 +270,10 @@ components:
         link:
           type: string
           description: The link to the sponsor's profile in the corresponding Social Network.
+    MessageContent:
+      type: object
+      discriminator:
+        propertyName: sfEntityType
   securitySchemes:
     oauth2:
       type: oauth2

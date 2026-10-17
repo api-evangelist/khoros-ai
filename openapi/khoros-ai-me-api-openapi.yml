@@ -99,18 +99,6 @@ components:
           default: false
         error:
           $ref: '#/components/schemas/ApiError'
-    Companies:
-      type: object
-      description: List of companies
-      properties:
-        sfEntityType:
-          type: string
-        directoryId:
-          type: integer
-        name:
-          type: string
-        environment:
-          type: string
     Me:
       type: object
       description: List of companies you have authorized for use with this app
@@ -170,6 +158,18 @@ components:
         message:
           type: string
           readOnly: true
+    Companies:
+      type: object
+      description: List of companies
+      properties:
+        sfEntityType:
+          type: string
+        directoryId:
+          type: integer
+        name:
+          type: string
+        environment:
+          type: string
   securitySchemes:
     oauth2:
       type: oauth2

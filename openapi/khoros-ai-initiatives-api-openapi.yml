@@ -100,16 +100,15 @@ components:
           default: false
         error:
           $ref: '#/components/schemas/ApiError'
-    Pagination:
+    Initiative:
       type: object
       properties:
-        next:
+        id:
           type: string
-        previous:
+        name:
           type: string
-        totalItems:
-          type: integer
-          format: int64
+        description:
+          type: string
     ApiError:
       type: object
       properties:
@@ -154,22 +153,6 @@ components:
         message:
           type: string
           readOnly: true
-    Initiative:
-      type: object
-      properties:
-        id:
-          type: string
-        name:
-          type: string
-        description:
-          type: string
-    EntityResponseInitiative:
-      type: object
-      properties:
-        data:
-          $ref: '#/components/schemas/Initiative'
-        status:
-          $ref: '#/components/schemas/CallStatus'
     EntityPageResponseInitiative:
       type: object
       properties:
@@ -182,6 +165,23 @@ components:
           $ref: '#/components/schemas/CallStatus'
         pagination:
           $ref: '#/components/schemas/Pagination'
+    EntityResponseInitiative:
+      type: object
+      properties:
+        data:
+          $ref: '#/components/schemas/Initiative'
+        status:
+          $ref: '#/components/schemas/CallStatus'
+    Pagination:
+      type: object
+      properties:
+        next:
+          type: string
+        previous:
+          type: string
+        totalItems:
+          type: integer
+          format: int64
   securitySchemes:
     oauth2:
       type: oauth2

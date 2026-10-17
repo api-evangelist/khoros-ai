@@ -63,6 +63,22 @@ paths:
       summary: Lists all accounts sets and corresponding accounts available to the user
 components:
   schemas:
+    Account:
+      type: object
+      description: A Conversations social media Account
+      properties:
+        sfEntityType:
+          type: string
+        id:
+          type: integer
+        service:
+          type: string
+        name:
+          type: string
+        accountType:
+          type: string
+        serviceId:
+          type: string
     AccountSet:
       type: object
       description: A Conversations AccountSet
@@ -81,22 +97,6 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/Account'
-    Account:
-      type: object
-      description: A Conversations social media Account
-      properties:
-        sfEntityType:
-          type: string
-        id:
-          type: integer
-        service:
-          type: string
-        name:
-          type: string
-        accountType:
-          type: string
-        serviceId:
-          type: string
   securitySchemes:
     oauth2:
       type: oauth2

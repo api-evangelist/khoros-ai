@@ -139,24 +139,15 @@ paths:
                 $ref: '#/components/schemas/EntityResponseAsset'
 components:
   schemas:
-    AssetCreate:
+    CallStatus:
       type: object
-      required:
-      - sfEntityType
-      - folderId
       properties:
-        folderId:
-          type: string
-        name:
-          type: string
-        description:
-          type: string
-        text:
-          type: string
-        sfEntityType:
-          type: string
-          enum:
-          - Asset
+        succeeded:
+          type: boolean
+          readOnly: true
+          default: false
+        error:
+          $ref: '#/components/schemas/ApiError'
     AssetCreateMultipart:
       type: object
       description: JSON describing the uploaded file.
@@ -176,15 +167,6 @@ components:
           type: string
           enum:
           - Asset
-    CallStatus:
-      type: object
-      properties:
-        succeeded:
-          type: boolean
-          readOnly: true
-          default: false
-        error:
-          $ref: '#/components/schemas/ApiError'
     EntityResponseAsset:
       type: object
       properties:
@@ -192,6 +174,50 @@ components:
           $ref: '#/components/schemas/Asset'
         status:
           $ref: '#/components/schemas/CallStatus'
+    ApiError:
+      type: object
+      properties:
+        code:
+          type: string
+          readOnly: true
+          enum:
+          - PUBLISH_DATE_INVALID
+          - CANNOT_CREATE_NEW_LABELS
+          - IP_ADDRESS_REJECTED
+          - MISSING_FIELD
+          - NOT_ACCEPTABLE
+          - NOT_FOUND
+          - PUBLISH_POST_UPDATE_NOT_ALLOWED
+          - PUBLISH_IMAGE_BAD_CONTENT_TYPE
+          - PUBLISH_IMAGE_TOO_LARGE
+          - PUBLISH_IMAGE_BAD_IMAGE
+          - PUBLISH_INVALID_ACCOUNT_FOR_SERVICE
+          - INVALID_MESSAGE_ID
+          - NOT_IN_PRE_PUBLISH_STATE
+          - NOT_ACCEPTABLE_CONTENT_TYPE
+          - MESSAGE_HAS_A_LINK_PREVIEW
+          - MESSAGE_HAS_TARGETING_PROFILE
+          - MESSAGE_HAS_PROMOTION
+          - MESSAGE_HAS_SCHEDULED_SERIES
+          - MESSAGE_HAS_APPROVAL_TEAMS
+          - EDIT_MESSAGE_SERVER_ERROR
+          - UNAUTHENTICATED
+          - UNAUTHORIZED
+          - UNKNOWN_ERROR
+          - RESOURCE_NOT_FOUND
+          - VALIDATION_ERROR
+          - VIDEO_SINGLE_ASSET_ALLOWED
+          - VIDEO_INVALID_CATEGORY
+          - SERVICE_INVALID_NAME
+          - STREAM_ITEM_INVALID_TYPE
+          - PROXY_UNROUTABLE_REQUEST
+          - PROXY_SERVER_FAILURE
+          - PROXY_ORIGIN_SERVER_FAILURE
+          - ACCOUNT_LOCKED
+          - PASSWORD_EXPIRED
+        message:
+          type: string
+          readOnly: true
     Asset:
       type: object
       required:
@@ -279,50 +305,24 @@ components:
         description: Cool new Asset!
         text: Text body.
         sfEntityType: Asset
-    ApiError:
+    AssetCreate:
       type: object
+      required:
+      - sfEntityType
+      - folderId
       properties:
-        code:
+        folderId:
           type: string
-          readOnly: true
+        name:
+          type: string
+        description:
+          type: string
+        text:
+          type: string
+        sfEntityType:
+          type: string
           enum:
-          - PUBLISH_DATE_INVALID
-          - CANNOT_CREATE_NEW_LABELS
-          - IP_ADDRESS_REJECTED
-          - MISSING_FIELD
-          - NOT_ACCEPTABLE
-          - NOT_FOUND
-          - PUBLISH_POST_UPDATE_NOT_ALLOWED
-          - PUBLISH_IMAGE_BAD_CONTENT_TYPE
-          - PUBLISH_IMAGE_TOO_LARGE
-          - PUBLISH_IMAGE_BAD_IMAGE
-          - PUBLISH_INVALID_ACCOUNT_FOR_SERVICE
-          - INVALID_MESSAGE_ID
-          - NOT_IN_PRE_PUBLISH_STATE
-          - NOT_ACCEPTABLE_CONTENT_TYPE
-          - MESSAGE_HAS_A_LINK_PREVIEW
-          - MESSAGE_HAS_TARGETING_PROFILE
-          - MESSAGE_HAS_PROMOTION
-          - MESSAGE_HAS_SCHEDULED_SERIES
-          - MESSAGE_HAS_APPROVAL_TEAMS
-          - EDIT_MESSAGE_SERVER_ERROR
-          - UNAUTHENTICATED
-          - UNAUTHORIZED
-          - UNKNOWN_ERROR
-          - RESOURCE_NOT_FOUND
-          - VALIDATION_ERROR
-          - VIDEO_SINGLE_ASSET_ALLOWED
-          - VIDEO_INVALID_CATEGORY
-          - SERVICE_INVALID_NAME
-          - STREAM_ITEM_INVALID_TYPE
-          - PROXY_UNROUTABLE_REQUEST
-          - PROXY_SERVER_FAILURE
-          - PROXY_ORIGIN_SERVER_FAILURE
-          - ACCOUNT_LOCKED
-          - PASSWORD_EXPIRED
-        message:
-          type: string
-          readOnly: true
+          - Asset
   parameters:
     companyId:
       name: companyId
