@@ -9,6 +9,9 @@ artifacts:
   authentication/lithium-authentication.yml:
     method: searched
     evidence: declared in the artifact
+  capabilities/khoros-ai-capability-edges.yml:
+    method: unknown
+    evidence: no authorship recorded
   capabilities/lithium-capability-edges.yml:
     method: unknown
     evidence: no authorship recorded
@@ -19,23 +22,23 @@ artifacts:
     method: searched
     evidence: declared in the artifact
   collections/lithium-accountset-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-accountset-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-accountset-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-accountset-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-active-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-active-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-active-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-active-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-admin-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-admin-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-admin-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-admin-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-agent-states-api-v2-api.opencollection.json:
     method: unknown
     evidence: no authorship recorded
@@ -43,35 +46,35 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   collections/lithium-asset-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-asset-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-asset-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-asset-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-assets-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-assets-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-assets-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-assets-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-author-api-v2-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-author-api-v2-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-author-api-v2-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-author-api-v2-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-authors-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-authors-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-authors-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-authors-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-broadcast-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-broadcast-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-broadcast-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-broadcast-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-businesshours-api.opencollection.json:
     method: unknown
     evidence: no authorship recorded
@@ -79,65 +82,65 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   collections/lithium-bysourcedocumentid-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-bysourcedocumentid-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-bysourcedocumentid-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-bysourcedocumentid-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-case-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-case-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-case-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-case-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-changed-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-changed-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-changed-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-changed-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-compare-json-streams-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-compare-json-streams-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-compare-json-streams-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-compare-json-streams-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-compare-json-streams-content-sort-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-compare-json-streams-content-sort-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-compare-json-streams-content-sort-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-compare-json-streams-content-sort-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-compare-json-streams-content-target-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-compare-json-streams-content-target-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-compare-json-streams-content-target-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-compare-json-streams-content-target-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-compare-json-streams-content-target-number-precision-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-compare-json-streams-content-target-number-precision-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-compare-json-streams-content-target-number-precision-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-compare-json-streams-content-target-number-precision-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-config-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-config-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-config-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-config-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-control-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-control-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-control-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-control-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-conversation-api-v2-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-conversation-api-v2-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-conversation-api-v2-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-conversation-api-v2-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-conversation-tag-rules-v2-api.opencollection.json:
     method: unknown
     evidence: no authorship recorded
@@ -145,131 +148,131 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   collections/lithium-conversations-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-conversations-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-conversations-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-conversations-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-csv-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-csv-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-csv-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-csv-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-csv-long-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-csv-long-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-csv-long-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-csv-long-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-currenttar-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-currenttar-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-currenttar-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-currenttar-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-customer-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-customer-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-customer-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-customer-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-customer-copy-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-customer-copy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-customer-copy-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-customer-copy-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-customers-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-customers-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-customers-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-customers-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-data-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-data-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-data-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-data-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-default-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-default-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-default-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-default-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-discussion-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-discussion-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-discussion-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-discussion-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-displayids-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-displayids-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-displayids-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-displayids-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-email-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-email-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-email-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-email-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-entities-json-entity-ids-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-entities-json-entity-ids-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-entities-json-entity-ids-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-entities-json-entity-ids-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-export-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-export-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-export-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-export-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-flow-rest-api-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-flow-rest-api-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-flow-rest-api-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-flow-rest-api-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-folder-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-folder-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-folder-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-folder-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-form-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-form-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-form-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-form-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-getforms-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-getforms-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-getforms-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-getforms-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-handover-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-handover-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-handover-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-handover-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-health-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-health-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-health-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-health-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-initiatives-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-initiatives-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-initiatives-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-initiatives-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-introspection-api-api.opencollection.json:
     method: unknown
     evidence: no authorship recorded
@@ -277,17 +280,17 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   collections/lithium-khorosapi-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-khorosapi-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-khorosapi-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-khorosapi-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-labels-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-labels-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-labels-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-labels-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-labelsets-api-api.opencollection.json:
     method: unknown
     evidence: no authorship recorded
@@ -295,227 +298,227 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   collections/lithium-list-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-list-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-list-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-list-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-me-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-me-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-me-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-me-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-messages-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-messages-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-messages-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-messages-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-meta-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-meta-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-activity-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-activity-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-activity-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-activity-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-all-topics-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-all-topics-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-all-topics-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-all-topics-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-disregard-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-disregard-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-disregard-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-disregard-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-finish-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-finish-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-finish-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-finish-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-networks-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-networks-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-networks-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-networks-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-num-contributors-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-num-contributors-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-num-contributors-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-num-contributors-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-num-days-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-num-days-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-num-days-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-num-days-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-num-hashtags-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-num-hashtags-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-num-hashtags-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-num-hashtags-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-num-hours-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-num-hours-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-num-hours-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-num-hours-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-num-minutes-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-num-minutes-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-num-minutes-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-num-minutes-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-num-trends-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-num-trends-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-num-trends-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-num-trends-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-percent-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-percent-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-percent-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-percent-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-precision-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-precision-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-precision-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-precision-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-sort-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-sort-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-sort-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-sort-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-top-count-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-top-count-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-top-count-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-top-count-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-top-periods-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-top-periods-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-top-periods-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-top-periods-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-top-periods-relative-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-top-periods-relative-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-meta-json-top-periods-relative-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-meta-json-top-periods-relative-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-multichannelmessages-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-multichannelmessages-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-multichannelmessages-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-multichannelmessages-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-networks-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-networks-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-networks-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-networks-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-note-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-note-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-note-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-note-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-pause-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-pause-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-pause-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-pause-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-permissions-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-permissions-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-permissions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-permissions-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-plans-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-plans-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-plans-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-plans-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-priority-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-priority-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-priority-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-priority-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-projects-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-projects-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-projects-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-projects-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-registrations-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-registrations-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-registrations-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-registrations-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-report-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-report-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-report-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-report-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-reports-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-reports-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-reports-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-reports-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-request-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-request-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-request-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-request-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-requests-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-requests-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-requests-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-requests-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-resolve-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-resolve-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-resolve-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-resolve-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-respond-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-respond-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-respond-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-respond-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-smart-views-api-v2-api.opencollection.json:
     method: unknown
     evidence: no authorship recorded
@@ -523,35 +526,35 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   collections/lithium-ssoid-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-ssoid-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-ssoid-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-ssoid-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-stream-api-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-stream-api-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-stream-api-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-stream-api-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-streams-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-streams-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-streams-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-streams-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-subscription-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-subscription-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-subscription-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-subscription-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-surveys-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-surveys-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-surveys-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-surveys-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-tag-api-v2-api.opencollection.json:
     method: unknown
     evidence: no authorship recorded
@@ -559,47 +562,47 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   collections/lithium-tag-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-tag-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-tag-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-tag-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-teams-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-teams-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-teams-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-teams-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-threads-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-threads-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-threads-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-threads-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-tokens-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-tokens-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-tokens-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-tokens-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-trigger-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-trigger-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-trigger-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-trigger-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-users-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-users-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-users-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-users-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-uuid-api.opencollection.json:
-    method: derived
-    evidence: openapi/lithium-uuid-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-uuid-api.postman_collection.json:
-    method: derived
-    evidence: openapi/lithium-uuid-api
+    method: unknown
+    evidence: no authorship recorded
   collections/lithium-workqueue-api.opencollection.json:
     method: unknown
     evidence: no authorship recorded
@@ -630,127 +633,7 @@ artifacts:
   front-door-ai/2026-09-17.yml:
     method: unknown
     evidence: no authorship recorded
-  kin/checks-2026-09-24T161608.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T125852.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T133943.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T143147.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T154045.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-26T215308.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T094438.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T103455.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T123021.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T132314.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T140727.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-28T221322.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-29T213958.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-29T230545.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-30T203505.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-30T220315.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-31T223420.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T063623.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T210448.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T222808.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-02T211804.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-02T224043.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-03T161828.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-03T174231.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T062714.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T212454.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T224856.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T055819.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T072335.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T144739.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T195450.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T211839.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T011047.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T211804.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T224210.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-07T200636.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-07T213054.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-08T214843.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-08T232836.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-10T204815.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-10T222408.yml:
+  kin/checks-2026-10-11T110117.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-12T062655.yml:
@@ -834,6 +717,21 @@ artifacts:
   kin/score-2026-09-24T161608.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-25T210408.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-25T232841.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-03T000835.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-03T024842.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-11T110117.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
   lifecycle/lithium-lifecycle.yml:
     method: searched
     evidence: declared in the artifact
@@ -843,6 +741,46 @@ artifacts:
   mcp/lithium-mcp.yml:
     method: derived
     evidence: declared in the artifact
+  openapi/_original/lithium-accountset-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-active-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-admin-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-asset-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-assets-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-author-api-v2-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-authors-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-broadcast-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-business-hours-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-bysourcedocumentid-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-care-agent-states-api-v2-openapi.json:
     method: harvested
     evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
@@ -915,7 +853,139 @@ artifacts:
     method: harvested
     evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
       to the provider's source is unverified
+  openapi/_original/lithium-case-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-changed-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-compare-json-streams-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-compare-json-streams-content-sort-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-compare-json-streams-content-target-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-compare-json-streams-content-target-number-precision-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-config-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-control-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-conversation-api-v2-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-conversations-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-csv-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-csv-long-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-currenttar-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-customer-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-customer-copy-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-customers-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-data-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-default-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-discussion-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-displayids-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-email-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-entities-json-entity-ids-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-export-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
   openapi/_original/lithium-flow-flow-rest-api-openapi.json:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-flow-rest-api-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-folder-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-form-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-getforms-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-handover-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-health-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-initiatives-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-khorosapi-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-labels-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-list-api-openapi.yml:
     method: harvested
     evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
       to the provider's source is unverified
@@ -955,372 +1025,794 @@ artifacts:
     method: harvested
     evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
       to the provider's source is unverified
-  openapi/lithium-accountset-api-openapi.yml:
+  openapi/_original/lithium-me-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-messages-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-meta-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-meta-json-activity-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-meta-json-all-topics-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-meta-json-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-meta-json-disregard-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-meta-json-finish-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-meta-json-networks-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-meta-json-num-contributors-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-meta-json-num-days-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-meta-json-num-hashtags-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-meta-json-num-hours-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-meta-json-num-minutes-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-meta-json-num-trends-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-meta-json-percent-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-meta-json-precision-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-meta-json-sort-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-meta-json-top-count-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-meta-json-top-periods-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-meta-json-top-periods-relative-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-multichannelmessages-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-networks-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-note-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-pause-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-permissions-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-plans-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-priority-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-projects-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-registrations-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-report-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-reports-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-request-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-requests-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-resolve-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-respond-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-ssoid-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-stream-api-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-streams-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-subscription-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-surveys-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-tag-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-teams-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-threads-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-tokens-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-trigger-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-users-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-uuid-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-work-queue-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/_original/lithium-work-queues-api-openapi.yml:
+    method: harvested
+    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
+      to the provider's source is unverified
+  openapi/khoros-ai-accountset-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-active-api-openapi.yml:
+  openapi/khoros-ai-active-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-admin-api-openapi.yml:
+  openapi/khoros-ai-admin-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-asset-api-openapi.yml:
+  openapi/khoros-ai-asset-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-assets-api-openapi.yml:
+  openapi/khoros-ai-assets-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-author-api-v2-api-openapi.yml:
+  openapi/khoros-ai-author-api-v2-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-authors-api-openapi.yml:
+  openapi/khoros-ai-authors-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-broadcast-api-openapi.yml:
+  openapi/khoros-ai-broadcast-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-business-hours-api-openapi.yml:
+  openapi/khoros-ai-business-hours-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-bysourcedocumentid-api-openapi.yml:
+  openapi/khoros-ai-bysourcedocumentid-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-case-api-openapi.yml:
+  openapi/khoros-ai-case-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-changed-api-openapi.yml:
+  openapi/khoros-ai-changed-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-compare-json-streams-api-openapi.yml:
+  openapi/khoros-ai-compare-json-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-compare-json-streams-content-sort-api-openapi.yml:
+  openapi/khoros-ai-config-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-compare-json-streams-content-target-api-openapi.yml:
+  openapi/khoros-ai-control-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-compare-json-streams-content-target-number-precision-api-openapi.yml:
+  openapi/khoros-ai-conversation-api-v2-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-config-api-openapi.yml:
+  openapi/khoros-ai-conversations-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-control-api-openapi.yml:
+  openapi/khoros-ai-csv-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-conversation-api-v2-api-openapi.yml:
+  openapi/khoros-ai-csv-long-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-conversations-api-openapi.yml:
+  openapi/khoros-ai-currenttar-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-csv-api-openapi.yml:
+  openapi/khoros-ai-customer-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-csv-long-api-openapi.yml:
+  openapi/khoros-ai-customer-copy-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-currenttar-api-openapi.yml:
+  openapi/khoros-ai-customers-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-customer-api-openapi.yml:
+  openapi/khoros-ai-data-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-customer-copy-api-openapi.yml:
+  openapi/khoros-ai-discussion-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-customers-api-openapi.yml:
+  openapi/khoros-ai-displayids-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-data-api-openapi.yml:
+  openapi/khoros-ai-email-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-default-api-openapi.yml:
+  openapi/khoros-ai-entities-json-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-discussion-api-openapi.yml:
+  openapi/khoros-ai-export-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-displayids-api-openapi.yml:
+  openapi/khoros-ai-flow-rest-api-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-email-api-openapi.yml:
+  openapi/khoros-ai-folder-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-entities-json-entity-ids-api-openapi.yml:
+  openapi/khoros-ai-form-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-export-api-openapi.yml:
+  openapi/khoros-ai-getforms-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-flow-rest-api-api-openapi.yml:
+  openapi/khoros-ai-handover-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-folder-api-openapi.yml:
+  openapi/khoros-ai-health-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-form-api-openapi.yml:
+  openapi/khoros-ai-initiatives-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-getforms-api-openapi.yml:
+  openapi/khoros-ai-khorosapi-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-handover-api-openapi.yml:
+  openapi/khoros-ai-labels-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-health-api-openapi.yml:
+  openapi/khoros-ai-list-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-initiatives-api-openapi.yml:
+  openapi/khoros-ai-me-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-khorosapi-api-openapi.yml:
+  openapi/khoros-ai-messages-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-labels-api-openapi.yml:
+  openapi/khoros-ai-meta-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-list-api-openapi.yml:
+  openapi/khoros-ai-meta-json-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-me-api-openapi.yml:
+  openapi/khoros-ai-multichannelmessages-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-messages-api-openapi.yml:
+  openapi/khoros-ai-networks-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-meta-api-openapi.yml:
+  openapi/khoros-ai-note-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-meta-json-activity-api-openapi.yml:
+  openapi/khoros-ai-pause-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-meta-json-all-topics-api-openapi.yml:
+  openapi/khoros-ai-permissions-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-meta-json-api-openapi.yml:
+  openapi/khoros-ai-plans-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-meta-json-disregard-api-openapi.yml:
+  openapi/khoros-ai-priority-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-meta-json-finish-api-openapi.yml:
+  openapi/khoros-ai-projects-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-meta-json-networks-api-openapi.yml:
+  openapi/khoros-ai-registrations-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-meta-json-num-contributors-api-openapi.yml:
+  openapi/khoros-ai-report-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-meta-json-num-days-api-openapi.yml:
+  openapi/khoros-ai-reports-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-meta-json-num-hashtags-api-openapi.yml:
+  openapi/khoros-ai-request-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-meta-json-num-hours-api-openapi.yml:
+  openapi/khoros-ai-requests-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-meta-json-num-minutes-api-openapi.yml:
+  openapi/khoros-ai-resolve-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-meta-json-num-trends-api-openapi.yml:
+  openapi/khoros-ai-respond-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-meta-json-percent-api-openapi.yml:
+  openapi/khoros-ai-ssoid-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-meta-json-precision-api-openapi.yml:
+  openapi/khoros-ai-stream-api-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-meta-json-sort-api-openapi.yml:
+  openapi/khoros-ai-streams-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-meta-json-top-count-api-openapi.yml:
+  openapi/khoros-ai-subscription-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-meta-json-top-periods-api-openapi.yml:
+  openapi/khoros-ai-surveys-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-meta-json-top-periods-relative-api-openapi.yml:
+  openapi/khoros-ai-tag-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-multichannelmessages-api-openapi.yml:
+  openapi/khoros-ai-teams-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-networks-api-openapi.yml:
+  openapi/khoros-ai-threads-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-note-api-openapi.yml:
+  openapi/khoros-ai-tokens-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-pause-api-openapi.yml:
+  openapi/khoros-ai-trigger-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-permissions-api-openapi.yml:
+  openapi/khoros-ai-users-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-plans-api-openapi.yml:
+  openapi/khoros-ai-uuid-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-priority-api-openapi.yml:
+  openapi/khoros-ai-work-queue-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-projects-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-registrations-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-report-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-reports-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-request-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-requests-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-resolve-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-respond-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-ssoid-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-stream-api-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-streams-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-subscription-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-surveys-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-tag-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-teams-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-threads-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-tokens-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-trigger-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-users-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-uuid-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-work-queue-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/lithium-work-queues-api-openapi.yml:
+  openapi/khoros-ai-work-queues-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   overlays/_index.yml:
     method: generated
     evidence: declared in the artifact
+  overlays/khoros-ai-accountset-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-active-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-admin-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-asset-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-assets-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-author-api-v2-api-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-author-api-v2-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-authors-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-broadcast-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-business-hours-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-bysourcedocumentid-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-case-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-changed-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-compare-json-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-compare-json-streams-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-compare-json-streams-content-sort-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-compare-json-streams-content-target-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-compare-json-streams-content-target-number-precision-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-config-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-control-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-conversation-api-v2-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-conversations-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-csv-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-csv-long-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-currenttar-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-customer-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-customer-copy-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-customers-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-data-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-discussion-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-displayids-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-email-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-entities-json-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-entities-json-entity-ids-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-export-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-flow-rest-api-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-folder-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-form-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-getforms-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-handover-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-health-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-initiatives-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-khorosapi-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-labels-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-list-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-me-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-messages-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-meta-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-meta-json-activity-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-meta-json-all-topics-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-meta-json-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-meta-json-disregard-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-meta-json-finish-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-meta-json-networks-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-meta-json-num-contributors-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-meta-json-num-days-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-meta-json-num-hashtags-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-meta-json-num-hours-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-meta-json-num-minutes-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-meta-json-num-trends-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-meta-json-percent-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-meta-json-precision-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-meta-json-sort-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-meta-json-top-count-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-meta-json-top-periods-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-meta-json-top-periods-relative-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-multichannelmessages-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-networks-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-note-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-pause-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-permissions-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-plans-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-priority-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-projects-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-registrations-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-report-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-reports-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-request-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-requests-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-resolve-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-respond-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-ssoid-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-stream-api-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-streams-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-subscription-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-surveys-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-tag-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-teams-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-threads-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-tokens-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-trigger-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-users-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-uuid-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-work-queue-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
+  overlays/khoros-ai-work-queues-api-phrasing-overlay.yaml:
+    method: generated
+    evidence: declared in the artifact
   overlays/lithium-care-agent-states-api-v2-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-care-analytics-reports-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-care-api-specifications-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-care-authentication-api-v2-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-care-author-api-v2-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-care-bot-api-v2-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-care-bot-api-v3-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-care-conversation-api-v2-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-care-conversation-tag-rules-v2-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-care-gdpr-api-v2-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-care-listening-api-v2-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-care-secure-forms-api-v2-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-care-smart-views-api-v2-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-care-supervisor-reports-api-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-care-tag-api-v2-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-care-users-api-v2-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-care-work-queue-api-v1-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-care-work-queue-api-v2-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-flow-flow-rest-api-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-marketing-api-specifications-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-marketing-beta-analytics-api-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-marketing-conversations-api-v1-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-marketing-conversations-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-marketing-crm-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-marketing-introspection-api-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-marketing-labelsets-api-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-marketing-notification-service-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   overlays/lithium-marketing-stream-api-overlay.yaml:
-    method: unknown
-    evidence: no authorship recorded
+    method: derived
+    evidence: an API Evangelist overlay (title) over the provider's contract
   packages/lithium-packages.yml:
     method: searched
     evidence: declared in the artifact
